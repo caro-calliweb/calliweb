@@ -1,0 +1,110 @@
+.jvm-richtext-icons-popover .components-popover__content {
+  width: 261px;
+  overflow: hidden !important;
+  padding: 10px;
+  box-sizing: border-box !important;
+}
+.jvm-richtext-icons-popover .components-popover__content * {
+  box-sizing: border-box !important;
+}
+
+.jvm-richtext-icons-popover .components-popover__content input[type="text"] {
+  max-width: 334px;
+}
+
+.jvm-richtext-icons-popover .components-popover__content > div {
+  height: auto;
+}
+
+.jvm-richtext-icons-popover.is-expanded .components-popover__content {
+  width: auto;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+/*
+.jvm-richtext-icons-popover .components-base-control {
+    margin: 10px;
+    padding: 0 15px 0 0;
+}
+.jvm-richtext-icons-panel {
+    margin: 10px 0 0 10px;
+}*/
+
+ul.jvm-richtext-icons-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  height: 100%;
+}
+
+ul.jvm-richtext-icons-list li {
+  border: 1px solid #c8c8c8;
+  padding: 2px;
+  margin: 0;
+}
+
+ul.jvm-richtext-icons-list li .components-button {
+  display: inline-block;
+  font-size: 25px;
+  width: 50px;
+  height: 50px;
+  color: #111;
+  border: 1px solid transparent;
+  text-align: center;
+  padding: 0;
+}
+
+ul.jvm-richtext-icons-list li .components-button:hover {
+  border-color: #111;
+  color: #000 !important;
+}
+
+@media (min-width: 460px) {
+  .jvm-richtext-icons-popover .components-popover__content {
+    width: 376px;
+  }
+}
+
+/* Scrollable icon grid in popover (search bar stays fixed) */
+.jvm-richtext-icons-popover .jvm-richtext-icons-panel {
+  max-height: 278px;
+  overflow-y: auto;
+}
+
+/* Selected icon highlight */
+ul.jvm-richtext-icons-list li .components-button.is-selected {
+  border-color: var(--wp-admin-theme-color, #007cba);
+  background: rgba(0, 124, 186, 0.08);
+}
+
+/* Icon color override control in sidebar (InspectorControls) */
+.jvm-richtext-icon-color {
+  margin-top: 16px;
+}
+
+/* Icon color toolbar popover */
+.jvm-richtext-icon-color-popover {
+  padding: 16px;
+}
+
+/* Icon picker in sidebar (InspectorControls) */
+.components-panel__body .jvm-richtext-icons-picker .jvm-richtext-icons-panel {
+  max-height: 274px;
+  overflow-y: auto;
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+.components-panel__body
+  .jvm-richtext-icons-picker
+  ul.jvm-richtext-icons-list
+  li
+  .components-button {
+  font-size: 20px;
+  width: 40px;
+  height: 40px;
+}

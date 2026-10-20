@@ -1,0 +1,571 @@
+# Copyright (C) 2025 repocean
+# This file is distributed under the GPL-2.0+.
+msgid ""
+msgstr ""
+"Project-Id-Version: Widgets for Google Business Reviews and Ratings 1.0.16\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/widgets-for-google-reviews-and-ratings\n"
+"POT-Creation-Date: 2025-12-22T12:02:03+00:00\n"
+"PO-Revision-Date: 2025-11-05T11:26:55+00:00\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: es_CR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Domain: widgets-for-google-reviews-and-ratings\n"
+"X-Generator: WP-CLI 2.11.0\n"
+
+#. Plugin Name of the plugin
+#: widgets-for-google-reviews-and-ratings.php
+msgid "Widgets for Google Business Reviews and Ratings"
+msgstr "Widgets para Reseñas y Calificaciones de Google Business"
+
+#. Plugin URI of the plugin
+#: widgets-for-google-reviews-and-ratings.php
+msgid "https://repocean.com/"
+msgstr ""
+
+#. Description of the plugin
+#: widgets-for-google-reviews-and-ratings.php
+msgid ""
+"Quickly and easily embed Google reviews into your WordPress site. Boost SEO,"
+" build trust, and increase sales with Google reviews."
+msgstr ""
+"Incrusta rápidamente y fácilmente reseñas de Google en tu sitio de "
+"WordPress. Mejora el SEO, genera confianza y aumenta las ventas con reseñas "
+"de Google."
+
+#. Author of the plugin
+#: widgets-for-google-reviews-and-ratings.php
+msgid "repocean"
+msgstr ""
+
+#. Author URI of the plugin
+#: widgets-for-google-reviews-and-ratings.php
+msgid "https://profiles.wordpress.org/repocean/"
+msgstr ""
+
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:38
+msgid "Google Reviews Settings"
+msgstr "Configuraciones de Reseñas de Google"
+
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:39
+#: admin/class-widgets-for-google-reviews-and-ratings-widget.php:23
+msgid "Google Reviews"
+msgstr "Reseñas de Google"
+
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:59
+msgid "Widget Customizer"
+msgstr "Personalizador de Widget"
+
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:61
+msgid "Connect Google"
+msgstr "Conectar Google"
+
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:62
+msgid "Select Layout"
+msgstr "Seleccionar Diseño"
+
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:63
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:763
+msgid "Settings"
+msgstr "Configuraciones"
+
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:66
+msgid "Get Reviews"
+msgstr "Obtener Reseñas"
+
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:156
+msgid "Nonce verification failed"
+msgstr "La verificación de nonce falló"
+
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:164
+msgid "Error decoding JSON."
+msgstr "Error al decodificar JSON."
+
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:167
+msgid "Error: Place data not received."
+msgstr "Error: No se recibieron datos del lugar."
+
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:170
+msgid "An error occurred: "
+msgstr "Ocurrió un error: "
+
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:212
+msgid "Place Image"
+msgstr "Imagen del Lugar"
+
+#. Translators: %d represents the total number of user reviews.
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:217
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:210
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:301
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:749
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:904
+msgid "reviews"
+msgstr "reseñas"
+
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:223
+msgid "Disconnect"
+msgstr "Desconectar"
+
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:238
+msgid "Place disconnected successfully. Connect a new place."
+msgstr "Lugar desconectado con éxito. Conecta un nuevo lugar."
+
+#. translators: combined notice for support and review
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:264
+msgid ""
+"Hi there, If you have any questions or need assistance, feel free to "
+"%1$sreach out%2$s anytime. If you have a moment, I would love it if you "
+"could %3$sleave a review%4$s."
+msgstr ""
+"Hola, si tienes alguna pregunta o necesitas ayuda, no dudes en %1$sponerte "
+"en contacto%2$s en cualquier momento. Si tienes un momento, me encantaría "
+"que pudieras %3$sdejar una reseña%4$s."
+
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:280
+msgid "Slider"
+msgstr "Control deslizante"
+
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:282
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:300
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:318
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:336
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:354
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:372
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:390
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:408
+msgid "Shortcode:"
+msgstr "Código corto:"
+
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:285
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:303
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:321
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:339
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:357
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:375
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:393
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:411
+msgid "Copy to Clipboard"
+msgstr "Copiar al portapapeles"
+
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:286
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:304
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:322
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:340
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:358
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:376
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:394
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:412
+msgid "Copied!"
+msgstr "¡Copiado!"
+
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:298
+msgid "Slider I."
+msgstr "Deslizador I."
+
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:316
+msgid "Slider II."
+msgstr "Deslizador II."
+
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:334
+msgid "Slider III."
+msgstr "Deslizador III."
+
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:352
+msgid "Slider IIII."
+msgstr "Deslizador IIII."
+
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:370
+msgid "Grid"
+msgstr "Cuadrícula"
+
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:388
+msgid "List"
+msgstr "Lista"
+
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:406
+msgid "Sidebar"
+msgstr "Barra lateral"
+
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:488
+msgid "Security check failed. Nonce verification failed."
+msgstr "Error de verificación de seguridad. La verificación de nonce falló."
+
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:508
+msgid "Settings saved successfully!"
+msgstr "¡Configuraciones guardadas con éxito!"
+
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:525
+msgid "Google Review Widget Settings"
+msgstr "Configuraciones del widget de reseñas de Google"
+
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:533
+msgid "Hide Review Date"
+msgstr "Ocultar fecha de reseña"
+
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:539
+msgid "Hide Reviewer Profile Picture"
+msgstr "Ocultar foto de perfil del revisor"
+
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:545
+msgid "Hide Google Logo"
+msgstr "Ocultar logo de Google"
+
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:551
+msgid "Hide Widget Rating Text (e.g. EXCELLENT XXX reviews)"
+msgstr ""
+"Ocultar texto de calificación del widget (por ejemplo, EXCELENTE XXX "
+"reseñas)"
+
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:558
+msgid "Hide \"Previous\" and \"Next\" Buttons"
+msgstr "Ocultar botones \"Anterior\" y \"Siguiente\""
+
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:566
+msgid "Show Verified By RepOcean"
+msgstr "Mostrar Verificado por RepOcean"
+
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:574
+msgid "Show Verified Symbol for Reviews"
+msgstr "Mostrar símbolo verificado para reseñas"
+
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:576
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:189
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:351
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:455
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:561
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:641
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:799
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:953
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:1071
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:1468
+msgid "RepOcean verifies that the original source of the review is Google."
+msgstr "RepOcean verifica que la fuente original de la reseña es Google."
+
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:583
+msgid "Shorten Reviewer Names (e.g., John Smith → John S.)"
+msgstr "Acortar nombres de revisores (por ejemplo, John Smith → John S.)"
+
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:591
+msgid "Enable Dark Mode (Dark background with light text)"
+msgstr "Habilitar modo oscuro (fondo oscuro con texto claro)"
+
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:599
+msgid "Change Star Color"
+msgstr "Cambiar color de estrellas"
+
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:656
+msgid "Review Card Background Color"
+msgstr "Revisar el color de fondo de la tarjeta"
+
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:702
+msgid "Review Card Border Color"
+msgstr "Revisar el color del borde de la tarjeta"
+
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:750
+msgid "Save Changes"
+msgstr "Guardar cambios"
+
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:756
+msgid "An error occurred while saving the settings. Please try again."
+msgstr ""
+"Ocurrió un error al guardar la configuración. Por favor, inténtalo de nuevo."
+
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:772
+msgid "Community support"
+msgstr "Soporte comunitario"
+
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:773
+msgid "Rate our plugin"
+msgstr "Califica nuestro plugin"
+
+#: admin/class-widgets-for-google-reviews-and-ratings-widget.php:9
+msgid "A Widget to display Google Reviews"
+msgstr "Un widget para mostrar reseñas de Google"
+
+#: admin/class-widgets-for-google-reviews-and-ratings-widget.php:26
+msgid "Title:"
+msgstr "Título:"
+
+#: admin/feedback/deactivation-feedback-form.php:8
+msgid "Return"
+msgstr "Regresar"
+
+#: admin/feedback/deactivation-feedback-form.php:9
+msgid "We’re sorry to see you go! 💔"
+msgstr "¡Lamentamos verte partir! 💔"
+
+#: admin/feedback/deactivation-feedback-form.php:11
+msgid "Close"
+msgstr "Cerrar"
+
+#: admin/feedback/deactivation-feedback-form.php:15
+msgid ""
+"Can you please tell us why you’re deactivating the plugin? Your feedback "
+"helps us make it better."
+msgstr ""
+"¿Puedes decirnos por qué estás desactivando el plugin? Tu opinión nos ayuda "
+"a mejorarlo."
+
+#: admin/feedback/deactivation-feedback-form.php:19
+msgid "Temporary deactivation (troubleshooting)"
+msgstr "Desactivación temporal (solución de problemas)"
+
+#: admin/feedback/deactivation-feedback-form.php:23
+msgid "Compatibility issue"
+msgstr "Problema de compatibilidad"
+
+#: admin/feedback/deactivation-feedback-form.php:25
+msgid "Please describe what part of the layout or functionality was affected."
+msgstr ""
+"Por favor, describe qué parte del diseño o funcionalidad se vio afectada."
+
+#: admin/feedback/deactivation-feedback-form.php:30
+msgid "Difficult to set up"
+msgstr "Difícil de configurar"
+
+#: admin/feedback/deactivation-feedback-form.php:32
+msgid "What part of the setup was confusing or unclear?"
+msgstr "¿Qué parte de la configuración fue confusa o poco clara?"
+
+#: admin/feedback/deactivation-feedback-form.php:37
+msgid "Missing features"
+msgstr "Funciones faltantes"
+
+#: admin/feedback/deactivation-feedback-form.php:39
+msgid "Which features were you looking for?"
+msgstr "¿Qué funciones estabas buscando?"
+
+#: admin/feedback/deactivation-feedback-form.php:44
+msgid "Other"
+msgstr "Otro"
+
+#: admin/feedback/deactivation-feedback-form.php:46
+msgid ""
+"Please share why you’re deactivating the Google Business Reviews plugin so "
+"we can make improvements."
+msgstr ""
+"Por favor, comparte por qué estás desactivando el complemento de Reseñas de "
+"Google Business para que podamos hacer mejoras."
+
+#: admin/feedback/deactivation-feedback-form.php:58
+msgid ""
+"Your privacy is important to us. No personal data is collected with this "
+"form—just your valuable feedback and basic system information (such as "
+"WordPress and plugin versions) to help us improve our plugin."
+msgstr ""
+"Tu privacidad es importante para nosotros. No se recopilan datos personales "
+"con este formulario, solo tu valiosa opinión e información básica del "
+"sistema (como las versiones de WordPress y del plugin) para ayudarnos a "
+"mejorar nuestro plugin."
+
+#: admin/feedback/deactivation-feedback-form.php:63
+msgid "Visit our support page for assistance"
+msgstr "Visita nuestra página de soporte para obtener asistencia"
+
+#: admin/feedback/deactivation-feedback-form.php:63
+msgid "Get Support"
+msgstr "Obtener Soporte"
+
+#: admin/feedback/deactivation-feedback-form.php:65
+msgid "Send & Deactivate"
+msgstr "Enviar y Desactivar"
+
+#: admin/feedback/deactivation-feedback-form.php:67
+msgid "I rather wouldn't say"
+msgstr "Preferiría no decirlo"
+
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:103
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:233
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:386
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:492
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:598
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:680
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:836
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:991
+msgid "Hide"
+msgstr "Ocultar"
+
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:104
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:197
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:234
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:359
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:387
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:462
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:493
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:568
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:599
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:650
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:681
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:808
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:837
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:962
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:992
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:1095
+msgid "Read more"
+msgstr "Leer más"
+
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:144
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:288
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:393
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:499
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:605
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:734
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:890
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:1046
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:1449
+msgid "No reviews found."
+msgstr "No se encontraron reseñas."
+
+#. Translators: %s represents the human-readable time difference.
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:150
+msgid " %s ago"
+msgstr "hace %s"
+
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:207
+msgid "Google"
+msgstr ""
+
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:207
+msgid "Rating Score:"
+msgstr "Puntuación:"
+
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:208
+msgid "out of 5,"
+msgstr "de 5,"
+
+#. Translators: %d represents the total number of user reviews.
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:210
+msgid "based on"
+msgstr "basado en"
+
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:295
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:402
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:508
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:742
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:898
+msgid "EXCELLENT"
+msgstr "EXCELENTE"
+
+#. Translators: %s represents the human-readable time difference.
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:312
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:428
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:534
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:621
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:760
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:915
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:1079
+msgid "%s ago"
+msgstr "hace %s"
+
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:371
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:477
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:583
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:666
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:822
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:976
+msgid "Your Google Place not connected"
+msgstr "Tu lugar de Google no está conectado"
+
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:374
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:480
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:586
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:669
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:825
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:979
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:1132
+msgid "An error occurred."
+msgstr "Ocurrió un error."
+
+#. Translators: %d represents the total number of user reviews.
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:405
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:511
+msgid "Based on <a href=\"#\" class=\"review-link\">%d reviews</a>"
+msgstr "Basado en <a href=\"#\" class=\"review-link\">%d reseñas</a>"
+
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:409
+msgid "Review us on Google"
+msgstr "Revísanos en Google"
+
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:815
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:969
+msgid "Load More"
+msgstr "Cargar más"
+
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:1056
+msgid "Excellent rating"
+msgstr "Calificación excelente"
+
+#. Translators: %d represents the total number of user reviews.
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:1058
+msgid "Based on %s reviews"
+msgstr "Basado en %s reseñas"
+
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:1129
+msgid "Your Google Place is not connected."
+msgstr "Tu lugar de Google no está conectado."
+
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:1440
+msgid "Unable to retrieve reviews at this time."
+msgstr "No se pueden recuperar las reseñas en este momento."
+
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:1467
+msgid "Verified"
+msgstr "Verificado"
+
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:1469
+msgid "Verified by RepOcean"
+msgstr "Verificado por RepOcean"
+
+msgid "Review Filters"
+msgstr "Filtros de reseñas"
+
+msgid "Minimum Star Rating"
+msgstr "Calificación mínima de estrellas"
+
+msgid "5 Stars Only"
+msgstr "Solo 5 estrellas"
+
+msgid "4 Stars and Up"
+msgstr "4 estrellas o más"
+
+msgid "3 Stars and Up"
+msgstr "3 estrellas o más"
+
+msgid "2 Stars and Up"
+msgstr "2 estrellas o más"
+
+msgid "1 Star and Up"
+msgstr "1 estrella o más"
+
+msgid "Hide Reviews Without Text"
+msgstr "Ocultar reseñas sin texto"
+
+msgid "Display Options"
+msgstr "Opciones de visualización"
+
+msgid "Hide Review Photos"
+msgstr "Ocultar fotos de las reseñas"
+
+msgid "Style"
+msgstr "Estilo"
+
+msgid "Star Color"
+msgstr "Color de las estrellas"
+
+msgid "Card Background Color"
+msgstr "Color de fondo de la tarjeta"
+
+msgid "Card Border Color"
+msgstr "Color del borde de la tarjeta"
+
+msgid "Card Border Radius"
+msgstr "Radio del borde de la tarjeta"
+
+msgid "When enabled, the background and border colors will use dark-mode values."
+msgstr "Cuando está activado, los colores de fondo y de borde usarán los valores del modo oscuro."
+
+msgid "Get Pro"
+msgstr "Obtener Pro"

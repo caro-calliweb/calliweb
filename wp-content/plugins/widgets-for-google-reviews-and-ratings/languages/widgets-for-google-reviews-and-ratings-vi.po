@@ -1,0 +1,515 @@
+# Copyright (C) 2025 repocean
+# This file is distributed under the GPL-2.0+.
+msgid ""
+msgstr ""
+"Project-Id-Version: Widgets for Google Business Reviews and Ratings 1.0.16\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/widgets-for-google-reviews-and-ratings\n"
+"POT-Creation-Date: 2025-12-22T12:02:03+00:00\n"
+"PO-Revision-Date: 2025-11-05T11:26:55+00:00\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: vi\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Domain: widgets-for-google-reviews-and-ratings\n"
+"X-Generator: WP-CLI 2.11.0\n"
+
+#. Plugin Name of the plugin
+#: widgets-for-google-reviews-and-ratings.php
+msgid "Widgets for Google Business Reviews and Ratings"
+msgstr "Widgets cho Đánh giá và Xếp hạng Doanh nghiệp Google"
+
+#. Plugin URI of the plugin
+#: widgets-for-google-reviews-and-ratings.php
+msgid "https://repocean.com/"
+msgstr ""
+
+#. Description of the plugin
+#: widgets-for-google-reviews-and-ratings.php
+msgid ""
+"Quickly and easily embed Google reviews into your WordPress site. Boost SEO,"
+" build trust, and increase sales with Google reviews."
+msgstr ""
+"Nhanh chóng và dễ dàng nhúng đánh giá Google vào trang WordPress của bạn. "
+"Tăng cường SEO, xây dựng lòng tin và tăng doanh số với đánh giá Google."
+
+#. Author of the plugin
+#: widgets-for-google-reviews-and-ratings.php
+msgid "repocean"
+msgstr ""
+
+#. Author URI of the plugin
+#: widgets-for-google-reviews-and-ratings.php
+msgid "https://profiles.wordpress.org/repocean/"
+msgstr ""
+
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:38
+msgid "Google Reviews Settings"
+msgstr "Cài đặt Đánh giá Google"
+
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:39
+#: admin/class-widgets-for-google-reviews-and-ratings-widget.php:23
+msgid "Google Reviews"
+msgstr "Đánh giá Google"
+
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:59
+msgid "Widget Customizer"
+msgstr "Tùy chỉnh Widget"
+
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:61
+msgid "Connect Google"
+msgstr "Kết nối Google"
+
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:62
+msgid "Select Layout"
+msgstr "Chọn Bố cục"
+
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:63
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:763
+msgid "Settings"
+msgstr "Cài đặt"
+
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:66
+msgid "Get Reviews"
+msgstr "Lấy Đánh giá"
+
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:156
+msgid "Nonce verification failed"
+msgstr "Xác minh nonce không thành công"
+
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:164
+msgid "Error decoding JSON."
+msgstr "Lỗi giải mã JSON."
+
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:167
+msgid "Error: Place data not received."
+msgstr "Lỗi: Dữ liệu địa điểm không nhận được."
+
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:170
+msgid "An error occurred: "
+msgstr "Đã xảy ra lỗi: "
+
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:212
+msgid "Place Image"
+msgstr "Hình ảnh Địa điểm"
+
+#. Translators: %d represents the total number of user reviews.
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:217
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:210
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:301
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:749
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:904
+msgid "reviews"
+msgstr "đánh giá"
+
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:223
+msgid "Disconnect"
+msgstr "Ngắt kết nối"
+
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:238
+msgid "Place disconnected successfully. Connect a new place."
+msgstr "Địa điểm đã ngắt kết nối thành công. Kết nối một địa điểm mới."
+
+#. translators: combined notice for support and review
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:264
+msgid ""
+"Hi there, If you have any questions or need assistance, feel free to "
+"%1$sreach out%2$s anytime. If you have a moment, I would love it if you "
+"could %3$sleave a review%4$s."
+msgstr ""
+"Chào bạn, Nếu bạn có bất kỳ câu hỏi nào hoặc cần trợ giúp, hãy thoải mái "
+"%1$sliên hệ%2$s bất cứ lúc nào. Nếu bạn có một chút thời gian, tôi sẽ rất "
+"vui nếu bạn có thể %3$sgửi đánh giá%4$s."
+
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:280
+msgid "Slider"
+msgstr "Thanh trượt"
+
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:282
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:300
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:318
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:336
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:354
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:372
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:390
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:408
+msgid "Shortcode:"
+msgstr "Mã ngắn:"
+
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:285
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:303
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:321
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:339
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:357
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:375
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:393
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:411
+msgid "Copy to Clipboard"
+msgstr "Sao chép vào Clipboard"
+
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:286
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:304
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:322
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:340
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:358
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:376
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:394
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:412
+msgid "Copied!"
+msgstr "Đã sao chép!"
+
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:298
+msgid "Slider I."
+msgstr "Trượt I."
+
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:316
+msgid "Slider II."
+msgstr "Trượt II."
+
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:334
+msgid "Slider III."
+msgstr "Trượt III."
+
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:352
+msgid "Slider IIII."
+msgstr "Trượt IIII."
+
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:370
+msgid "Grid"
+msgstr "Lưới"
+
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:388
+msgid "List"
+msgstr "Danh sách"
+
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:406
+msgid "Sidebar"
+msgstr "Thanh bên"
+
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:488
+msgid "Security check failed. Nonce verification failed."
+msgstr "Kiểm tra bảo mật không thành công. Xác minh Nonce không thành công."
+
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:508
+msgid "Settings saved successfully!"
+msgstr "Cài đặt đã được lưu thành công!"
+
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:525
+msgid "Google Review Widget Settings"
+msgstr "Cài đặt Widget Đánh giá Google"
+
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:533
+msgid "Hide Review Date"
+msgstr "Ẩn Ngày Đánh giá"
+
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:539
+msgid "Hide Reviewer Profile Picture"
+msgstr "Ẩn Ảnh đại diện của Người đánh giá"
+
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:545
+msgid "Hide Google Logo"
+msgstr "Ẩn Logo Google"
+
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:551
+msgid "Hide Widget Rating Text (e.g. EXCELLENT XXX reviews)"
+msgstr "Ẩn Văn bản Đánh giá Widget (ví dụ: ĐÁNH GIÁ TUYỆT VỜI XXX đánh giá)"
+
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:558
+msgid "Hide \"Previous\" and \"Next\" Buttons"
+msgstr "Ẩn nút \"Trước\" và \"Sau\""
+
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:566
+msgid "Show Verified By RepOcean"
+msgstr "Hiển thị Đã xác minh bởi RepOcean"
+
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:574
+msgid "Show Verified Symbol for Reviews"
+msgstr "Hiển thị Biểu tượng Đã xác minh cho các Đánh giá"
+
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:576
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:189
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:351
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:455
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:561
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:641
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:799
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:953
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:1071
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:1468
+msgid "RepOcean verifies that the original source of the review is Google."
+msgstr "RepOcean xác minh rằng nguồn gốc ban đầu của đánh giá là Google."
+
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:583
+msgid "Shorten Reviewer Names (e.g., John Smith → John S.)"
+msgstr "Rút ngắn tên người đánh giá (ví dụ: John Smith → John S.)"
+
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:591
+msgid "Enable Dark Mode (Dark background with light text)"
+msgstr "Bật chế độ tối (Nền tối với văn bản sáng)"
+
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:599
+msgid "Change Star Color"
+msgstr "Thay đổi màu sao"
+
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:656
+msgid "Review Card Background Color"
+msgstr "Xem màu nền thẻ"
+
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:702
+msgid "Review Card Border Color"
+msgstr "Xem màu viền thẻ"
+
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:750
+msgid "Save Changes"
+msgstr "Lưu thay đổi"
+
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:756
+msgid "An error occurred while saving the settings. Please try again."
+msgstr "Đã xảy ra lỗi khi lưu cài đặt. Vui lòng thử lại."
+
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:772
+msgid "Community support"
+msgstr "Hỗ trợ cộng đồng"
+
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:773
+msgid "Rate our plugin"
+msgstr "Đánh giá plugin của chúng tôi"
+
+#: admin/class-widgets-for-google-reviews-and-ratings-widget.php:9
+msgid "A Widget to display Google Reviews"
+msgstr "Một Widget để hiển thị đánh giá của Google"
+
+#: admin/class-widgets-for-google-reviews-and-ratings-widget.php:26
+msgid "Title:"
+msgstr "Tiêu đề:"
+
+#: admin/feedback/deactivation-feedback-form.php:8
+msgid "Return"
+msgstr "Trả lại"
+
+#: admin/feedback/deactivation-feedback-form.php:9
+msgid "We’re sorry to see you go! 💔"
+msgstr "Chúng tôi rất tiếc khi thấy bạn ra đi! 💔"
+
+#: admin/feedback/deactivation-feedback-form.php:11
+msgid "Close"
+msgstr "Đóng"
+
+#: admin/feedback/deactivation-feedback-form.php:15
+msgid ""
+"Can you please tell us why you’re deactivating the plugin? Your feedback "
+"helps us make it better."
+msgstr ""
+"Bạn có thể cho chúng tôi biết lý do bạn đang vô hiệu hóa plugin không? Phản "
+"hồi của bạn giúp chúng tôi cải thiện nó hơn."
+
+#: admin/feedback/deactivation-feedback-form.php:19
+msgid "Temporary deactivation (troubleshooting)"
+msgstr "Vô hiệu hóa tạm thời (khắc phục sự cố)"
+
+#: admin/feedback/deactivation-feedback-form.php:23
+msgid "Compatibility issue"
+msgstr "Vấn đề tương thích"
+
+#: admin/feedback/deactivation-feedback-form.php:25
+msgid "Please describe what part of the layout or functionality was affected."
+msgstr "Vui lòng mô tả phần nào của bố cục hoặc chức năng bị ảnh hưởng."
+
+#: admin/feedback/deactivation-feedback-form.php:30
+msgid "Difficult to set up"
+msgstr "Khó để thiết lập"
+
+#: admin/feedback/deactivation-feedback-form.php:32
+msgid "What part of the setup was confusing or unclear?"
+msgstr "Phần nào của thiết lập khiến bạn cảm thấy bối rối hoặc không rõ ràng?"
+
+#: admin/feedback/deactivation-feedback-form.php:37
+msgid "Missing features"
+msgstr "Các tính năng bị thiếu"
+
+#: admin/feedback/deactivation-feedback-form.php:39
+msgid "Which features were you looking for?"
+msgstr "Bạn đang tìm kiếm những tính năng nào?"
+
+#: admin/feedback/deactivation-feedback-form.php:44
+msgid "Other"
+msgstr "Khác"
+
+#: admin/feedback/deactivation-feedback-form.php:46
+msgid ""
+"Please share why you’re deactivating the Google Business Reviews plugin so "
+"we can make improvements."
+msgstr ""
+"Vui lòng chia sẻ lý do bạn đang vô hiệu hóa plugin Đánh giá Doanh nghiệp "
+"Google để chúng tôi có thể cải thiện."
+
+#: admin/feedback/deactivation-feedback-form.php:58
+msgid ""
+"Your privacy is important to us. No personal data is collected with this "
+"form—just your valuable feedback and basic system information (such as "
+"WordPress and plugin versions) to help us improve our plugin."
+msgstr ""
+"Sự riêng tư của bạn rất quan trọng đối với chúng tôi. Không có dữ liệu cá "
+"nhân nào được thu thập qua mẫu này—chỉ có phản hồi quý giá của bạn và thông "
+"tin hệ thống cơ bản (chẳng hạn như phiên bản WordPress và plugin) để giúp "
+"chúng tôi cải thiện plugin của mình."
+
+#: admin/feedback/deactivation-feedback-form.php:63
+msgid "Visit our support page for assistance"
+msgstr "Truy cập trang hỗ trợ của chúng tôi để được trợ giúp."
+
+#: admin/feedback/deactivation-feedback-form.php:63
+msgid "Get Support"
+msgstr "Nhận Hỗ Trợ"
+
+#: admin/feedback/deactivation-feedback-form.php:65
+msgid "Send & Deactivate"
+msgstr "Gửi & Vô hiệu hóa"
+
+#: admin/feedback/deactivation-feedback-form.php:67
+msgid "I rather wouldn't say"
+msgstr "Tôi không muốn nói vậy."
+
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:103
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:233
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:386
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:492
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:598
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:680
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:836
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:991
+msgid "Hide"
+msgstr "Ẩn"
+
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:104
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:197
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:234
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:359
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:387
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:462
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:493
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:568
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:599
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:650
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:681
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:808
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:837
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:962
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:992
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:1095
+msgid "Read more"
+msgstr "Đọc thêm"
+
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:144
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:288
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:393
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:499
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:605
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:734
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:890
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:1046
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:1449
+msgid "No reviews found."
+msgstr "Không tìm thấy đánh giá nào."
+
+#. Translators: %s represents the human-readable time difference.
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:150
+msgid " %s ago"
+msgstr " %s trước"
+
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:207
+msgid "Google"
+msgstr ""
+
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:207
+msgid "Rating Score:"
+msgstr "Điểm đánh giá:"
+
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:208
+msgid "out of 5,"
+msgstr "trên tổng số 5,"
+
+#. Translators: %d represents the total number of user reviews.
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:210
+msgid "based on"
+msgstr "dựa trên"
+
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:295
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:402
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:508
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:742
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:898
+msgid "EXCELLENT"
+msgstr "Tuyệt vời"
+
+#. Translators: %s represents the human-readable time difference.
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:312
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:428
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:534
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:621
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:760
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:915
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:1079
+msgid "%s ago"
+msgstr "%s trước"
+
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:371
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:477
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:583
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:666
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:822
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:976
+msgid "Your Google Place not connected"
+msgstr "Nơi của bạn trên Google chưa được kết nối"
+
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:374
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:480
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:586
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:669
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:825
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:979
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:1132
+msgid "An error occurred."
+msgstr "Đã xảy ra lỗi."
+
+#. Translators: %d represents the total number of user reviews.
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:405
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:511
+msgid "Based on <a href=\"#\" class=\"review-link\">%d reviews</a>"
+msgstr "Dựa trên <a href=\"#\" class=\"review-link\">%d đánh giá</a>"
+
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:409
+msgid "Review us on Google"
+msgstr "Đánh giá chúng tôi trên Google"
+
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:815
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:969
+msgid "Load More"
+msgstr "Tải thêm"
+
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:1056
+msgid "Excellent rating"
+msgstr "Đánh giá xuất sắc"
+
+#. Translators: %d represents the total number of user reviews.
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:1058
+msgid "Based on %s reviews"
+msgstr "Dựa trên %s đánh giá"
+
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:1129
+msgid "Your Google Place is not connected."
+msgstr "Nơi của bạn trên Google chưa được kết nối."
+
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:1440
+msgid "Unable to retrieve reviews at this time."
+msgstr "Không thể lấy đánh giá vào lúc này."
+
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:1467
+msgid "Verified"
+msgstr "Đã xác minh"
+
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:1469
+msgid "Verified by RepOcean"
+msgstr "Được xác minh bởi RepOcean"

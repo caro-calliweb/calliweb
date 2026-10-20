@@ -1,0 +1,164 @@
+/**
+ * Events Widget — featured image shell (sizing, card/image hover presets, vignette).
+ * Controlled via Style tab hover animation selects on the widget root (.ect-ev--*).
+ */
+
+.ect-ev {
+	--ect-bricks-card-hover-lift-default: 4;
+	--ect-bricks-image-hover-scale-default: 105.5;
+	--ect-bricks-shell-transition: 280ms;
+}
+
+.ect-ev :is(.ect-list__img-wrap, .ect-card__img-wrap) {
+	min-height: var(--ect-bricks-featured-image-min-height);
+	height: var(--ect-bricks-featured-image-height);
+}
+
+.ect-ev :is(.ect-list__img, .ect-card__img) {
+	object-fit: cover;
+	object-position: center;
+	transition:
+		transform var(--ect-bricks-shell-transition) ease,
+		filter var(--ect-bricks-shell-transition) ease;
+}
+
+.ect-ev .ect-list,
+.ect-ev .ect-card {
+	transition:
+		transform var(--ect-bricks-shell-transition) ease,
+		box-shadow var(--ect-bricks-shell-transition) ease,
+		border-color var(--ect-bricks-shell-transition) ease;
+}
+
+.ect-ev .ect-list__content {
+	transition: box-shadow var(--ect-bricks-shell-transition) ease;
+}
+
+/* Vignette / color overlay (below badges, above image; non-interactive). */
+.ect-ev[class*="ect-vig--"] :is(.ect-list__img-wrap, .ect-card__img-wrap)::after {
+	content: "";
+	position: absolute;
+	inset: 0;
+	z-index: 1;
+	pointer-events: none;
+	opacity: calc(var(--ect-bricks-vignette-opacity, 45) / 100);
+	transition: opacity var(--ect-bricks-shell-transition) ease;
+}
+
+.ect-vig--radial-center :is(.ect-list__img-wrap, .ect-card__img-wrap)::after {
+	background: radial-gradient(
+		ellipse at center,
+		transparent 32%,
+		var(--ect-bricks-vignette-color, rgba(15, 23, 42, 0.82)) 100%
+	);
+}
+
+.ect-vig--bottom-fade :is(.ect-list__img-wrap, .ect-card__img-wrap)::after {
+	--ect-bricks-vig-direction: to top;
+}
+
+.ect-vig--top-fade :is(.ect-list__img-wrap, .ect-card__img-wrap)::after {
+	--ect-bricks-vig-direction: to bottom;
+}
+
+.ect-vig--left-fade :is(.ect-list__img-wrap, .ect-card__img-wrap)::after {
+	--ect-bricks-vig-direction: to right;
+}
+
+.ect-vig--right-fade :is(.ect-list__img-wrap, .ect-card__img-wrap)::after {
+	--ect-bricks-vig-direction: to left;
+}
+
+:is(
+	.ect-vig--bottom-fade,
+	.ect-vig--top-fade,
+	.ect-vig--left-fade,
+	.ect-vig--right-fade
+) :is(.ect-list__img-wrap, .ect-card__img-wrap)::after {
+	background: linear-gradient(
+		var(--ect-bricks-vig-direction),
+		var(--ect-bricks-vignette-color, rgba(15, 23, 42, 0.72)) 0%,
+		transparent 58%
+	);
+}
+
+.ect-vig--tint :is(.ect-list__img-wrap, .ect-card__img-wrap)::after {
+	background: var(--ect-bricks-vignette-color, rgba(33, 71, 199, 0.28));
+	mix-blend-mode: multiply;
+}
+
+@media (hover: hover) and (pointer: fine) {
+	/* Hover motion presets: set --ect-bricks-*-hover-transform on the root. */
+	.ect-ev.ect-card-hover--fade_in_up {
+		--ect-bricks-card-hover-transform: translateY(calc(-1 * var(--ect-bricks-anim-offset)));
+	}
+	.ect-ev.ect-card-hover--fade_in_right {
+		--ect-bricks-card-hover-transform: translateX(var(--ect-bricks-anim-offset));
+	}
+	.ect-ev.ect-card-hover--fade_in_down {
+		--ect-bricks-card-hover-transform: translateY(var(--ect-bricks-anim-offset));
+	}
+	.ect-ev.ect-card-hover--fade_in_left {
+		--ect-bricks-card-hover-transform: translateX(calc(-1 * var(--ect-bricks-anim-offset)));
+	}
+	.ect-ev.ect-card-hover--zoom_in {
+		--ect-bricks-card-hover-transform: scale(1.03);
+	}
+	.ect-ev.ect-card-hover--zoom_out {
+		--ect-bricks-card-hover-transform: scale(0.97);
+	}
+
+	.ect-ev.ect-img-hover--fade_in_up {
+		--ect-bricks-img-hover-transform: translateY(calc(-1 * var(--ect-bricks-anim-offset)));
+	}
+	.ect-ev.ect-img-hover--fade_in_right {
+		--ect-bricks-img-hover-transform: translateX(var(--ect-bricks-anim-offset));
+	}
+	.ect-ev.ect-img-hover--fade_in_down {
+		--ect-bricks-img-hover-transform: translateY(var(--ect-bricks-anim-offset));
+	}
+	.ect-ev.ect-img-hover--fade_in_left {
+		--ect-bricks-img-hover-transform: translateX(calc(-1 * var(--ect-bricks-anim-offset)));
+	}
+	.ect-ev.ect-img-hover--zoom_in {
+		--ect-bricks-img-hover-transform: scale(var(--ect-bricks-anim-scale-in));
+	}
+	.ect-ev.ect-img-hover--zoom_out {
+		--ect-bricks-img-hover-transform: scale(var(--ect-bricks-anim-scale-out));
+	}
+
+	/* Default card hover (lift + shadow + border tint) when no preset is selected. */
+	.ect-ev:not([class*="ect-card-hover--"]) .ect-ev__item-inner:hover {
+		transform: translateY(
+			calc(-1 * var(--ect-bricks-card-hover-lift-default) * 1px)
+		);
+		border-color: var(--ect-bricks-card-hover-border-color);
+		box-shadow: var(--shadow-card-hover);
+	}
+
+	/* Default image zoom on card hover. */
+	.ect-ev:not([class*="ect-img-hover--"]) .ect-ev__item-inner:hover :is(.ect-list__img, .ect-card__img) {
+		transform: scale(calc(var(--ect-bricks-image-hover-scale-default) / 100));
+	}
+
+	.ect-ev.ect-card-hover--none .ect-ev__item-inner:hover {
+		transform: none;
+		box-shadow: none;
+	}
+
+	/* Shared border/shadow + transform for all non-none card presets. */
+	.ect-ev[class*="ect-card-hover--"]:not(.ect-card-hover--none) .ect-ev__item-inner:hover {
+		transform: var(--ect-bricks-card-hover-transform);
+		border-color: var(--ect-bricks-card-hover-border-color);
+		box-shadow: var(--shadow-card-hover);
+	}
+
+	.ect-ev.ect-img-hover--none .ect-ev__item-inner:hover :is(.ect-list__img, .ect-card__img) {
+		transform: none;
+		filter: none;
+	}
+
+	.ect-ev[class*="ect-img-hover--"]:not(.ect-img-hover--none) .ect-ev__item-inner:hover :is(.ect-list__img, .ect-card__img) {
+		transform: var(--ect-bricks-img-hover-transform);
+	}
+}

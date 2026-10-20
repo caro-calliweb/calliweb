@@ -1,0 +1,411 @@
+/*ECT ICONS FONT*/
+@font-face {
+  font-family: 'ecticons';
+  src: url('../font/ebecicons.eot?24096328');
+  src: url('../font/ebecicons.eot?24096328#iefix') format('embedded-opentype'),
+       url('../font/ebecicons.woff2?24096328') format('woff2'),
+       url('../font/ebecicons.woff?24096328') format('woff'),
+       url('../font/ebecicons.ttf?24096328') format('truetype'),
+       url('../font/ebecicons.svg?24096328#ecticons') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+   
+   [class^="ebec-icon-"]:before, [class*=" ebec-icon-"]:before {
+    font-family: "ecticons";
+    font-style: normal;
+    font-weight: normal;
+    speak: none;
+   
+    display: inline-block;
+    text-decoration: inherit;
+    width: 1em;
+    margin-right: .2em;
+    text-align: center;
+    font-variant: normal;
+    text-transform: none;
+    /* fix buttons height, for twitter bootstrap */
+    line-height: 1em;
+    margin-left: .2em;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+   
+  .ebec-icon-star:before { content: '\e800'; } /* '' */
+  .ebec-icon-down:before { content: '\e801'; } /* '' */
+  .ebec-icon-up:before { content: '\e802'; } /* '' */
+  .ebec-icon-flight:before { content: '\e803'; } /* '' */
+  .ebec-icon-bell:before { content: '\e804'; } /* '' */
+  .ebec-icon-left:before { content: '\e805'; } /* '' */
+  .ebec-icon-right:before { content: '\e806'; } /* '' */
+  .ebec-icon-flash:before { content: '\e807'; } /* '' */
+  .ebec-icon-card:before { content: '\e808'; } /* '' */
+  .ebec-icon-calendar:before { content: '\e809'; } /* '' */
+  .ebec-icon-calendar-alt:before { content: '\e80a'; } /* '' */
+  .ebec-icon-clock:before { content: '\e80b'; } /* '' */
+  .ebec-icon-clock-alt:before { content: '\e80c'; } /* '' */
+  .ebec-icon-tag:before { content: '\e80d'; } /* '' */
+  .ebec-icon-pin:before { content: '\e80e'; } /* '' */
+  .ebec-icon-tags:before { content: '\e80f'; } /* '' */
+  .ebec-icon-location:before { content: '\e810'; } /* '' */
+  .ebec-icon-location-alt:before { content: '\e811'; } /* '' */
+  .ebec-icon-wallet:before { content: '\e812'; } /* '' */
+  .ebec-icon-share-alt:before { content: '\e813'; } /* '' */
+  .ebec-icon-search:before { content: '\e814'; } /* '' */
+  .ebec-icon-users:before { content: '\e815'; } /* '' */
+  .ebec-icon-user:before { content: '\e816'; } /* '' */
+  .ebec-icon-home:before { content: '\e817'; } /* '' */
+  .ebec-icon-link:before { content: '\e818'; } /* '' */
+  .ebec-icon-star-circled:before { content: '\e819'; } /* '' */
+  .ebec-icon-heart:before { content: '\e81a'; } /* '' */
+  .ebec-icon-tag-alt:before { content: '\e81b'; } /* '' */
+  .ebec-icon-spin:before { content: '\e839'; } /* '' */
+  .ebec-icon-phone:before { content: '\f098'; } /* '' */
+  .ebec-icon-certificate:before { content: '\f0a3'; } /* '' */
+  .ebec-icon-filter:before { content: '\f0b0'; } /* '' */
+  .ebec-icon-money:before { content: '\f0d6'; } /* '' */
+  .ebec-icon-mail-alt:before { content: '\f0e0'; } /* '' */
+  .ebec-icon-bulb:before { content: '\f0eb'; } /* '' */
+  .ebec-icon-bell-alt:before { content: '\f0f3'; } /* '' */
+  .ebec-icon-coffee:before { content: '\f0f4'; } /* '' */
+  .ebec-icon-food:before { content: '\f0f5'; } /* '' */
+  .ebec-icon-left-double:before { content: '\f100'; } /* '' */
+  .ebec-icon-right-double:before { content: '\f101'; } /* '' */
+  .ebec-icon-up-double:before { content: '\f102'; } /* '' */
+  .ebec-icon-down-double:before { content: '\f103'; } /* '' */
+  .ebec-icon-quote-left:before { content: '\f10d'; } /* '' */
+  .ebec-icon-quote-right:before { content: '\f10e'; } /* '' */
+  .ebec-icon-mic:before { content: '\f130'; } /* '' */
+  .ebec-icon-ticket:before { content: '\f145'; } /* '' */
+  .ebec-icon-ok:before { content: '\f14a'; } /* '' */
+  .ebec-icon-down-alt:before { content: '\f150'; } /* '' */
+  .ebec-icon-up-alt:before { content: '\f151'; } /* '' */
+  .ebec-icon-right-alt:before { content: '\f152'; } /* '' */
+  .ebec-icon-euro:before { content: '\f153'; } /* '' */
+  .ebec-icon-pound:before { content: '\f154'; } /* '' */
+  .ebec-icon-dollar:before { content: '\f155'; } /* '' */
+  .ebec-icon-bitcoin:before { content: '\f15a'; } /* '' */
+  .ebec-icon-thumbs-up:before { content: '\f164'; } /* '' */
+  .ebec-icon-thumbs-down:before { content: '\f165'; } /* '' */
+  .ebec-icon-youtube:before { content: '\f166'; } /* '' */
+  .ebec-icon-left-alt:before { content: '\f191'; } /* '' */
+  .ebec-icon-mail:before { content: '\f199'; } /* '' */
+  .ebec-icon-car:before { content: '\f1b9'; } /* '' */
+  .ebec-icon-share:before { content: '\f1e1'; } /* '' */
+  .ebec-icon-diamond:before { content: '\f219'; } /* '' */
+  .ebec-icon-whatsapp:before { content: '\f232'; } /* '' */
+  .ebec-icon-twitter:before { content: '\f304'; } /* '' */
+  .ebec-icon-facebook:before { content: '\f308'; } /* '' */
+  .ebec-icon-linkedin:before { content: '\f30c'; } /* '' */
+
+/*ECT ICONS FONT - END*/
+
+/* ECT lAYOUT CSS START */
+.ebec-minimal-list-wrapper .ebec-list-posts.style-1 {
+border: 1px solid #00000020;
+}
+
+
+.ebec-minimal-list-wrapper .ebec-list-posts.style-1.ebec-simple-event .ebec-event-date-tag {
+background: #99d6b6;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.ebec-minimal-list-wrapper .ebec-list-posts.style-1.ebec-featured-event .ebec-event-date-tag {
+background: #66baff;
+}
+
+.ebec-minimal-list-wrapper .ebec-list-posts.style-1 .ebec-event-details {
+border-left: 0px
+}
+
+/* ECT lAYOUT CSS END */
+
+.ebec-static-small-list-ev-img img {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+  }
+  .ebec-month-header .ebec-header-line {
+    background-color: #00445e;
+    content: "";
+    display: block;
+    flex: auto;
+    height: 3px;
+    margin-left: 8px;
+  }
+  .ebec-month-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
+  }
+  .ebec-list-venue {
+    display: block;
+  }
+  .ebec-list-venue span.tribe-address {
+    display: block;
+    margin-left:3.5%;
+  }
+  .ebec-list-venue a {
+      color: #00445e;
+  }
+  
+  .ebec-event-details {
+    padding-inline: 30px;
+    width: 82%;
+  }
+
+  .ebec-minimal-list-wrapper .ebec-event-details{
+    padding: 15px 10px 15px 10px;
+  }
+  span.ebec-header-year {
+    font-size: 20px;
+    font-weight: 600;
+  }
+  #ect-events-minimal-list-content .ebec-list-posts.style-1.ebec-simple-event .ebec-event-details{
+    border-left: 3px solid#dbf5ff;
+  
+  }
+  .style-1 .ebec-event-date-tag {
+    padding: 25px;
+
+      
+  }
+  .ebec-list-posts.style-1 .ebec-event-datetimes span.ebec-ev-day {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: initial;
+  }
+  .ebec-list-wrapper>:not(.ebec-minimal-list-wrapper) .ebec-list-posts.style-1.ebec-featured-event .ebec-event-details{
+    border-left: 3px solid #eda264;
+  }
+ 
+  .style-1 span.ebec-minimal-list-time  {
+    letter-spacing: -1px;
+  }
+  .style-1 .ebec-event-datetime{
+    font-size:15px;
+    font-weight: 600;
+   }
+   .style-1  .ebec-events-read-more{
+    font-size:14px;
+  }
+  .ebec-list-posts.style-1 {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+    max-width: 100%;
+    margin: 5px auto;
+    padding: 0;
+    margin-bottom: 20px;
+  }
+  .ebec-list-posts.style-1 .ebec-event-details,
+  .ebec-list-posts.style-1 .ebec-right-wrapper {
+    min-width: 0;
+  }
+  /* Date Picker CSS */
+  .ebec-start-date-picker .components-datetime__time-field-hours-input,
+  .components-datetime__time-field,
+  .ebec-end-date-picker .components-datetime__time-field-hours-input{
+    margin-bottom: 0px !important;
+  }
+  .ebec-start-date-picker .components-datetime__time-separator,
+  .ebec-end-date-picker .components-datetime__time-separator{
+    padding: 2px 2px 2px 2px;
+    line-height: 0px;
+    border: 0px;
+    background-color: transparent;
+    position: absolute;
+    left: 48px;
+  }
+  .ebec-start-date-picker .components-datetime__time-field-time,
+  .ebec-end-date-picker .components-datetime__time-field-time{
+    align-items: center;
+  }
+  .ebec-start-date-picker .components-base-control__field,
+  .ebec-end-date-picker .components-base-control__field{
+    padding: 0px
+  }
+/* Date Picker CSS END */
+/* No Event Text CSS */
+  .ebec-no-event-text{
+    margin: 10px 10px;
+  }
+/* No Event Text CSS END */
+/**
+* Responsive for style 2
+*/
+  @media(max-width:768px){
+    .ebec-list-wrapper>:not(.ebec-minimal-list-wrapper) .ebec-list-posts.style-1 {
+      display: flex;
+      flex-wrap:nowrap;
+      flex-direction: column;
+      width: 100%;
+      max-width: 100%;
+      margin:auto;
+      padding: 0;
+      margin-bottom: 20px;
+      justify-content: center;
+    }
+    .style-1 .ebec-event-date-tag {
+      padding: 0px;
+    }
+    .style-1 .ebec-event-details {
+      width: 100%;
+     padding-left: 18px;
+     border-left: none;
+    }
+    .ebec-list-posts.style-1 .ebec-event-details{
+      order:2;
+    }
+    .style-1 .ebec-right-wrapper{
+      order:1;
+      margin-bottom:12px;
+      padding-left: 20px;
+     
+    }
+    .ebec-list-wrapper>:not(.ebec-minimal-list-wrapper) .style-1 .ebec-event-date-tag{
+      align-self:flex-start;
+    }
+  
+    .ebec-list-wrapper>:not(.ebec-minimal-list-wrapper) .style-1 .ebec-event-datetimes {
+      text-align: left;
+          display: block;
+          margin-left: 17px;
+      }
+   
+    .ebec-list-posts.style-1{
+    height:100%;
+    border-left: 3px solid  #eda264 ;
+    }
+    .style-1 .ebec-event-details {
+   
+      border-left: none !important;
+  }
+    
+  
+  }
+  @media(min-width:1200px){
+    .ebec-right-wrapper {
+     width:85%;
+   }
+   
+   .style-1 .ebec-event-date-tag {
+       width: 22%;
+   }
+   .ebec-list-wrapper>:not(.ebec-minimal-list-wrapper) .ebec-list-posts.style-1{
+     border-left: none !important;
+   }
+ }
+ @media(max-width:425px){
+    .ebec-event-date-tag {
+      width: 30%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    .ebec-right-wrapper {
+    padding-left:16px;
+  
+    }
+    .style-1 .ebec-event-details {
+      width: 80%;
+  }
+    }
+    @media(max-width:767px){
+     .ebec-event-date-tag {
+      width: 30%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  @media(min-width:768px){
+    .ebec-event-date-tag {
+      width: 30%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+      .style-1 .ebec-right-wrapper {
+        width: 70%;
+        padding-left: 0px;
+      }
+}
+.ebec-list-posts .ebec-events-title {
+    font-size:16px;
+    line-height: initial;
+    font-weight: bold;
+    color: #00445e;
+   }
+  .ebec-event-datetimes {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 12px;
+    line-height: initial;
+  }
+   .ebec-event-datetimes span.ev-mo {
+    font-size: 16px;
+    font-weight:600;
+    line-height: initial;
+    text-transform: uppercase;
+  } 
+  .ebec-featured-event .ebec-event-datetime .ebec-icon-clock:before{
+    margin-left:0px;
+  }
+    
+ /**
+ * default color set
+ */
+ .ebec-event-content p {
+  font-size: unset;
+  line-height: unset;
+  margin-top: 0
+}
+.style-1.ebec-featured-event .ebec-clslist-event-details a{
+    color: #3a2201;
+}
+.ebec-simple-event .ebec-event-datetimes span{
+    color: #00445e;
+}
+.ebec-month-header.ebec-simple-event:after{
+    color: #00445e;  
+    background-color: #00445e;
+}
+.ebec-list-wrapper>:not(.ebec-minimal-list-wrapper) .ebec-list-posts.style-1.ebec-simple-event .ebec-event-details{
+    border-left: 3px solid#00445e;
+}
+.ebec-featured-event .ebec-event-datetimes {
+    color: #3a2201;
+}
+.ebec-month-header.ebec-featured-event:after {
+    background-color: #3a2201;
+}
+.ebec-month-header.ebec-featured-event{
+    color: #3a2201;
+}
+.ebec-simple-event .ebec-header-year {
+
+    color: #00445e;
+}
+.ebec-event-datetime,.ebec-style-1-more a {
+    color: #00445e;
+}
+.ebec-minimal-list-desc {
+    color: #515d64;
+}
+
+.ebec-impressum-select-multiple.ebec-impressum-select-multiple.ebec-impressum-select-multiple select[multiple] {
+    height: auto;
+    padding: 8px;
+}
+.ebec_error{
+  font-size: 27px;
+    font-weight: 900;
+}
+

@@ -1,0 +1,568 @@
+# Copyright (C) 2025 repocean
+# This file is distributed under the GPL-2.0+.
+msgid ""
+msgstr ""
+"Project-Id-Version: Widgets for Google Business Reviews and Ratings 1.0.16\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/widgets-for-google-reviews-and-ratings\n"
+"POT-Creation-Date: 2025-12-22T12:02:03+00:00\n"
+"PO-Revision-Date: 2025-11-05T11:26:55+00:00\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: it_LT\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Domain: widgets-for-google-reviews-and-ratings\n"
+"X-Generator: WP-CLI 2.11.0\n"
+
+#. Plugin Name of the plugin
+#: widgets-for-google-reviews-and-ratings.php
+msgid "Widgets for Google Business Reviews and Ratings"
+msgstr "Įrankiai Google verslo atsiliepimams ir įvertinimams"
+
+#. Plugin URI of the plugin
+#: widgets-for-google-reviews-and-ratings.php
+msgid "https://repocean.com/"
+msgstr ""
+
+#. Description of the plugin
+#: widgets-for-google-reviews-and-ratings.php
+msgid ""
+"Quickly and easily embed Google reviews into your WordPress site. Boost SEO,"
+" build trust, and increase sales with Google reviews."
+msgstr ""
+"Greitai ir lengvai įterpkite Google atsiliepimus į savo WordPress svetainę. "
+"Pagerinkite SEO, kurkite pasitikėjimą ir didinkite pardavimus su Google "
+"atsiliepimais."
+
+#. Author of the plugin
+#: widgets-for-google-reviews-and-ratings.php
+msgid "repocean"
+msgstr ""
+
+#. Author URI of the plugin
+#: widgets-for-google-reviews-and-ratings.php
+msgid "https://profiles.wordpress.org/repocean/"
+msgstr ""
+
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:38
+msgid "Google Reviews Settings"
+msgstr "Google atsiliepimų nustatymai"
+
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:39
+#: admin/class-widgets-for-google-reviews-and-ratings-widget.php:23
+msgid "Google Reviews"
+msgstr "Google atsiliepimai"
+
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:59
+msgid "Widget Customizer"
+msgstr "Įrankių pritaikymas"
+
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:61
+msgid "Connect Google"
+msgstr "Prijungti Google"
+
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:62
+msgid "Select Layout"
+msgstr "Pasirinkti išdėstymą"
+
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:63
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:763
+msgid "Settings"
+msgstr "Nustatymai"
+
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:66
+msgid "Get Reviews"
+msgstr "Gauti atsiliepimus"
+
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:156
+msgid "Nonce verification failed"
+msgstr "Nonce patikrinimas nepavyko"
+
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:164
+msgid "Error decoding JSON."
+msgstr "Klaida dekoduojant JSON."
+
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:167
+msgid "Error: Place data not received."
+msgstr "Klaida: Vietos duomenys negauti."
+
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:170
+msgid "An error occurred: "
+msgstr "Įvyko klaida: "
+
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:212
+msgid "Place Image"
+msgstr "Vietos nuotrauka"
+
+#. Translators: %d represents the total number of user reviews.
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:217
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:210
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:301
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:749
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:904
+msgid "reviews"
+msgstr "atsiliepimai"
+
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:223
+msgid "Disconnect"
+msgstr "Atsijungti"
+
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:238
+msgid "Place disconnected successfully. Connect a new place."
+msgstr "Vieta sėkmingai atsijungta. Prijunkite naują vietą."
+
+#. translators: combined notice for support and review
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:264
+msgid ""
+"Hi there, If you have any questions or need assistance, feel free to "
+"%1$sreach out%2$s anytime. If you have a moment, I would love it if you "
+"could %3$sleave a review%4$s."
+msgstr ""
+"Labas, jei turite klausimų arba reikia pagalbos, drąsiai %1$susisiekite%2$s "
+"bet kada. Jei turite akimirką, man būtų malonu, jei galėtumėte %3$spalikti "
+"atsiliepimą%4$s."
+
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:280
+msgid "Slider"
+msgstr "Skaidrių peržiūra"
+
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:282
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:300
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:318
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:336
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:354
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:372
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:390
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:408
+msgid "Shortcode:"
+msgstr "Trumpas kodas:"
+
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:285
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:303
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:321
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:339
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:357
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:375
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:393
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:411
+msgid "Copy to Clipboard"
+msgstr "Kopijuoti į iškarpinę"
+
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:286
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:304
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:322
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:340
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:358
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:376
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:394
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:412
+msgid "Copied!"
+msgstr "Kopijuota!"
+
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:298
+msgid "Slider I."
+msgstr "Skaidrius I."
+
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:316
+msgid "Slider II."
+msgstr "Skaidrius II."
+
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:334
+msgid "Slider III."
+msgstr "Skaidrius III."
+
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:352
+msgid "Slider IIII."
+msgstr "Skaidrius IIII."
+
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:370
+msgid "Grid"
+msgstr "Tinklelis"
+
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:388
+msgid "List"
+msgstr "Sąrašas"
+
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:406
+msgid "Sidebar"
+msgstr "Šoninė juosta"
+
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:488
+msgid "Security check failed. Nonce verification failed."
+msgstr "Saugumo patikra nepavyko. Nonce patvirtinimas nepavyko."
+
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:508
+msgid "Settings saved successfully!"
+msgstr "Nustatymai sėkmingai išsaugoti!"
+
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:525
+msgid "Google Review Widget Settings"
+msgstr "Google atsiliepimų valdiklio nustatymai"
+
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:533
+msgid "Hide Review Date"
+msgstr "Slėpti atsiliepimo datą"
+
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:539
+msgid "Hide Reviewer Profile Picture"
+msgstr "Slėpti recenzento profilio nuotrauką"
+
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:545
+msgid "Hide Google Logo"
+msgstr "Slėpti Google logotipą"
+
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:551
+msgid "Hide Widget Rating Text (e.g. EXCELLENT XXX reviews)"
+msgstr "Slėpti valdiklio įvertinimo tekstą (pvz., PUIKUS XXX atsiliepimų)"
+
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:558
+msgid "Hide \"Previous\" and \"Next\" Buttons"
+msgstr "Slėpti \"Ankstesnis\" ir \"Kitas\" mygtukus"
+
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:566
+msgid "Show Verified By RepOcean"
+msgstr "Rodyti patvirtinta RepOcean"
+
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:574
+msgid "Show Verified Symbol for Reviews"
+msgstr "Rodyti patvirtinimo simbolį atsiliepimams"
+
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:576
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:189
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:351
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:455
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:561
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:641
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:799
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:953
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:1071
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:1468
+msgid "RepOcean verifies that the original source of the review is Google."
+msgstr "RepOcean patvirtina, kad originalus atsiliepimo šaltinis yra Google."
+
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:583
+msgid "Shorten Reviewer Names (e.g., John Smith → John S.)"
+msgstr "Sutrumpinti recenzentų vardus (pvz., John Smith → John S.)"
+
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:591
+msgid "Enable Dark Mode (Dark background with light text)"
+msgstr "Įjungti tamsų režimą (tamsi fono spalva su šviesiu tekstu)"
+
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:599
+msgid "Change Star Color"
+msgstr "Pakeisti žvaigždžių spalvą"
+
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:656
+msgid "Review Card Background Color"
+msgstr "Peržiūrėti kortelės fono spalvą"
+
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:702
+msgid "Review Card Border Color"
+msgstr "Peržiūrėti kortelės krašto spalvą"
+
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:750
+msgid "Save Changes"
+msgstr "Išsaugoti pakeitimus"
+
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:756
+msgid "An error occurred while saving the settings. Please try again."
+msgstr "Iškilo klaida išsaugant nustatymus. Prašome bandyti dar kartą."
+
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:772
+msgid "Community support"
+msgstr "Bendruomenės palaikymas"
+
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:773
+msgid "Rate our plugin"
+msgstr "Įvertinkite mūsų papildinį"
+
+#: admin/class-widgets-for-google-reviews-and-ratings-widget.php:9
+msgid "A Widget to display Google Reviews"
+msgstr "Widget'as, skirtas rodyti Google atsiliepimus"
+
+#: admin/class-widgets-for-google-reviews-and-ratings-widget.php:26
+msgid "Title:"
+msgstr "Pavadinimas:"
+
+#: admin/feedback/deactivation-feedback-form.php:8
+msgid "Return"
+msgstr "Grįžti"
+
+#: admin/feedback/deactivation-feedback-form.php:9
+msgid "We’re sorry to see you go! 💔"
+msgstr "Apgailestaujame, kad išeinate! 💔"
+
+#: admin/feedback/deactivation-feedback-form.php:11
+msgid "Close"
+msgstr "Uždaryti"
+
+#: admin/feedback/deactivation-feedback-form.php:15
+msgid ""
+"Can you please tell us why you’re deactivating the plugin? Your feedback "
+"helps us make it better."
+msgstr ""
+"Ar galite pasakyti, kodėl deaktyvuojate papildinį? Jūsų atsiliepimai padeda "
+"mums jį patobulinti."
+
+#: admin/feedback/deactivation-feedback-form.php:19
+msgid "Temporary deactivation (troubleshooting)"
+msgstr "Laikinas deaktyvavimas (trikčių šalinimas)"
+
+#: admin/feedback/deactivation-feedback-form.php:23
+msgid "Compatibility issue"
+msgstr "Suderinamumo problema"
+
+#: admin/feedback/deactivation-feedback-form.php:25
+msgid "Please describe what part of the layout or functionality was affected."
+msgstr ""
+"Prašome apibūdinti, kuri dalis išdėstymo ar funkcionalumo buvo paveikta."
+
+#: admin/feedback/deactivation-feedback-form.php:30
+msgid "Difficult to set up"
+msgstr "Sunku nustatyti"
+
+#: admin/feedback/deactivation-feedback-form.php:32
+msgid "What part of the setup was confusing or unclear?"
+msgstr "Kuri dalis nustatymo buvo paini ar neaiški?"
+
+#: admin/feedback/deactivation-feedback-form.php:37
+msgid "Missing features"
+msgstr "Trūksta funkcijų"
+
+#: admin/feedback/deactivation-feedback-form.php:39
+msgid "Which features were you looking for?"
+msgstr "Kurių funkcijų ieškojote?"
+
+#: admin/feedback/deactivation-feedback-form.php:44
+msgid "Other"
+msgstr "Kita"
+
+#: admin/feedback/deactivation-feedback-form.php:46
+msgid ""
+"Please share why you’re deactivating the Google Business Reviews plugin so "
+"we can make improvements."
+msgstr ""
+"Prašome pasidalinti, kodėl deaktyvuojate „Google Business Reviews“ "
+"papildinį, kad galėtume atlikti patobulinimus."
+
+#: admin/feedback/deactivation-feedback-form.php:58
+msgid ""
+"Your privacy is important to us. No personal data is collected with this "
+"form—just your valuable feedback and basic system information (such as "
+"WordPress and plugin versions) to help us improve our plugin."
+msgstr ""
+"Jūsų privatumas mums svarbus. Šiame forme nesurenkama jokių asmens "
+"duomenų—tik jūsų vertingi atsiliepimai ir pagrindinė sistemos informacija "
+"(tokie kaip WordPress ir papildinio versijos), kad galėtume patobulinti savo"
+" papildinį."
+
+#: admin/feedback/deactivation-feedback-form.php:63
+msgid "Visit our support page for assistance"
+msgstr "Apsilankykite mūsų pagalbos puslapyje, kad gautumėte pagalbą"
+
+#: admin/feedback/deactivation-feedback-form.php:63
+msgid "Get Support"
+msgstr "Gauti pagalbą"
+
+#: admin/feedback/deactivation-feedback-form.php:65
+msgid "Send & Deactivate"
+msgstr "Siųsti ir deaktyvuoti"
+
+#: admin/feedback/deactivation-feedback-form.php:67
+msgid "I rather wouldn't say"
+msgstr "Nesakyčiau"
+
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:103
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:233
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:386
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:492
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:598
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:680
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:836
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:991
+msgid "Hide"
+msgstr "Slėpti"
+
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:104
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:197
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:234
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:359
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:387
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:462
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:493
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:568
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:599
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:650
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:681
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:808
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:837
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:962
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:992
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:1095
+msgid "Read more"
+msgstr "Skaityti daugiau"
+
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:144
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:288
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:393
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:499
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:605
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:734
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:890
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:1046
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:1449
+msgid "No reviews found."
+msgstr "Atsiliepimų nerasta."
+
+#. Translators: %s represents the human-readable time difference.
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:150
+msgid " %s ago"
+msgstr " %s prieš"
+
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:207
+msgid "Google"
+msgstr ""
+
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:207
+msgid "Rating Score:"
+msgstr "Įvertinimo balas:"
+
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:208
+msgid "out of 5,"
+msgstr "iš 5,"
+
+#. Translators: %d represents the total number of user reviews.
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:210
+msgid "based on"
+msgstr "pagal"
+
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:295
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:402
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:508
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:742
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:898
+msgid "EXCELLENT"
+msgstr "PUIKUS"
+
+#. Translators: %s represents the human-readable time difference.
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:312
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:428
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:534
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:621
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:760
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:915
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:1079
+msgid "%s ago"
+msgstr "%s prieš"
+
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:371
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:477
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:583
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:666
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:822
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:976
+msgid "Your Google Place not connected"
+msgstr "Jūsų „Google“ vieta nėra prijungta"
+
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:374
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:480
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:586
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:669
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:825
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:979
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:1132
+msgid "An error occurred."
+msgstr "Įvyko klaida."
+
+#. Translators: %d represents the total number of user reviews.
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:405
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:511
+msgid "Based on <a href=\"#\" class=\"review-link\">%d reviews</a>"
+msgstr "Remiantis <a href=\"#\" class=\"review-link\">%d atsiliepimais</a>"
+
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:409
+msgid "Review us on Google"
+msgstr "Atsiliepkit apie mus „Google“"
+
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:815
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:969
+msgid "Load More"
+msgstr "Įkelti daugiau"
+
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:1056
+msgid "Excellent rating"
+msgstr "Puikus įvertinimas"
+
+#. Translators: %d represents the total number of user reviews.
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:1058
+msgid "Based on %s reviews"
+msgstr "Remiantis %s atsiliepimais"
+
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:1129
+msgid "Your Google Place is not connected."
+msgstr "Jūsų „Google“ vieta nėra prijungta."
+
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:1440
+msgid "Unable to retrieve reviews at this time."
+msgstr "Šiuo metu nepavyksta gauti atsiliepimų."
+
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:1467
+msgid "Verified"
+msgstr "Patvirtinta"
+
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:1469
+msgid "Verified by RepOcean"
+msgstr "Patvirtinta RepOcean"
+
+msgid "Review Filters"
+msgstr "Filtri recensioni"
+
+msgid "Minimum Star Rating"
+msgstr "Valutazione minima in stelle"
+
+msgid "5 Stars Only"
+msgstr "Solo 5 stelle"
+
+msgid "4 Stars and Up"
+msgstr "4 stelle e oltre"
+
+msgid "3 Stars and Up"
+msgstr "3 stelle e oltre"
+
+msgid "2 Stars and Up"
+msgstr "2 stelle e oltre"
+
+msgid "1 Star and Up"
+msgstr "1 stella e oltre"
+
+msgid "Hide Reviews Without Text"
+msgstr "Nascondi recensioni senza testo"
+
+msgid "Display Options"
+msgstr "Opzioni di visualizzazione"
+
+msgid "Hide Review Photos"
+msgstr "Nascondi foto delle recensioni"
+
+msgid "Style"
+msgstr "Stile"
+
+msgid "Star Color"
+msgstr "Colore stelle"
+
+msgid "Card Background Color"
+msgstr "Colore sfondo scheda"
+
+msgid "Card Border Color"
+msgstr "Colore bordo scheda"
+
+msgid "Card Border Radius"
+msgstr "Raggio bordo scheda"
+
+msgid "When enabled, the background and border colors will use dark-mode values."
+msgstr "Se abilitata, i colori di sfondo e del bordo useranno i valori della modalità scura."
+
+msgid "Get Pro"
+msgstr "Passa a Pro"

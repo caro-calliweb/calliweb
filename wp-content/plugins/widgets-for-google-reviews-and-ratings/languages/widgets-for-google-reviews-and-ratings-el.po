@@ -1,0 +1,522 @@
+# Copyright (C) 2025 repocean
+# This file is distributed under the GPL-2.0+.
+msgid ""
+msgstr ""
+"Project-Id-Version: Widgets for Google Business Reviews and Ratings 1.0.16\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/widgets-for-google-reviews-and-ratings\n"
+"POT-Creation-Date: 2025-12-22T12:02:03+00:00\n"
+"PO-Revision-Date: 2025-11-05T11:26:55+00:00\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: el\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Domain: widgets-for-google-reviews-and-ratings\n"
+"X-Generator: WP-CLI 2.11.0\n"
+
+#. Plugin Name of the plugin
+#: widgets-for-google-reviews-and-ratings.php
+msgid "Widgets for Google Business Reviews and Ratings"
+msgstr "Γραφικά για τις Κριτικές και τις Αξιολογήσεις της Google"
+
+#. Plugin URI of the plugin
+#: widgets-for-google-reviews-and-ratings.php
+msgid "https://repocean.com/"
+msgstr ""
+
+#. Description of the plugin
+#: widgets-for-google-reviews-and-ratings.php
+msgid ""
+"Quickly and easily embed Google reviews into your WordPress site. Boost SEO,"
+" build trust, and increase sales with Google reviews."
+msgstr ""
+"Ενσωματώστε γρήγορα και εύκολα τις κριτικές της Google στον ιστότοπό σας "
+"WordPress. Αυξήστε το SEO, χτίστε εμπιστοσύνη και αυξήστε τις πωλήσεις με "
+"τις κριτικές της Google."
+
+#. Author of the plugin
+#: widgets-for-google-reviews-and-ratings.php
+msgid "repocean"
+msgstr ""
+
+#. Author URI of the plugin
+#: widgets-for-google-reviews-and-ratings.php
+msgid "https://profiles.wordpress.org/repocean/"
+msgstr ""
+
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:38
+msgid "Google Reviews Settings"
+msgstr "Ρυθμίσεις Κριτικών Google"
+
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:39
+#: admin/class-widgets-for-google-reviews-and-ratings-widget.php:23
+msgid "Google Reviews"
+msgstr "Κριτικές Google"
+
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:59
+msgid "Widget Customizer"
+msgstr "Προσαρμογέας Γραφικών"
+
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:61
+msgid "Connect Google"
+msgstr "Σύνδεση Google"
+
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:62
+msgid "Select Layout"
+msgstr "Επιλέξτε Διάταξη"
+
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:63
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:763
+msgid "Settings"
+msgstr "Ρυθμίσεις"
+
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:66
+msgid "Get Reviews"
+msgstr "Λάβετε Κριτικές"
+
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:156
+msgid "Nonce verification failed"
+msgstr "Αποτυχία επαλήθευσης nonce"
+
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:164
+msgid "Error decoding JSON."
+msgstr "Σφάλμα αποκωδικοποίησης JSON."
+
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:167
+msgid "Error: Place data not received."
+msgstr "Σφάλμα: Δεδομένα τοποθεσίας δεν ελήφθησαν."
+
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:170
+msgid "An error occurred: "
+msgstr "Παρουσιάστηκε σφάλμα: "
+
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:212
+msgid "Place Image"
+msgstr "Εικόνα Τοποθεσίας"
+
+#. Translators: %d represents the total number of user reviews.
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:217
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:210
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:301
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:749
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:904
+msgid "reviews"
+msgstr "κριτικές"
+
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:223
+msgid "Disconnect"
+msgstr "Αποσύνδεση"
+
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:238
+msgid "Place disconnected successfully. Connect a new place."
+msgstr "Η τοποθεσία αποσυνδέθηκε επιτυχώς. Συνδέστε μια νέα τοποθεσία."
+
+#. translators: combined notice for support and review
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:264
+msgid ""
+"Hi there, If you have any questions or need assistance, feel free to "
+"%1$sreach out%2$s anytime. If you have a moment, I would love it if you "
+"could %3$sleave a review%4$s."
+msgstr ""
+"Γειά σου, αν έχεις οποιαδήποτε ερώτηση ή χρειάζεσαι βοήθεια, μη διστάσεις να"
+" %1$sεπικοινωνήσεις%2$s οποιαδήποτε στιγμή. Αν έχεις λίγο χρόνο, θα μου "
+"άρεσε αν μπορούσες να %3$sαφήσεις μια κριτική%4$s."
+
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:280
+msgid "Slider"
+msgstr "Γλιστρητής"
+
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:282
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:300
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:318
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:336
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:354
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:372
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:390
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:408
+msgid "Shortcode:"
+msgstr "Κωδικός σύντομης μορφής:"
+
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:285
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:303
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:321
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:339
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:357
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:375
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:393
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:411
+msgid "Copy to Clipboard"
+msgstr "Αντιγραφή στο πρόχειρο"
+
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:286
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:304
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:322
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:340
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:358
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:376
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:394
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:412
+msgid "Copied!"
+msgstr "Αντιγράφηκε!"
+
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:298
+msgid "Slider I."
+msgstr "Διαφάνεια I."
+
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:316
+msgid "Slider II."
+msgstr "Διαφάνεια II."
+
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:334
+msgid "Slider III."
+msgstr "Διαφάνεια III."
+
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:352
+msgid "Slider IIII."
+msgstr "Διαφάνεια IIII."
+
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:370
+msgid "Grid"
+msgstr "Πλέγμα"
+
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:388
+msgid "List"
+msgstr "Λίστα"
+
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:406
+msgid "Sidebar"
+msgstr "Πλευρική μπάρα"
+
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:488
+msgid "Security check failed. Nonce verification failed."
+msgstr "Αποτυχία ελέγχου ασφαλείας. Αποτυχία επαλήθευσης Nonce."
+
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:508
+msgid "Settings saved successfully!"
+msgstr "Οι ρυθμίσεις αποθηκεύτηκαν με επιτυχία!"
+
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:525
+msgid "Google Review Widget Settings"
+msgstr "Ρυθμίσεις Widget Κριτικών Google"
+
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:533
+msgid "Hide Review Date"
+msgstr "Απόκρυψη ημερομηνίας κριτικής"
+
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:539
+msgid "Hide Reviewer Profile Picture"
+msgstr "Απόκρυψη φωτογραφίας προφίλ κριτή"
+
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:545
+msgid "Hide Google Logo"
+msgstr "Απόκρυψη λογότυπου Google"
+
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:551
+msgid "Hide Widget Rating Text (e.g. EXCELLENT XXX reviews)"
+msgstr "Απόκρυψη κειμένου βαθμολογίας Widget (π.χ. ΕΞΑΙΡΕΤΙΚΕΣ XXX κριτικές)"
+
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:558
+msgid "Hide \"Previous\" and \"Next\" Buttons"
+msgstr "Απόκρυψη κουμπιών \"Προηγούμενο\" και \"Επόμενο\""
+
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:566
+msgid "Show Verified By RepOcean"
+msgstr "Εμφάνιση Επαληθευμένο από RepOcean"
+
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:574
+msgid "Show Verified Symbol for Reviews"
+msgstr "Εμφάνιση Επαληθευμένου Συμβόλου για Κριτικές"
+
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:576
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:189
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:351
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:455
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:561
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:641
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:799
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:953
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:1071
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:1468
+msgid "RepOcean verifies that the original source of the review is Google."
+msgstr ""
+"Η RepOcean επαληθεύει ότι η αρχική πηγή της αξιολόγησης είναι το Google."
+
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:583
+msgid "Shorten Reviewer Names (e.g., John Smith → John S.)"
+msgstr "Συντομεύστε τα ονόματα των αξιολογητών (π.χ., John Smith → John S.)"
+
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:591
+msgid "Enable Dark Mode (Dark background with light text)"
+msgstr ""
+"Ενεργοποιήστε τη σκοτεινή λειτουργία (Σκοτεινό φόντο με ανοιχτό κείμενο)"
+
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:599
+msgid "Change Star Color"
+msgstr "Αλλάξτε το χρώμα των αστεριών"
+
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:656
+msgid "Review Card Background Color"
+msgstr "Ανασκόπηση Χρώματος Φόντου Κάρτας"
+
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:702
+msgid "Review Card Border Color"
+msgstr "Αξιολόγηση Χρώματος Περιγράμματος Κάρτας"
+
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:750
+msgid "Save Changes"
+msgstr "Αποθήκευση αλλαγών"
+
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:756
+msgid "An error occurred while saving the settings. Please try again."
+msgstr ""
+"Παρουσιάστηκε σφάλμα κατά την αποθήκευση των ρυθμίσεων. Παρακαλώ δοκιμάστε "
+"ξανά."
+
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:772
+msgid "Community support"
+msgstr "Υποστήριξη κοινότητας"
+
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:773
+msgid "Rate our plugin"
+msgstr "Βαθμολογήστε το πρόσθετό μας"
+
+#: admin/class-widgets-for-google-reviews-and-ratings-widget.php:9
+msgid "A Widget to display Google Reviews"
+msgstr "Ένα Widget για την εμφάνιση των αξιολογήσεων Google"
+
+#: admin/class-widgets-for-google-reviews-and-ratings-widget.php:26
+msgid "Title:"
+msgstr "Τίτλος:"
+
+#: admin/feedback/deactivation-feedback-form.php:8
+msgid "Return"
+msgstr "Επιστροφή"
+
+#: admin/feedback/deactivation-feedback-form.php:9
+msgid "We’re sorry to see you go! 💔"
+msgstr "Λυπούμαστε που σας βλέπουμε να φεύγετε! 💔"
+
+#: admin/feedback/deactivation-feedback-form.php:11
+msgid "Close"
+msgstr "Κλείσιμο"
+
+#: admin/feedback/deactivation-feedback-form.php:15
+msgid ""
+"Can you please tell us why you’re deactivating the plugin? Your feedback "
+"helps us make it better."
+msgstr ""
+"Μπορείτε να μας πείτε γιατί απενεργοποιείτε το πρόσθετο; Η ανατροφοδότησή "
+"σας μας βοηθά να το βελτιώσουμε."
+
+#: admin/feedback/deactivation-feedback-form.php:19
+msgid "Temporary deactivation (troubleshooting)"
+msgstr "Προσωρινή απενεργοποίηση (αντιμετώπιση προβλημάτων)"
+
+#: admin/feedback/deactivation-feedback-form.php:23
+msgid "Compatibility issue"
+msgstr "Ζήτημα συμβατότητας"
+
+#: admin/feedback/deactivation-feedback-form.php:25
+msgid "Please describe what part of the layout or functionality was affected."
+msgstr ""
+"Παρακαλώ περιγράψτε ποιο μέρος της διάταξης ή της λειτουργικότητας "
+"επηρεάστηκε."
+
+#: admin/feedback/deactivation-feedback-form.php:30
+msgid "Difficult to set up"
+msgstr "Δύσκολο να ρυθμιστεί"
+
+#: admin/feedback/deactivation-feedback-form.php:32
+msgid "What part of the setup was confusing or unclear?"
+msgstr "Ποιο μέρος της ρύθμισης ήταν συγκεχυμένο ή ασαφές;?"
+
+#: admin/feedback/deactivation-feedback-form.php:37
+msgid "Missing features"
+msgstr "Λείπουν δυνατότητες"
+
+#: admin/feedback/deactivation-feedback-form.php:39
+msgid "Which features were you looking for?"
+msgstr "Ποιες δυνατότητες αναζητούσατε;?"
+
+#: admin/feedback/deactivation-feedback-form.php:44
+msgid "Other"
+msgstr "Άλλο"
+
+#: admin/feedback/deactivation-feedback-form.php:46
+msgid ""
+"Please share why you’re deactivating the Google Business Reviews plugin so "
+"we can make improvements."
+msgstr ""
+"Παρακαλώ μοιραστείτε γιατί απενεργοποιείτε το πρόσθετο Google Business "
+"Reviews ώστε να μπορέσουμε να κάνουμε βελτιώσεις."
+
+#: admin/feedback/deactivation-feedback-form.php:58
+msgid ""
+"Your privacy is important to us. No personal data is collected with this "
+"form—just your valuable feedback and basic system information (such as "
+"WordPress and plugin versions) to help us improve our plugin."
+msgstr ""
+"Η ιδιωτικότητά σας είναι σημαντική για εμάς. Δεν συλλέγονται προσωπικά "
+"δεδομένα με αυτή τη φόρμα—μόνο η πολύτιμη ανατροφοδότησή σας και βασικές "
+"πληροφορίες συστήματος (όπως οι εκδόσεις WordPress και πρόσθετου) για να μας"
+" βοηθήσουν να βελτιώσουμε το πρόσθετό μας."
+
+#: admin/feedback/deactivation-feedback-form.php:63
+msgid "Visit our support page for assistance"
+msgstr "Επισκεφθείτε τη σελίδα υποστήριξής μας για βοήθεια"
+
+#: admin/feedback/deactivation-feedback-form.php:63
+msgid "Get Support"
+msgstr "Λάβετε Υποστήριξη"
+
+#: admin/feedback/deactivation-feedback-form.php:65
+msgid "Send & Deactivate"
+msgstr "Αποστολή & Απενεργοποίηση"
+
+#: admin/feedback/deactivation-feedback-form.php:67
+msgid "I rather wouldn't say"
+msgstr "Προτιμώ να μην πω"
+
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:103
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:233
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:386
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:492
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:598
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:680
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:836
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:991
+msgid "Hide"
+msgstr "Απόκρυψη"
+
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:104
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:197
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:234
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:359
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:387
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:462
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:493
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:568
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:599
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:650
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:681
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:808
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:837
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:962
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:992
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:1095
+msgid "Read more"
+msgstr "Διαβάστε περισσότερα"
+
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:144
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:288
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:393
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:499
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:605
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:734
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:890
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:1046
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:1449
+msgid "No reviews found."
+msgstr "Δεν βρέθηκαν κριτικές."
+
+#. Translators: %s represents the human-readable time difference.
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:150
+msgid " %s ago"
+msgstr " %s πριν"
+
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:207
+msgid "Google"
+msgstr "Γκούγκλ"
+
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:207
+msgid "Rating Score:"
+msgstr "Βαθμολογία:"
+
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:208
+msgid "out of 5,"
+msgstr "από 5,"
+
+#. Translators: %d represents the total number of user reviews.
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:210
+msgid "based on"
+msgstr "με βάση"
+
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:295
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:402
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:508
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:742
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:898
+msgid "EXCELLENT"
+msgstr "ΕΞΑΙΡΕΤΙΚΟ"
+
+#. Translators: %s represents the human-readable time difference.
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:312
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:428
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:534
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:621
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:760
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:915
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:1079
+msgid "%s ago"
+msgstr "%s πριν"
+
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:371
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:477
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:583
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:666
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:822
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:976
+msgid "Your Google Place not connected"
+msgstr "Ο χώρος σας στο Google δεν είναι συνδεδεμένος"
+
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:374
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:480
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:586
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:669
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:825
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:979
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:1132
+msgid "An error occurred."
+msgstr "Παρουσιάστηκε σφάλμα."
+
+#. Translators: %d represents the total number of user reviews.
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:405
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:511
+msgid "Based on <a href=\"#\" class=\"review-link\">%d reviews</a>"
+msgstr "Βασισμένο σε <a href=\"#\" class=\"review-link\">%d κριτικές</a>"
+
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:409
+msgid "Review us on Google"
+msgstr "Αξιολογήστε μας στο Google"
+
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:815
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:969
+msgid "Load More"
+msgstr "Φόρτωση περισσότερων"
+
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:1056
+msgid "Excellent rating"
+msgstr "Εξαιρετική βαθμολογία"
+
+#. Translators: %d represents the total number of user reviews.
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:1058
+msgid "Based on %s reviews"
+msgstr "Βασισμένο σε %s κριτικές"
+
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:1129
+msgid "Your Google Place is not connected."
+msgstr "Ο χώρος σας στο Google δεν είναι συνδεδεμένος."
+
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:1440
+msgid "Unable to retrieve reviews at this time."
+msgstr "Αδυναμία ανάκτησης κριτικών αυτή τη στιγμή."
+
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:1467
+msgid "Verified"
+msgstr "Επιβεβαιωμένο"
+
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:1469
+msgid "Verified by RepOcean"
+msgstr "Επιβεβαιωμένο από την RepOcean"

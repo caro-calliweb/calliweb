@@ -1,0 +1,88 @@
+/**
+ * Fullscreen admin chrome removal for the ECT onboarding wizard.
+ * Scoped to body.ect-onboarding-page only (SureForms-style pattern).
+ */
+
+html:has(> body.ect-onboarding-page).wp-toolbar {
+  padding-top: 0 !important;
+  box-sizing: border-box;
+}
+
+body.ect-onboarding-page #wpcontent,
+body.ect-onboarding-page #wpbody {
+  padding: 0;
+  margin: 0;
+}
+
+body.ect-onboarding-page #wpadminbar,
+body.ect-onboarding-page #adminmenuback,
+body.ect-onboarding-page #adminmenumain,
+body.ect-onboarding-page #adminmenuwrap,
+body.ect-onboarding-page #wpfooter,
+body.ect-onboarding-page #cpfNoticePanel,
+body.ect-onboarding-page .notice,
+body.ect-onboarding-page .updated,
+body.ect-onboarding-page .update-nag,
+body.ect-onboarding-page .error {
+  display: none !important;
+}
+
+body.ect-onboarding-page #wpbody-content {
+  padding-bottom: 0;
+}
+
+body.ect-onboarding-page .wrap {
+  margin: 0;
+}
+
+body.ect-onboarding-page .wrap > h1 {
+  display: none;
+}
+
+body.ect-onboarding-page .ect-onboarding-admin {
+  margin: 0;
+  min-height: 100vh;
+}
+
+/* Defeat wp-admin anchor focus bleed into wizard buttons/tabs. */
+.ect-wizard-shell a:focus:not(:focus-visible),
+.ect-wizard-shell button:focus:not(:focus-visible),
+.ect-onboarding-admin a:focus:not(:focus-visible),
+.ect-onboarding-admin button:focus:not(:focus-visible) {
+  box-shadow: none;
+}
+
+.ect-btn-primary:focus,
+.ect-btn-secondary:focus,
+.ect-btn-accent:focus,
+.ect-btn-ghost:focus {
+  border-radius: 6px;
+}
+
+.ect-onboarding-admin .ect-btn-primary,
+.ect-onboarding-admin .ect-btn-accent {
+  color: #fff;
+}
+
+.ect-btn-secondary:focus,
+.ect-btn-ghost:focus {
+  color: var(--ect-primary, #2271b1);
+}
+
+body.ect-finishing .ect-wizard-success__actions,
+body.ect-finishing .ect-cross-sell {
+  visibility: hidden !important;
+}
+
+[data-spb-promo][hidden] {
+  display: none !important;
+}
+
+[data-spb-confirm],
+[data-ect-install-confirm] {
+  align-self: center;
+  margin-right: 0.5rem;
+  font-size: 0.8125rem;
+  font-style: italic;
+  color: var(--ect-text-muted, #646970);
+}

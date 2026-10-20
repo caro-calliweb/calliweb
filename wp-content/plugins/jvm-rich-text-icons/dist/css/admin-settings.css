@@ -1,0 +1,265 @@
+#jvm-rich-text-icons_custom_icon_generator {
+  background: #fff;
+  border: 1px solid #c3c4c7;
+  border-radius: 4px;
+  padding: 16px;
+  margin-top: 24px;
+}
+
+#jvm-rich-text-icons_custom_icon_generator h2.title {
+  display: inline-block;
+  margin: 0 8px 0 0;
+  font-size: 1.2em;
+}
+
+#jvm-rich-text-icons_custom_icon_uploader {
+  text-align: center;
+}
+
+/*#jvm-rich-text-icons_custom_icon_generator .uploader-inline .drop-instructions {
+        display: none;
+    }
+
+    .supports-drag-drop #jvm-rich-text-icons_custom_icon_generator .uploader-inline .drop-instructions {
+        display: block;
+    }*/
+
+#jvm-rich-text-icons_custom_icon_generator .media-sidebar {
+  position: relative;
+  width: auto;
+  margin-top: 12px;
+  padding: 0 16px;
+  border-left: 4px solid #d63638;
+  box-shadow: 0 1px 1px 0 rgb(0 0 0 / 10%);
+  background-color: #fff;
+  overflow: auto;
+}
+
+#jvm-rich-text-icons_custom_icon_generator #upload-progess {
+  display: none;
+}
+
+#jvm-rich-text-icons_custom_icon_generator
+  #media-uploader-status.uploading
+  #upload-progess {
+  display: block;
+}
+
+#jvm-rich-text-icons_custom_icon_generator .media-progress-bar {
+  position: relative;
+  height: 10px;
+  width: 70%;
+  margin: 10px auto;
+  border-radius: 10px;
+  background: #dcdcde;
+  width: 100%;
+}
+
+#jvm-rich-text-icons_custom_icon_generator .media-progress-bar div {
+  height: 10px;
+  min-width: 20px;
+  width: 0;
+  background: #2271b1;
+  border-radius: 10px;
+  transition: width 0.3s;
+}
+
+#jvm-rich-text-icons_custom_icon_generator #media-uploader-status.errors::after,
+#jvm-rich-text-icons_custom_icon_generator
+  #media-uploader-status.uploading::after {
+  content: "";
+  display: flex;
+  clear: both;
+  height: 24px;
+}
+
+#jvm-rich-text-icons_custom_icon_generator .media-sidebar .upload-error {
+  margin: 12px 0;
+  padding: 4px 0 0;
+  border: none;
+  box-shadow: none;
+  background: 0 0;
+}
+
+#jvm-rich-text-icons_custom_icon_generator
+  #upload-errors
+  .upload-error-filename {
+  font-weight: 600;
+}
+
+#jvm-rich-text-icons_custom_icon_generator
+  #upload-errors
+  .upload-error-message {
+  display: block;
+  padding-top: 8px;
+  word-wrap: break-word;
+}
+
+#jvm-rich-text-icons_custom_icon_uploader
+  .uploader-inline
+  h2.drop-instructions {
+  font-size: 20px;
+  line-height: 1.4;
+  font-weight: 400;
+  margin: 0;
+}
+
+#jvm-rich-text-icons_custom_icon_uploader .close {
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+  height: 48px;
+  outline: 0;
+  padding: 0;
+  position: absolute;
+  right: 2px;
+  text-align: center;
+  top: 2px;
+  width: 48px;
+  z-index: 1;
+}
+
+#jvm-rich-text-icons_custom_icon_uploader .close:before {
+  font: normal 30px/1 dashicons !important;
+  color: #50575e;
+  display: inline-block;
+  content: "\f335";
+  font-weight: 300;
+  margin-top: 1px;
+}
+
+#jvm-rich-text-icons_custom_icon_uploader .upload-ui {
+  margin: 2em 0;
+}
+
+#jvm-rich-text-icons_custom_icon_uploader .dz-default.dz-message {
+  display: none;
+}
+
+#svg-file-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+  gap: 8px;
+  padding: 4px;
+  margin: 20px 0;
+}
+
+#svg-file-list .icon-dialog-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 8px 4px;
+  border: 1px solid #dcdcde;
+  border-radius: 4px;
+  color: #000;
+  text-decoration: none;
+  min-height: 70px;
+  transition:
+    border-color 0.15s,
+    background-color 0.15s;
+}
+
+#svg-file-list .icon-dialog-link:hover {
+  border-color: #2271b1;
+  background-color: #f0f6fc;
+}
+
+#svg-file-list .icon-dialog-link i,
+#svg-file-list .icon-dialog-link .icon-dialog-svg {
+  font-size: 24px;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 !important;
+  top: 0 !important;
+}
+
+#svg-file-list .icon-dialog-svg svg {
+  width: 1em;
+  height: 1em;
+}
+
+#icon-dialog-preview svg {
+  width: 1em;
+  height: 1em;
+}
+
+#svg-file-list .icon-dialog-label {
+  font-size: 10px;
+  text-align: center;
+  word-break: break-all;
+  line-height: 1.2;
+  color: #333;
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  margin-top: 4px;
+}
+
+/* ---- Tools tab fieldset ---- */
+
+.jvm-rti-fieldset {
+  border: 1px solid #c3c4c7;
+  border-radius: 4px;
+  padding: 4px 16px 16px;
+  margin: 16px 0 24px;
+}
+
+.jvm-rti-fieldset legend {
+  font-size: 14px;
+  font-weight: 600;
+  padding: 0 6px;
+  color: #1d2327;
+}
+
+.jvm-rti-fieldset > p {
+  color: #50575e;
+  margin: 8px 0 0;
+}
+
+/* ---- Bulk sanitize (Tools tab) ---- */
+
+#jvm-rti-bulk-sanitize-section {
+  margin-top: 24px;
+}
+
+.jvm-rti-bulk-bar-wrap {
+  position: relative;
+  height: 10px;
+  background: #dcdcde;
+  border-radius: 5px;
+  width: 100%;
+  margin: 8px 0 4px;
+}
+
+#jvm-rti-bulk-bar-inner {
+  height: 10px;
+  background: #2271b1;
+  border-radius: 5px;
+  transition: width 0.2s ease;
+  min-width: 0;
+  width: 0;
+}
+
+#jvm-rti-bulk-status {
+  color: #50575e;
+  margin: 4px 0 12px;
+}
+
+#jvm-rti-bulk-errors {
+  border-left: 4px solid #d63638;
+  background: #fff;
+  padding: 8px 12px;
+  margin: 8px 0 12px;
+  max-width: 600px;
+}
+
+#jvm-rti-bulk-errors ul {
+  margin: 4px 0 0 16px;
+  list-style: disc;
+}

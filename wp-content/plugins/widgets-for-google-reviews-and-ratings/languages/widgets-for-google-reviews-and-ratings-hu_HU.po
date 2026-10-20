@@ -1,0 +1,518 @@
+# Copyright (C) 2025 repocean
+# This file is distributed under the GPL-2.0+.
+msgid ""
+msgstr ""
+"Project-Id-Version: Widgets for Google Business Reviews and Ratings 1.0.16\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/widgets-for-google-reviews-and-ratings\n"
+"POT-Creation-Date: 2025-12-22T12:02:03+00:00\n"
+"PO-Revision-Date: 2025-11-05T11:26:55+00:00\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: hu\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Domain: widgets-for-google-reviews-and-ratings\n"
+"X-Generator: WP-CLI 2.11.0\n"
+
+#. Plugin Name of the plugin
+#: widgets-for-google-reviews-and-ratings.php
+msgid "Widgets for Google Business Reviews and Ratings"
+msgstr "Widgetek a Google Üzleti Véleményekhez és Értékelésekhez"
+
+#. Plugin URI of the plugin
+#: widgets-for-google-reviews-and-ratings.php
+msgid "https://repocean.com/"
+msgstr ""
+
+#. Description of the plugin
+#: widgets-for-google-reviews-and-ratings.php
+msgid ""
+"Quickly and easily embed Google reviews into your WordPress site. Boost SEO,"
+" build trust, and increase sales with Google reviews."
+msgstr ""
+"Gyorsan és egyszerűen ágyazd be a Google értékeléseket a WordPress "
+"webhelyedbe. Növeld a SEO-t, építs bizalmat és növeld az eladásokat a Google"
+" értékelésekkel."
+
+#. Author of the plugin
+#: widgets-for-google-reviews-and-ratings.php
+msgid "repocean"
+msgstr ""
+
+#. Author URI of the plugin
+#: widgets-for-google-reviews-and-ratings.php
+msgid "https://profiles.wordpress.org/repocean/"
+msgstr ""
+
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:38
+msgid "Google Reviews Settings"
+msgstr "Google Értékelések Beállításai"
+
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:39
+#: admin/class-widgets-for-google-reviews-and-ratings-widget.php:23
+msgid "Google Reviews"
+msgstr "Google Értékelések"
+
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:59
+msgid "Widget Customizer"
+msgstr "Widget Testreszabó"
+
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:61
+msgid "Connect Google"
+msgstr "Google Csatlakoztatása"
+
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:62
+msgid "Select Layout"
+msgstr "Elrendezés Kiválasztása"
+
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:63
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:763
+msgid "Settings"
+msgstr "Beállítások"
+
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:66
+msgid "Get Reviews"
+msgstr "Értékelések Megszerzése"
+
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:156
+msgid "Nonce verification failed"
+msgstr "Nonce ellenőrzés nem sikerült"
+
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:164
+msgid "Error decoding JSON."
+msgstr "Hiba a JSON dekódolásakor."
+
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:167
+msgid "Error: Place data not received."
+msgstr "Hiba: Helyadatok nem érkeztek meg."
+
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:170
+msgid "An error occurred: "
+msgstr "Hiba történt: "
+
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:212
+msgid "Place Image"
+msgstr "Hely Kép"
+
+#. Translators: %d represents the total number of user reviews.
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:217
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:210
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:301
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:749
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:904
+msgid "reviews"
+msgstr "értékelések"
+
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:223
+msgid "Disconnect"
+msgstr "Kapcsolja ki"
+
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:238
+msgid "Place disconnected successfully. Connect a new place."
+msgstr "A hely sikeresen leválasztva. Csatlakoztass egy új helyet."
+
+#. translators: combined notice for support and review
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:264
+msgid ""
+"Hi there, If you have any questions or need assistance, feel free to "
+"%1$sreach out%2$s anytime. If you have a moment, I would love it if you "
+"could %3$sleave a review%4$s."
+msgstr ""
+"Szia, Ha bármilyen kérdésed van, vagy segítségre van szükséged, nyugodtan "
+"%1$skeress meg%2$s bármikor. Ha van egy kis időd, örülnék, ha %3$sírnál egy "
+"véleményt%4$s."
+
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:280
+msgid "Slider"
+msgstr "Csúszka"
+
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:282
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:300
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:318
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:336
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:354
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:372
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:390
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:408
+msgid "Shortcode:"
+msgstr "Rövidkód:"
+
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:285
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:303
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:321
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:339
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:357
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:375
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:393
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:411
+msgid "Copy to Clipboard"
+msgstr "Másolás a vágólapra"
+
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:286
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:304
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:322
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:340
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:358
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:376
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:394
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:412
+msgid "Copied!"
+msgstr "Másolva!"
+
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:298
+msgid "Slider I."
+msgstr "Csúszka I."
+
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:316
+msgid "Slider II."
+msgstr "Csúszka II."
+
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:334
+msgid "Slider III."
+msgstr "Csúszka III."
+
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:352
+msgid "Slider IIII."
+msgstr "Csúszka IIII."
+
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:370
+msgid "Grid"
+msgstr "Rács"
+
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:388
+msgid "List"
+msgstr "Lista"
+
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:406
+msgid "Sidebar"
+msgstr "Oldalsáv"
+
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:488
+msgid "Security check failed. Nonce verification failed."
+msgstr "Biztonsági ellenőrzés nem sikerült. A nonce ellenőrzés nem sikerült."
+
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:508
+msgid "Settings saved successfully!"
+msgstr "A beállítások sikeresen mentve!"
+
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:525
+msgid "Google Review Widget Settings"
+msgstr "Google Vélemény Widget Beállítások"
+
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:533
+msgid "Hide Review Date"
+msgstr "Vélemény Dátumának Elrejtése"
+
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:539
+msgid "Hide Reviewer Profile Picture"
+msgstr "Véleményező Profilképének Elrejtése"
+
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:545
+msgid "Hide Google Logo"
+msgstr "Google Logó Elrejtése"
+
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:551
+msgid "Hide Widget Rating Text (e.g. EXCELLENT XXX reviews)"
+msgstr "Widget Értékelés Szövegének Elrejtése (pl. KIVÁLÓ XXX vélemény)"
+
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:558
+msgid "Hide \"Previous\" and \"Next\" Buttons"
+msgstr "\"Előző\" és \"Következő\" Gombok Elrejtése"
+
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:566
+msgid "Show Verified By RepOcean"
+msgstr "Megjelenítés Ellenőrizve a RepOcean által"
+
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:574
+msgid "Show Verified Symbol for Reviews"
+msgstr "Megjelenítés Ellenőrzött Szimbólum a Véleményekhez"
+
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:576
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:189
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:351
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:455
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:561
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:641
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:799
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:953
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:1071
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:1468
+msgid "RepOcean verifies that the original source of the review is Google."
+msgstr "A RepOcean ellenőrzi, hogy a vélemény eredeti forrása a Google."
+
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:583
+msgid "Shorten Reviewer Names (e.g., John Smith → John S.)"
+msgstr "Rövidítse a véleményezők nevét (pl. John Smith → John S.)"
+
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:591
+msgid "Enable Dark Mode (Dark background with light text)"
+msgstr "Sötét mód engedélyezése (Sötét háttér világos szöveggel)"
+
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:599
+msgid "Change Star Color"
+msgstr "Csillag színének megváltoztatása"
+
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:656
+msgid "Review Card Background Color"
+msgstr "Kártya háttérszínének ellenőrzése"
+
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:702
+msgid "Review Card Border Color"
+msgstr "Kártya határszínének ellenőrzése"
+
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:750
+msgid "Save Changes"
+msgstr "Változtatások mentése"
+
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:756
+msgid "An error occurred while saving the settings. Please try again."
+msgstr "Hiba történt a beállítások mentésekor. Kérjük, próbálja újra."
+
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:772
+msgid "Community support"
+msgstr "Közösségi támogatás"
+
+#: admin/class-widgets-for-google-reviews-and-ratings-admin.php:773
+msgid "Rate our plugin"
+msgstr "Értékelje a bővítményünket"
+
+#: admin/class-widgets-for-google-reviews-and-ratings-widget.php:9
+msgid "A Widget to display Google Reviews"
+msgstr "Egy widget a Google vélemények megjelenítésére"
+
+#: admin/class-widgets-for-google-reviews-and-ratings-widget.php:26
+msgid "Title:"
+msgstr "Cím:"
+
+#: admin/feedback/deactivation-feedback-form.php:8
+msgid "Return"
+msgstr "Vissza"
+
+#: admin/feedback/deactivation-feedback-form.php:9
+msgid "We’re sorry to see you go! 💔"
+msgstr "Sajnáljuk, hogy elhagysz minket! 💔"
+
+#: admin/feedback/deactivation-feedback-form.php:11
+msgid "Close"
+msgstr "Zárás"
+
+#: admin/feedback/deactivation-feedback-form.php:15
+msgid ""
+"Can you please tell us why you’re deactivating the plugin? Your feedback "
+"helps us make it better."
+msgstr ""
+"Kérlek, mondd el, miért deaktiválod a plugint? A visszajelzésed segít nekünk"
+" javítani rajta."
+
+#: admin/feedback/deactivation-feedback-form.php:19
+msgid "Temporary deactivation (troubleshooting)"
+msgstr "Ideiglenes letiltás (hibaelhárítás)"
+
+#: admin/feedback/deactivation-feedback-form.php:23
+msgid "Compatibility issue"
+msgstr "Kompatibilitási probléma"
+
+#: admin/feedback/deactivation-feedback-form.php:25
+msgid "Please describe what part of the layout or functionality was affected."
+msgstr ""
+"Kérlek, írd le, hogy a layout vagy a funkcionalitás mely része volt "
+"érintett."
+
+#: admin/feedback/deactivation-feedback-form.php:30
+msgid "Difficult to set up"
+msgstr "Nehéz beállítani"
+
+#: admin/feedback/deactivation-feedback-form.php:32
+msgid "What part of the setup was confusing or unclear?"
+msgstr "Melyik része a beállításnak volt zavaros vagy nem világos?"
+
+#: admin/feedback/deactivation-feedback-form.php:37
+msgid "Missing features"
+msgstr "Hiányzó funkciók"
+
+#: admin/feedback/deactivation-feedback-form.php:39
+msgid "Which features were you looking for?"
+msgstr "Milyen funkciókat kerestél?"
+
+#: admin/feedback/deactivation-feedback-form.php:44
+msgid "Other"
+msgstr "Más"
+
+#: admin/feedback/deactivation-feedback-form.php:46
+msgid ""
+"Please share why you’re deactivating the Google Business Reviews plugin so "
+"we can make improvements."
+msgstr ""
+"Kérjük, ossza meg, miért deaktiválja a Google Business Reviews bővítményt, "
+"hogy javíthassunk rajta."
+
+#: admin/feedback/deactivation-feedback-form.php:58
+msgid ""
+"Your privacy is important to us. No personal data is collected with this "
+"form—just your valuable feedback and basic system information (such as "
+"WordPress and plugin versions) to help us improve our plugin."
+msgstr ""
+"Az Ön magánszférája fontos számunkra. Ezzel a űrlappal nem gyűjtünk "
+"személyes adatokat—csak az értékes visszajelzését és alapvető "
+"rendszerinformációkat (például a WordPress és a bővítmények verzióját), hogy"
+" segítsenek nekünk fejleszteni a bővítményünket."
+
+#: admin/feedback/deactivation-feedback-form.php:63
+msgid "Visit our support page for assistance"
+msgstr "Látogasson el a támogatási oldalunkra segítségért."
+
+#: admin/feedback/deactivation-feedback-form.php:63
+msgid "Get Support"
+msgstr "Kapcsolatfelvétel a Támogatással"
+
+#: admin/feedback/deactivation-feedback-form.php:65
+msgid "Send & Deactivate"
+msgstr "Küldés és Deaktiválás"
+
+#: admin/feedback/deactivation-feedback-form.php:67
+msgid "I rather wouldn't say"
+msgstr "Inkább nem mondanám."
+
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:103
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:233
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:386
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:492
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:598
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:680
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:836
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:991
+msgid "Hide"
+msgstr "Elrejtés"
+
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:104
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:197
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:234
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:359
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:387
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:462
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:493
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:568
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:599
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:650
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:681
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:808
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:837
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:962
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:992
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:1095
+msgid "Read more"
+msgstr "További információk"
+
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:144
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:288
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:393
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:499
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:605
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:734
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:890
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:1046
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:1449
+msgid "No reviews found."
+msgstr "Nincsenek vélemények."
+
+#. Translators: %s represents the human-readable time difference.
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:150
+msgid " %s ago"
+msgstr " %s előtt"
+
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:207
+msgid "Google"
+msgstr ""
+
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:207
+msgid "Rating Score:"
+msgstr "Értékelési pontszám:"
+
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:208
+msgid "out of 5,"
+msgstr "az 5-ből,"
+
+#. Translators: %d represents the total number of user reviews.
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:210
+msgid "based on"
+msgstr "alapján"
+
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:295
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:402
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:508
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:742
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:898
+msgid "EXCELLENT"
+msgstr "KIVÁLÓ"
+
+#. Translators: %s represents the human-readable time difference.
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:312
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:428
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:534
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:621
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:760
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:915
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:1079
+msgid "%s ago"
+msgstr "%s előtt"
+
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:371
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:477
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:583
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:666
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:822
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:976
+msgid "Your Google Place not connected"
+msgstr "A Google Helye nincs csatlakoztatva"
+
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:374
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:480
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:586
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:669
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:825
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:979
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:1132
+msgid "An error occurred."
+msgstr "Hiba történt."
+
+#. Translators: %d represents the total number of user reviews.
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:405
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:511
+msgid "Based on <a href=\"#\" class=\"review-link\">%d reviews</a>"
+msgstr "Alapján <a href=\"#\" class=\"review-link\">%d értékelés</a>"
+
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:409
+msgid "Review us on Google"
+msgstr "Értékelj minket a Google-on"
+
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:815
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:969
+msgid "Load More"
+msgstr "Több betöltése"
+
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:1056
+msgid "Excellent rating"
+msgstr "Kiváló értékelés"
+
+#. Translators: %d represents the total number of user reviews.
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:1058
+msgid "Based on %s reviews"
+msgstr "Alapján %s értékelés"
+
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:1129
+msgid "Your Google Place is not connected."
+msgstr "A Google Helyed nincs összekapcsolva."
+
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:1440
+msgid "Unable to retrieve reviews at this time."
+msgstr "Jelenleg nem tudjuk lekérni az értékeléseket."
+
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:1467
+msgid "Verified"
+msgstr "Ellenőrzött"
+
+#: public/class-widgets-for-google-reviews-and-ratings-public.php:1469
+msgid "Verified by RepOcean"
+msgstr "Ellenőrizve a RepOcean által"

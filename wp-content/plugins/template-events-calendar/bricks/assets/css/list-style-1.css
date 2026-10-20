@@ -1,0 +1,373 @@
+/**
+ * Events Widget — List template / Style 1 (ect-list)
+ *
+ * See the header of ect-bricks-events-widget-base.css: this file uses no
+ * !important either, which is a known limitation for Bricks Style-panel overrides.
+ */
+
+.ect-ev .ect-list {
+	display: grid;
+	grid-template-columns: 420px 1fr;
+	gap: 0;
+	align-items: stretch;
+	background: var(--ect-bricks-card-bg, var(--color-card-bg));
+	border: var(--ect-bricks-card-border-width, 1px) solid var(--ect-bricks-card-border-color, var(--color-border));
+	border-radius: 20px;
+	overflow: hidden;
+	width: 100%;
+}
+
+.ect-ev .ect-list__img-wrap {
+	position: relative;
+	min-height: var(--ect-bricks-featured-image-min-height, 268px);
+	overflow: hidden;
+	border-radius: 20px 0 0 20px;
+	background: var(--ect-bricks-image-placeholder-bg);
+}
+
+.ect-ev .ect-list__content {
+	display: grid;
+	grid-template-columns: 58px 1fr;
+	gap: 18px;
+	min-height: 268px;
+	padding: 30px 34px 28px 28px;
+	border-radius: 0 20px 20px;
+}
+
+.ect-ev .ect-list__date {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	align-self: stretch;
+	justify-content: flex-start;
+	padding: 2px 15px 2px 2px;
+	color: var(--color-primary);
+	border-right: 1px solid var(--color-border);
+	min-height: 0;
+}
+
+.ect-ev .ect-list__date-inner {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: var(--ect-bricks-list1-date-bg, transparent);
+	font-size: 11px;
+	font-weight: 500;
+	line-height: 1;
+	text-transform: uppercase;
+	color: inherit;
+}
+
+.ect-ev.ect-list1-date-align--center .ect-list__date {
+	justify-content: center;
+}
+
+.ect-ev.ect-list1-date-align--bottom .ect-list__date {
+	justify-content: flex-end;
+}
+
+.ect-ev .ect-list__day {
+	display: block;
+	font-size: 3.182em;
+	font-weight: 700;
+	line-height: 0.95;
+	letter-spacing: -0.04em;
+	font-family: inherit;
+	text-transform: inherit;
+	color: inherit;
+}
+
+.ect-ev .ect-list__month {
+	display: block;
+	font-size: 1em;
+	font-weight: inherit;
+	line-height: inherit;
+	letter-spacing: inherit;
+	font-family: inherit;
+	text-transform: inherit;
+	color: inherit;
+}
+
+.ect-ev .ect-list__body {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: 12px;
+}
+
+/* Meta lists are flex children; keep block spacing when a row is moved (e.g. after title). */
+.ect-ev .ect-list__body > .event-meta {
+	width: 100%;
+	max-width: 100%;
+	margin: 0;
+}
+
+.ect-ev .ect-list__body > .ect-part--title {
+	align-self: stretch;
+	width: 100%;
+}
+
+.ect-ev .ect-list__body > :is(.ect-part--description, .ect-s2-description) {
+	align-self: stretch;
+	width: 100%;
+	max-width: 100%;
+}
+
+.ect-ev .ect-list__body > .ect-part--read-more {
+	width: 100%;
+}
+
+/* Style 1 categories: comma-separated links (same as tags). */
+.ect-ev__item--style-1 .ect-list__body > .ect-part--categories {
+	align-self: stretch;
+	width: 100%;
+	max-width: 100%;
+	pointer-events: auto;
+}
+
+.ect-ev__item--style-1 .ect-list__body > .ect-part--categories .ect-fld__link {
+	pointer-events: auto;
+	cursor: pointer;
+}
+
+.ect-ev__item--style-1 .ect-list__body > .ect-part--categories.ect-has-part-bg .ect-fld__link {
+	background-color: var(--ect-bricks-chip-bg);
+}
+
+.ect-ev__item--style-1 .ect-list__body > .ect-part--categories.ect-has-hover-bg:not(.ect-no-hover) .ect-fld__link:hover,
+.ect-ev__item--style-1 .ect-list__body > .ect-part--categories.ect-has-hover-bg:not(.ect-no-hover) .ect-fld__link:focus-visible {
+	background-color: var(--ect-bricks-hover-bg);
+}
+
+.ect-ev__item--style-1 .ect-list__body > .ect-part--categories.ect-has-hover-fg:not(.ect-no-hover) .ect-fld__link:hover,
+.ect-ev__item--style-1 .ect-list__body > .ect-part--categories.ect-has-hover-fg:not(.ect-no-hover) .ect-fld__link:focus-visible {
+	color: var(--ect-bricks-hover-fg);
+}
+
+.ect-ev .ect-list__title {
+	margin: 0;
+	color: var(--color-heading);
+	font-size: 21px;
+	font-weight: 700;
+	line-height: 1.28;
+}
+
+.ect-ev .ect-list__desc:not(.ect-has-typo-fg) {
+	color: var(--color-text);
+}
+
+.ect-ev .ect-list__desc:not(.ect-has-typo-size) {
+	font-size: 15px;
+	line-height: 1.65;
+}
+
+.ect-ev .event-meta--list {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: var(--ect-bricks-meta-row-gap, 12px);
+	font-size: 14px;
+	line-height: 1.4;
+	width: 100%;
+}
+
+/* Combo rows: full-width horizontal flex. Aligned single rows: base stylesheet. */
+.ect-ev .event-meta--list > li.ect-meta-row:has(.ect-fld__meta-group) {
+	display: flex;
+	align-items: center;
+	width: 100%;
+	max-width: 100%;
+}
+
+.ect-ev .event-meta--list > li.ect-meta-row .ect-fld__meta-group {
+	flex-wrap: nowrap;
+	width: 100%;
+	min-width: 0;
+}
+
+/* Style 1 single meta row: icon lives inside the part so typography/bg/spacing apply to both.
+   Exclude .ect-has-align so base flex/full-width rules are not overridden. */
+.ect-ev .event-meta--list > li.ect-meta-row:not(:has(.ect-fld__meta-group)):not(.ect-has-align) {
+	display: block;
+	width: fit-content;
+	max-width: 100%;
+}
+
+.ect-ev .event-meta--list > li.ect-meta-row.ect-has-align:has(.ect-fld__meta-group) > .ect-part {
+	display: flex;
+	flex: 1 1 auto;
+	width: 100%;
+	min-width: 0;
+}
+
+.ect-ev .event-meta--list > li.ect-meta-row.ect-has-align:has(.ect-fld__meta-group) .ect-fld__meta-group {
+	display: flex;
+	width: 100%;
+}
+
+.ect-ev .event-meta--list > li.ect-meta-row.ect-align--center:has(.ect-fld__meta-group) .ect-fld__meta-group {
+	justify-content: center;
+}
+
+.ect-ev .event-meta--list > li.ect-meta-row.ect-align--right:has(.ect-fld__meta-group) .ect-fld__meta-group {
+	justify-content: flex-end;
+}
+
+.ect-ev .event-meta--list > li.ect-meta-row.ect-align--justify:has(.ect-fld__meta-group) .ect-fld__meta-group {
+	justify-content: space-between;
+}
+
+.ect-ev .event-meta--list > li.ect-meta-row:not(:has(.ect-fld__meta-group)) > .ect-part,
+.ect-ev .event-meta--list > li.ect-meta-row:not(:has(.ect-fld__meta-group)) > [data-field-id] {
+	display: inline-flex;
+	align-items: center;
+	gap: 8px;
+	width: fit-content;
+	max-width: 100%;
+	box-sizing: border-box;
+}
+
+/* Style 1: venue/time and cost can each sit on their own line; order follows the parts repeater. */
+.ect-ev .event-meta--list-price {
+	width: 100%;
+}
+
+.ect-ev .event-meta--list .price {
+	font-weight: 500;
+	color: var(--badge-blue);
+}
+
+.ect-ev .event-meta--list .price.ect-meta-row:not(:has(.ect-has-typo-fg)) .ect-card__meta-icon,
+.ect-ev .event-meta--list .price.ect-meta-row:not(:has(.ect-has-typo-fg)) > .ect-part,
+.ect-ev .event-meta--list .price.ect-meta-row:not(:has(.ect-has-typo-fg)) > [data-field-id] {
+	color: inherit;
+}
+
+/* No date column: single-column content grid. */
+.ect-ev .ect-list--no-date .ect-list__content {
+	grid-template-columns: 1fr;
+}
+
+/* No featured image: keep date column + body; only drop the image column. */
+.ect-ev .ect-list--no-image .ect-list__content {
+	grid-template-columns: 58px 1fr;
+	min-height: auto;
+}
+
+.ect-ev .ect-list--no-image.ect-list--no-date .ect-list__content {
+	grid-template-columns: 1fr;
+}
+
+@media (max-width: 1024px) {
+	.ect-ev .ect-list {
+		grid-template-columns: minmax(260px, 360px) minmax(0, 1fr);
+	}
+
+	.ect-ev .ect-list__img-wrap {
+		min-height: var(--ect-bricks-featured-image-min-height, 250px);
+	}
+
+	.ect-ev .ect-list__content {
+		min-height: 250px;
+		padding: 26px 26px 24px;
+	}
+}
+
+@media (max-width: 860px) {
+	.ect-ev .ect-list {
+		grid-template-columns: 1fr;
+		gap: 0;
+		box-shadow: var(--shadow-card);
+	}
+
+	.ect-ev .ect-list__img-wrap {
+		min-height: var(--ect-bricks-featured-image-min-height, 220px);
+		height: var(--ect-bricks-featured-image-height, 220px);
+		border-radius: 20px 20px 0 0;
+	}
+
+	.ect-ev .ect-list__content {
+		min-height: auto;
+		box-shadow: none;
+		border-radius: 0 0 20px 20px;
+	}
+}
+
+@media (max-width: 767px) {
+	.ect-ev .ect-list__img-wrap {
+		min-height: var(--ect-bricks-featured-image-min-height, 220px);
+		height: auto;
+		aspect-ratio: 16 / 10;
+	}
+
+	.ect-ev .ect-list__content {
+		grid-template-columns: 1fr;
+		gap: 13px;
+		padding: 22px;
+	}
+
+	.ect-ev .ect-list__date {
+		flex-direction: row;
+		align-items: baseline;
+		padding-right: 0;
+		border-right: none;
+	}
+
+	.ect-ev .ect-list__date-inner {
+		flex-direction: row;
+		align-items: baseline;
+		gap: 7px;
+	}
+
+	.ect-ev .ect-list__day {
+		font-size: 28px;
+	}
+
+	.ect-ev .ect-list__title {
+		font-size: 18px;
+	}
+
+	.ect-ev .ect-list__desc:not(.ect-has-typo-size) {
+		font-size: 14px;
+		line-height: 1.6;
+	}
+
+	.ect-ev .event-meta--list {
+		flex-direction: column;
+		gap: 8px;
+		margin: 0;
+	}
+
+	.ect-ev .ect-list .event-button--outline {
+		width: 100%;
+	}
+}
+
+@media (max-width: 480px) {
+	.ect-ev .ect-list__img-wrap {
+		aspect-ratio: 16 / 11;
+		min-height: auto;
+	}
+
+	.ect-ev .ect-list__content {
+		padding: 18px;
+	}
+
+	.ect-ev .ect-list__title {
+		font-size: 17px;
+	}
+}
+
+/*
+ * Layout default hovers (Style 1) — skip when Style tab custom hover colors are set.
+ */
+.ect-ev__item--style-1 .ect-part:not(.ect-no-hover):not(.ect-has-hover-fg):not(.ect-has-hover-bg) {
+	& a.event-button.event-button--outline:hover,
+	& > a.event-button.event-button--outline:hover,
+	& a.ect-fld__link.event-button--outline:hover {
+		color: var(--color-card-bg);
+		background-color: var(--color-primary);
+		border-color: var(--color-primary);
+		box-shadow: var(--ect-bricks-btn-hover-shadow);
+	}
+}

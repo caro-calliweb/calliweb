@@ -1,0 +1,566 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Events Shortcodes For The Events Calendar\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-02-21 04:55+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: \n"
+"Language: \n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Loco-Version: 2.8.1; wp-6.9.1; php-8.1.29\n"
+"X-Domain: template-events-calendar"
+
+#: admin/cpfm-feedback/cpfm-feedback-notice.php:203
+msgid " More info"
+msgstr ""
+
+#. %s: Event start date.
+#: events-calendar-templates.php:254
+#, php-format
+msgid "%1$s %2$s"
+msgstr ""
+
+#: includes/events-shortcode.php:352 includes/events-shortcode.php:355
+#: includes/events-shortcode.php:372 includes/events-shortcode.php:375
+#: includes/events-shortcode-block/includes/ebec-functions.php:161
+#: includes/events-shortcode-block/includes/ebec-functions.php:163
+#: includes/events-shortcode-block/includes/ebec-functions.php:177
+#: includes/events-shortcode-block/includes/ebec-functions.php:179
+#, php-format
+msgid "%1$s - %2$s"
+msgstr ""
+
+#. %d: number of active addons
+#: admin/events-addon-page/includes/dashboard-page.php:45
+msgid "%d Active Addon"
+msgid_plural "%d Active Addons"
+msgstr[0] ""
+msgstr[1] ""
+
+#: includes/events-shortcode.php:379 includes/events-shortcode.php:381
+#: includes/events-shortcode-block/includes/ebec-functions.php:183
+#: includes/events-shortcode-block/includes/ebec-functions.php:185
+#, php-format
+msgid "%s"
+msgstr ""
+
+#. Description of the plugin
+msgid ""
+"<a href=\"http://wordpress.org/plugins/the-events-calendar/\">📅 The Events "
+"Calendar Addon</a> - Shortcodes to show The Events Calendar plugin events "
+"list on any page or post in different layouts."
+msgstr ""
+
+#: events-calendar-templates.php:214
+msgid ""
+"<strong>Important Update</strong>:- <strong>Events Shortcodes & "
+"Templates</strong> plugin has integrated new settings panel. Please save "
+"your settings and check events views."
+msgstr ""
+
+#: events-calendar-templates.php:204
+msgid ">style settings</a> if you face any design issues."
+msgstr ""
+
+#: admin/events-addon-page/events-addon-page.php:696
+msgid "Activate Now"
+msgstr ""
+
+#: admin/events-addon-page/events-addon-page.php:734
+msgid "Activated"
+msgstr ""
+
+#: admin/events-addon-page/events-addon-page.php:673
+msgid "Active"
+msgstr ""
+
+#: admin/events-addon-page/includes/dashboard-sidebar.php:38
+msgid "Aim to resolve issues in 24 hrs."
+msgstr ""
+
+#: admin/visual-composer/ect-class-vc.php:23
+msgid "all"
+msgstr ""
+
+#: admin/visual-composer/ect-class-vc.php:161
+msgid "All (Upcoming + Past)"
+msgstr ""
+
+#: admin/ect-event-shortcode.php:309
+msgid "All Categories"
+msgstr ""
+
+#: includes/events-shortcode.php:360 includes/events-shortcode.php:363
+#: includes/events-shortcode-block/includes/ebec-functions.php:167
+#: includes/events-shortcode-block/includes/ebec-functions.php:169
+msgid "All day"
+msgstr ""
+
+#: admin/feedback-notice/feedback-notice.php:156
+msgid "Already Reviewed"
+msgstr ""
+
+#: admin/visual-composer/ect-class-vc.php:120
+msgid "ASC"
+msgstr ""
+
+#: admin/events-addon-page/includes/dashboard-page.php:77
+msgid "Available Addons"
+msgstr ""
+
+#: admin/events-addon-page/events-addon-page.php:707
+msgid "Buy Pro"
+msgstr ""
+
+#: admin/events-addon-page/includes/dashboard-header.php:55
+msgid "Check Docs"
+msgstr ""
+
+#: admin/events-addon-page/includes/dashboard-sidebar.php:41
+msgid "Contact Support"
+msgstr ""
+
+#. Author of the plugin
+msgid "Cool Plugins"
+msgstr ""
+
+#: admin/events-addon-page/includes/dashboard-page.php:43
+msgid "Currently Activated Addons"
+msgstr ""
+
+#: admin/visual-composer/ect-class-vc.php:43
+msgid "d.F (01. January)"
+msgstr ""
+
+#: admin/visual-composer/ect-class-vc.php:42
+msgid "d.FY (01. January 2019)"
+msgstr ""
+
+#: admin/visual-composer/ect-class-vc.php:46
+msgid "d.Ml (01. Jan Monday)"
+msgstr ""
+
+#: admin/events-addon-page/events-addon-page.php:261
+#: admin/events-addon-page/events-addon-page.php:262
+msgid "Dashboard"
+msgstr ""
+
+#: admin/visual-composer/ect-class-vc.php:106
+msgid "Date Format"
+msgstr ""
+
+#: admin/visual-composer/ect-class-vc.php:32
+msgid "Default (01 January 2019)"
+msgstr ""
+
+#: admin/visual-composer/ect-class-vc.php:51
+msgid "Default List Layout"
+msgstr ""
+
+#: admin/events-addon-page/events-addon-page.php:578
+msgid "Demo"
+msgstr ""
+
+#: admin/visual-composer/ect-class-vc.php:121
+msgid "DESC"
+msgstr ""
+
+#: admin/visual-composer/ect-class-vc.php:37
+msgid "dF (01 January)"
+msgstr ""
+
+#: admin/visual-composer/ect-class-vc.php:47
+msgid "dFT (01 January 8:00am-5:00pm)"
+msgstr ""
+
+#: admin/visual-composer/ect-class-vc.php:35
+msgid "dM (01 Jan))"
+msgstr ""
+
+#: admin/visual-composer/ect-class-vc.php:36
+msgid "dMl (01 Jan Monday)"
+msgstr ""
+
+#: admin/events-addon-page/events-addon-page.php:582
+msgid "Docs"
+msgstr ""
+
+#: admin/events-addon-page/events-addon-page.php:580
+msgid "Documentation"
+msgstr ""
+
+#: admin/visual-composer/ect-class-vc.php:143
+msgid "Enable Social Share Buttons"
+msgstr ""
+
+#: admin/visual-composer/ect-class-vc.php:190
+msgid "End Date | format(YY-MM-DD)"
+msgstr ""
+
+#: admin/events-addon-page/events-addon-page.php:251
+#: admin/events-addon-page/events-addon-page.php:252
+msgid "Events Addons"
+msgstr ""
+
+#: events-calendar-templates.php:151
+msgid "Events Addons By Cool Plugins"
+msgstr ""
+
+#: admin/events-addon-page/includes/dashboard-header.php:48
+msgid "Events Calendar Addons"
+msgstr ""
+
+#: admin/events-addon-page/includes/dashboard-sidebar.php:66
+msgid "EVENTS CALENDAR PRO"
+msgstr ""
+
+#: admin/visual-composer/ect-class-vc.php:117
+msgid "Events Order"
+msgstr ""
+
+#. Name of the plugin
+msgid "Events Shortcodes For The Events Calendar"
+msgstr ""
+
+#: admin/visual-composer/ect-class-vc.php:34
+msgid "Fd,Y (January 01, 2019)"
+msgstr ""
+
+#: includes/events-shortcode.php:160
+msgid "Find out more"
+msgstr ""
+
+#: admin/visual-composer/ect-class-vc.php:40
+msgid "Full (01 January 2019 8:00am-5:00pm)"
+msgstr ""
+
+#: admin/events-addon-page/includes/dashboard-sidebar.php:70
+msgid "Get Events Calendar Pro"
+msgstr ""
+
+#: events-calendar-templates.php:371
+msgid "Get Pro"
+msgstr ""
+
+#: admin/cpfm-feedback/cpfm-feedback-notice.php:177
+msgid "Help Improve Plugins"
+msgstr ""
+
+#: events-calendar-templates.php:152
+msgid ""
+"Help us make this plugin more compatible with your site by sharing non-"
+"sensitive site data."
+msgstr ""
+
+#: admin/visual-composer/ect-class-vc.php:130
+msgid "Hide Venue"
+msgstr ""
+
+#. Author URI of the plugin
+msgid ""
+"https://coolplugins.net/?"
+"utm_source=ect_plugin&utm_medium=inside&utm_campaign=author_page&utm_content=plugins_list"
+msgstr ""
+
+#. URI of the plugin
+msgid ""
+"https://eventscalendaraddons.com/plugin/events-shortcodes-pro/?"
+"utm_source=ect_plugin&utm_medium=inside&utm_campaign=get_pro&utm_content=plugin_uri"
+msgstr ""
+
+#: admin/feedback/admin-feedback-form.php:109
+msgid ""
+"I agree to share anonymous usage data and basic site details (such as server,"
+" PHP, and WordPress versions) to support Events Shortcodes For The Events "
+"Calendar improvement efforts. Additionally, I allow Cool Plugins to store "
+"all information provided through this form and to respond to my inquiry."
+msgstr ""
+
+#: admin/feedback/admin-feedback-form.php:198
+msgid "I found a better plugin"
+msgstr ""
+
+#: admin/feedback/admin-feedback-form.php:56
+msgid "I found a better plugin."
+msgstr ""
+
+#: admin/feedback/admin-feedback-form.php:88
+msgid ""
+"If you have a moment, please share the reason for deactivating this plugin."
+msgstr ""
+
+#: events-calendar-templates.php:255
+msgid "In order to use this addon, Please first install the latest version of"
+msgstr ""
+
+#: admin/events-addon-page/events-addon-page.php:696
+msgid "Install Now"
+msgstr ""
+
+#: admin/feedback/admin-feedback-form.php:64
+#: admin/feedback/admin-feedback-form.php:206
+msgid "It's a temporary deactivation."
+msgstr ""
+
+#: admin/visual-composer/ect-class-vc.php:41
+msgid "jMl"
+msgstr ""
+
+#: admin/visual-composer/ect-class-vc.php:44
+msgid "ldF (Monday 01 January)"
+msgstr ""
+
+#: admin/visual-composer/ect-class-vc.php:172
+msgid "Limit the events"
+msgstr ""
+
+#: admin/events-addon-page/includes/dashboard-sidebar.php:49
+msgid "LOVING OUR PLUGINS?"
+msgstr ""
+
+#: admin/visual-composer/ect-class-vc.php:38
+msgid "Md (Jan 01)"
+msgstr ""
+
+#: admin/visual-composer/ect-class-vc.php:33
+msgid "Md,Y (Jan 01, 2019)"
+msgstr ""
+
+#: admin/visual-composer/ect-class-vc.php:39
+msgid "Md,YT (Jan 01, 2019 8:00am-5:00pm)"
+msgstr ""
+
+#: admin/visual-composer/ect-class-vc.php:45
+msgid "Mdl (Jan 01 Monday)"
+msgstr ""
+
+#: admin/visual-composer/ect-class-vc.php:53
+msgid "Minimal List"
+msgstr ""
+
+#: admin/events-addon-page/includes/dashboard-sidebar.php:37
+msgid "Mon–Fri, 9:30 AM–6:30 PM IST."
+msgstr ""
+
+#: admin/visual-composer/ect-class-vc.php:133
+#: admin/visual-composer/ect-class-vc.php:146
+msgid "no"
+msgstr ""
+
+#: admin/events-addon-page/events-addon-page.php:73
+msgid "No plugin specified."
+msgstr ""
+
+#: admin/events-addon-page/events-addon-page.php:476
+msgid "No plugins data available at the moment."
+msgstr ""
+
+#: admin/cpfm-feedback/cpfm-feedback-notice.php:217
+msgid "No, Thanks"
+msgstr ""
+
+#: admin/feedback-notice/feedback-notice.php:157
+msgid "Not Interested"
+msgstr ""
+
+#: admin/cpfm-feedback/cron/class-cron.php:104
+msgid "Once every 30 days"
+msgstr ""
+
+#: admin/cpfm-feedback/cpfm-feedback-notice.php:207
+msgid ""
+"Opt in to receive email updates about security improvements, new features, "
+"helpful tutorials, and occasional special offers. We'll collect:"
+msgstr ""
+
+#: admin/feedback/admin-feedback-form.php:210
+msgid "Other"
+msgstr ""
+
+#: admin/feedback/admin-feedback-form.php:68
+msgid "Other reason."
+msgstr ""
+
+#: admin/events-addon-page/includes/dashboard-sidebar.php:68
+msgid ""
+"Our addons works perfectly with both The Events Calendar free and official "
+"pro version."
+msgstr ""
+
+#: admin/visual-composer/ect-class-vc.php:160
+msgid "Past Events"
+msgstr ""
+
+#: admin/events-addon-page/events-addon-page.php:124
+msgid "Permission denied"
+msgstr ""
+
+#: admin/feedback/admin-feedback-form.php:69
+#: admin/feedback/admin-feedback-form.php:211
+msgid "Please share the reason."
+msgstr ""
+
+#: admin/feedback/admin-feedback-form.php:57
+#: admin/feedback/admin-feedback-form.php:199
+msgid "Please share which plugin."
+msgstr ""
+
+#: admin/events-addon-page/events-addon-page.php:138
+msgid "Plugin activated successfully"
+msgstr ""
+
+#: admin/events-addon-page/includes/dashboard-page.php:61
+msgid "Premium Addons"
+msgstr ""
+
+#: admin/events-addon-page/includes/dashboard-sidebar.php:33
+msgid "PREMIUM SUPPORT"
+msgstr ""
+
+#: admin/events-addon-page/includes/dashboard-sidebar.php:36
+msgid "Priority fast support."
+msgstr ""
+
+#: admin/events-addon-page/events-addon-page.php:657
+msgid "Pro"
+msgstr ""
+
+#: admin/feedback/admin-feedback-form.php:79
+msgid "Quick Feedback"
+msgstr ""
+
+#: admin/feedback-notice/feedback-notice.php:155
+msgid "Rate Now! ★★★★★"
+msgstr ""
+
+#: admin/events-addon-page/includes/dashboard-sidebar.php:57
+msgid "Rate us on WP.org"
+msgstr ""
+
+#: admin/events-addon-page/includes/dashboard-sidebar.php:55
+msgid "Review us on WP.org and share your feedback with the community."
+msgstr ""
+
+#: admin/visual-composer/ect-class-vc.php:75
+msgid "Select Events Category"
+msgstr ""
+
+#: admin/visual-composer/ect-class-vc.php:96
+msgid "Select Styles"
+msgstr ""
+
+#: admin/visual-composer/ect-class-vc.php:85
+msgid "Select Templates"
+msgstr ""
+
+#: admin/visual-composer/ect-class-vc.php:156
+msgid "Show Events"
+msgstr ""
+
+#: admin/events-addon-page/events-addon-page.php:65
+msgid "Sorry, you are not allowed to install plugins on this site."
+msgstr ""
+
+#: admin/visual-composer/ect-class-vc.php:181
+msgid "Start Date | format(YY-MM-DD)"
+msgstr ""
+
+#: admin/visual-composer/ect-class-vc.php:57
+msgid "Style 1"
+msgstr ""
+
+#: admin/visual-composer/ect-class-vc.php:58
+msgid "Style 2"
+msgstr ""
+
+#: admin/visual-composer/ect-class-vc.php:59
+msgid "Style 3"
+msgstr ""
+
+#: events-calendar-templates.php:259
+msgid "The Events Calendar"
+msgstr ""
+
+#: admin/visual-composer/ect-class-vc.php:65
+#: admin/visual-composer/ect-class-vc.php:70
+msgid "The Events Calendar Shortcode"
+msgstr ""
+
+#: admin/feedback/admin-feedback-form.php:194
+msgid "The plugin didn't work as expected"
+msgstr ""
+
+#: admin/feedback/admin-feedback-form.php:52
+msgid "The plugin didn't work as expected."
+msgstr ""
+
+#: admin/feedback/admin-feedback-form.php:202
+msgid "The plugin is not working"
+msgstr ""
+
+#: admin/feedback/admin-feedback-form.php:60
+msgid "The plugin is not working."
+msgstr ""
+
+#: includes/events-shortcode.php:285
+msgid "There are no upcoming events at this time."
+msgstr ""
+
+#: admin/events-addon-page/events-addon-page.php:99
+msgid "This plugin cannot be installed from here."
+msgstr ""
+
+#: admin/visual-composer/ect-class-vc.php:52
+msgid "Timeline Layout"
+msgstr ""
+
+#: admin/cpfm-feedback/cpfm-feedback-notice.php:210
+msgid ""
+"To check plugin compatibility, we will collect the following: list of active "
+"plugins and themes, server type, MySQL version, WordPress version, memory "
+"limit, site language and database prefix."
+msgstr ""
+
+#: admin/events-addon-page/events-addon-page.php:212
+msgid "Unable to connect to the filesystem. Please confirm your credentials."
+msgstr ""
+
+#: admin/visual-composer/ect-class-vc.php:159
+msgid "Upcoming Events"
+msgstr ""
+
+#: admin/events-addon-page/events-addon-page.php:652
+#: admin/events-addon-page/events-addon-page.php:653
+msgid "Update available"
+msgstr ""
+
+#: events-calendar-templates.php:385
+msgid "Video Tutorials"
+msgstr ""
+
+#: admin/events-addon-page/events-addon-page.php:576
+msgid "View Demo"
+msgstr ""
+
+#: admin/events-addon-page/includes/dashboard-header.php:52
+msgid "View Demos"
+msgstr ""
+
+#: admin/visual-composer/ect-class-vc.php:134
+#: admin/visual-composer/ect-class-vc.php:147
+msgid "Yes"
+msgstr ""
+
+#: admin/cpfm-feedback/cpfm-feedback-notice.php:216
+msgid "Yes, I Agree"
+msgstr ""
+
+#: admin/cpfm-feedback/cpfm-feedback-notice.php:209
+msgid "Your website home URL and WordPress admin email."
+msgstr ""

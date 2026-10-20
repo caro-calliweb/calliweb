@@ -1,0 +1,353 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: JVM Rich Text Icons\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-25 09:41:32+0000\n"
+"PO-Revision-Date: 2026-06-25 09:41:32+0000\n"
+"Last-Translator: DeepL Auto Translation\n"
+"Language-Team: NL\n"
+"Language: nl_NL\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: views/settings-tools.php:6
+msgid "SVG Uploads"
+msgstr "SVG-uploads"
+
+#: views/settings-tools.php:7
+msgid "All SVG uploads are sanitized for security and can undergo additional processing. This is especially useful when using the Inline SVG render technology."
+msgstr "Alle SVG-uploads worden opgeschoond voor de beveiliging en kunnen extra verwerking ondergaan. Dit is vooral nuttig bij het gebruik van de Inline SVG-rendertechnologie."
+
+#: views/settings-tools.php:14
+msgid "Save Settings"
+msgstr "Instellingen opslaan"
+
+#: views/settings-tools.php:20
+msgid "Bulk Sanitize SVGs"
+msgstr "SVG's in bulk opschonen"
+
+#: views/settings-tools.php:26
+msgid "The SVG uploads directory is not writable. Bulk sanitize will not work until permissions are fixed: %s"
+msgstr "De SVG-uploadsmap is niet beschrijfbaar. Bulk opschonen werkt niet totdat de rechten zijn hersteld: %s"
+
+#: views/settings-tools.php:32
+msgid "Re-process all uploaded SVG icons through the sanitizer settings above. Files are updated in place. <br /><strong>Please note: </strong> Sanitation is irreversible. It is advised you have a backup of the wp-content/uploads/jvm-rich-text-icons just in case icons break."
+msgstr "Verwerk alle geüploade SVG-iconen opnieuw via de opschooninstellingen hierboven. Bestanden worden direct bijgewerkt. <br /><strong>Let op: </strong> Opschonen is onomkeerbaar. Maak een back-up van wp-content/uploads/jvm-rich-text-icons voor het geval iconen kapotgaan."
+
+#: views/settings-tools.php:47
+msgid "Sanitize All Icons"
+msgstr "Alle iconen opschonen"
+
+#: views/settings.php:10
+msgid "Rich Text Icons Settings"
+msgstr "Rich Text Icons instellingen"
+
+#: views/settings.php:15
+msgid "Icon Set"
+msgstr "Icoonset"
+
+#: views/settings.php:19
+msgid "Tools &amp; Settings"
+msgstr "Tools &amp; Instellingen"
+
+#: views/settings.php:41
+#: src/settings.php:371
+msgid "My SVG uploads"
+msgstr "Mijn SVG-uploads"
+
+#: views/settings.php:42
+msgid "Add Icon"
+msgstr "Icoon toevoegen"
+
+#: views/settings.php:49
+msgid "The SVG uploads directory is not writable. Uploading and deleting icons will not work until permissions are fixed: %s"
+msgstr "De SVG uploads map is niet beschrijfbaar. Het uploaden en verwijderen van iconen werkt niet totdat de rechten zijn hersteld: %s"
+
+#: views/uploader.php:43
+msgid "Drop SVG icons to upload"
+msgstr "SVG-iconen laten vallen om te uploaden"
+
+#: views/icon-list.php:29
+msgid "No custom icons have been uploaded. Please upload some SVG files to create your custom icon set."
+msgstr "Er zijn geen aangepaste iconen geüpload. Upload enkele SVG-bestanden om je eigen iconenset te maken."
+
+#: src/fields/class-jvm_acf_jvm_rich_text_icons5.php:38
+msgid "JVM Icon"
+msgstr "JVM Icoon"
+
+#: src/fields/class-jvm_acf_jvm_rich_text_icons5.php:81
+msgid "Default icon"
+msgstr "Standaardicoon"
+
+#: src/fields/class-jvm_acf_jvm_rich_text_icons5.php:87
+msgid "Choose a default icon (optional)"
+msgstr "Kies een standaardicoon (optioneel)"
+
+#: src/fields/class-jvm_acf_jvm_rich_text_icons5.php:95
+msgid "Return Value"
+msgstr "Terugkeerwaarde"
+
+#: src/fields/class-jvm_acf_jvm_rich_text_icons5.php:96
+msgid "Specify the returned value on front end"
+msgstr "Specificeer de geretourneerde waarde aan de voorkant"
+
+#: src/fields/class-jvm_acf_jvm_rich_text_icons5.php:100
+msgid "Icon Element"
+msgstr "Icoon Element"
+
+#: src/fields/class-jvm_acf_jvm_rich_text_icons5.php:101
+msgid "Icon Class"
+msgstr "Icoon Klasse"
+
+#: src/fields/class-jvm_acf_jvm_rich_text_icons5.php:106
+msgid "Allow Null?"
+msgstr "Null toestaan?"
+
+#: src/fields/class-jvm_acf_jvm_rich_text_icons5.php:111
+msgid "Yes"
+msgstr "Ja"
+
+#: src/fields/class-jvm_acf_jvm_rich_text_icons5.php:112
+msgid "No"
+msgstr "Nee"
+
+#: src/settings.php:60
+msgid "A custom icon set is being loaded from: %s. Keep your setting set to the default Font Awsome icon set to keep this working. The custom icon set can't be loaded if you are creating a SVG icon set from this page."
+msgstr "Een aangepaste icoonset wordt geladen van: %s. Houd je instelling op de standaard Font Awsome icoonset om dit te laten werken. De aangepaste icoonset kan niet worden geladen als je een SVG-icoonset maakt vanaf deze pagina."
+
+#: src/settings.php:99
+#: src/init.php:149
+msgid "Delete Icon"
+msgstr "Icoon verwijderen"
+
+#: src/settings.php:100
+msgid ""
+"You are about to permanently delete this icon from your site. This action cannot be undone.\n"
+"'Cancel' to stop 'OK' to delete."
+msgstr ""
+"U staat op het punt dit icoon permanent van uw site te verwijderen. Deze actie kan niet ongedaan worden gemaakt.\n"
+"Annuleren' om te stoppen 'OK' om te verwijderen."
+
+#: src/settings.php:101
+msgid "Sanitizing..."
+msgstr "Opschonen..."
+
+#: src/settings.php:102
+msgid "Done! %d icons processed."
+msgstr "Gereed! %d iconen verwerkt."
+
+#: src/settings.php:103
+msgid "Some icons could not be processed:"
+msgstr "Sommige iconen konden niet worden verwerkt:"
+
+#: src/settings.php:234
+msgid "Permission denied."
+msgstr "Toestemming geweigerd."
+
+#: src/settings.php:238
+msgid "Invalid nonce."
+msgstr "Ongeldige nonce."
+
+#: src/settings.php:246
+msgid "The SVG uploads directory is not writable: %s"
+msgstr "De SVG upload map is niet beschrijfbaar: %s"
+
+#: src/settings.php:273
+msgid "could not read file"
+msgstr "kon bestand niet lezen"
+
+#: src/settings.php:330
+msgid "JVM rich text icons"
+msgstr "JVM Rich Text Icons"
+
+#: src/settings.php:365
+msgid "Icon set"
+msgstr "Icoonset"
+
+#: src/settings.php:368
+msgid "Font Awesome 4.7"
+msgstr "Font Awesome 4.7"
+
+#: src/settings.php:369
+msgid "Font Awesome Free 5.15.4"
+msgstr "Font Awesome Free 5.15.4"
+
+#: src/settings.php:370
+msgid "Font Awesome Free 6.7.2"
+msgstr "Font Awesome Free 6.7.2"
+
+#: src/settings.php:402
+msgid "Render technology"
+msgstr "Rendertechnologie"
+
+#: src/settings.php:407
+msgid "Inline SVG"
+msgstr "Inline SVG"
+
+#: src/settings.php:410
+msgid "HTML + CSS"
+msgstr "HTML + CSS"
+
+#: src/settings.php:412
+msgid "HTML + CSS ::before pseudo-element"
+msgstr "HTML + CSS ::before pseudo-element"
+
+#: src/settings.php:415
+msgid "HTML + CSS ::after pseudo-element"
+msgstr "HTML + CSS ::after pseudo-element"
+
+#: src/settings.php:478
+msgid "Normalize colors"
+msgstr "Kleuren normaliseren"
+
+#: src/settings.php:479
+msgid "Replace hardcoded fill and stroke colors with currentColor so icons automatically inherit the surrounding text color. White is excluded."
+msgstr "Vervang hardgecodeerde vul- en lijnkleuren door currentColor zodat iconen automatisch de omringende tekstkleur erven. Wit is uitgesloten."
+
+#: src/settings.php:482
+msgid "Normalize viewBox"
+msgstr "ViewBox normaliseren"
+
+#: src/settings.php:483
+msgid "Derive a viewBox from width/height attributes when missing, then remove explicit width/height so the icon scales freely with CSS."
+msgstr "Leid een viewBox af van width/height-attributen als deze ontbreken en verwijder dan expliciete width/height zodat het icoon vrij schaalt met CSS."
+
+#: src/settings.php:486
+msgid "Square viewBox"
+msgstr "Vierkante viewBox"
+
+#: src/settings.php:487
+msgid "Pad non-square viewBoxes to a square canvas by centering the content. Useful when icons need uniform dimensions in a grid."
+msgstr "Zet niet-vierkante viewBoxen op een vierkant canvas door de inhoud te centreren. Nuttig wanneer iconen uniforme afmetingen nodig hebben in een raster."
+
+#: src/settings.php:490
+msgid "Remove IDs"
+msgstr "ID's verwijderen"
+
+#: src/settings.php:491
+msgid "Strip id attributes to prevent DOM collisions when the same icon appears multiple times on a page. IDs on mask elements are always preserved."
+msgstr "Strip id-attributen om DOM-botsingen te voorkomen wanneer hetzelfde icoon meerdere keren op een pagina verschijnt. ID's op maskerelementen blijven altijd behouden."
+
+#: src/settings.php:494
+msgid "Convert white masks"
+msgstr "Witte maskers omzetten"
+
+#: src/settings.php:495
+msgid "Auto-detect icons that use white shapes as cutouts and convert them to proper SVG mask elements. This ensures they render correctly with currentColor."
+msgstr "Detecteer automatisch iconen die witte vormen gebruiken als uitsnijdingen en converteer ze naar de juiste SVG-maskerelementen. Dit zorgt ervoor dat ze correct worden weergegeven met currentColor."
+
+#: src/pattern-overrides-control.js:58
+msgid "Reset override"
+msgstr "Overschrijving resetten"
+
+#: src/pattern-overrides-control.js:75
+msgid "Overrides"
+msgstr "Overschrijvingen"
+
+#: src/pattern-overrides-control.js:78
+msgid "This icon and its color can be changed in each instance of this pattern."
+msgstr "Dit pictogram en de kleur ervan kunnen in elk exemplaar van dit patroon worden aangepast."
+
+#: src/pattern-overrides-control.js:82
+msgid "Allow this icon and its color to be changed per pattern instance."
+msgstr "Maak het mogelijk om dit pictogram en de kleur ervan per patroonexemplaar aan te passen."
+
+#: src/pattern-overrides-control.js:94
+msgid "Disable overrides"
+msgstr "Overschrijvingen uitschakelen"
+
+#: src/pattern-overrides-control.js:101
+msgid "Name this block"
+msgstr "Geef dit blok een naam"
+
+#: src/pattern-overrides-control.js:116
+msgid "Enable overrides"
+msgstr "Overschrijvingen inschakelen"
+
+#: src/icon-picker.js:25
+msgid "Search"
+msgstr "Zoeken"
+
+#: src/icon-picker.js:49
+msgid "No icons found."
+msgstr "Er zijn geen pictogrammen gevonden."
+
+#: src/blocks.js:61
+#: src/controls.js:41
+#: src/controls.js:52
+msgid "Insert Icon"
+msgstr "Pictogram invoegen"
+
+#: src/blocks.js:168
+msgid "Replace"
+msgstr "Vervangen"
+
+#: src/blocks.js:169
+msgid "Replace icon"
+msgstr "Pictogram vervangen"
+
+#: src/blocks.js:175
+msgid "Icon color"
+msgstr "Kleur van het pictogram"
+
+#: src/blocks.js:185
+msgid "Remove link"
+msgstr "Link verwijderen"
+
+#: src/blocks.js:186
+msgid "Add link"
+msgstr "Link toevoegen"
+
+#: src/blocks.js:262
+msgid "Icon"
+msgstr "Pictogram"
+
+#: src/blocks.js:272
+msgid "Font Size (px)"
+msgstr "Lettergrootte (px)"
+
+#: src/blocks.js:284
+msgid "Icon Color Override"
+msgstr "Kleur van pictogram overschrijven"
+
+#: src/init.php:86
+msgid "Donate to Support"
+msgstr "Doneer om te steunen"
+
+#: src/init.php:110
+msgid "Insert icon"
+msgstr "Icoon invoegen"
+
+#: src/init.php:323
+msgid "Enjoying %1$s? Please consider %2$sleaving a review%3$s — it helps other WordPress users find this plugin."
+msgstr "Geniet je van %1$s? Overweeg dan %2$snog een recensie achter te laten%3$s — het helpt andere WordPress-gebruikers om deze plugin te vinden."
+
+#: src/svg-sanitizer.php:139
+msgid "SVG input is empty."
+msgstr "SVG-invoer is leeg."
+
+#: src/svg-sanitizer.php:146
+msgid "Failed to parse SVG."
+msgstr "SVG is niet geparseerd."
+
+#: src/svg-sanitizer.php:153
+msgid "Root element is not <svg>."
+msgstr "Root element is niet <svg>."
+
+#: src/svg-sanitizer.php:190
+msgid "SVG file not found or not readable."
+msgstr "SVG-bestand niet gevonden of niet leesbaar."
+
+#: src/svg-sanitizer.php:196
+msgid "Could not read SVG file."
+msgstr "Kan SVG-bestand niet lezen."
+
+#: src/svg-sanitizer.php:417
+msgid "Icon contains white shapes that appear to be used as masks. Consider reviewing the SVG manually."
+msgstr "Icoon bevat witte vormen die als maskers lijken te worden gebruikt. Overweeg om de SVG handmatig te bekijken."
+
+#: src/svg-sanitizer.php:420
+msgid "Icon contains white-filled elements. These have been left as-is — verify the icon renders correctly."
+msgstr "Icoon bevat witgevulde elementen. Deze zijn ongewijzigd gelaten - controleer of het icoon correct wordt weergegeven."

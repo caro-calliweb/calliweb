@@ -1,0 +1,45 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Simple Post Redirect\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-12-05 21:34+0000\n"
+"PO-Revision-Date: 2019-12-05 21:34+0000\n"
+"Last-Translator: root <agarwal29ster@gmail.com>\n"
+"Language-Team: \n"
+"Language: en_US\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Loco-Version: 2.3.1; wp-5.2.4"
+
+#. Author URI of the plugin
+msgid "http://agarwalmohit.com/"
+msgstr ""
+
+#. URI of the plugin
+msgid "http://wordpress.org/plugins/simple-post-redirect/"
+msgstr ""
+
+#. Author of the plugin
+msgid "Mohit Agarwal"
+msgstr ""
+
+#. Name of the plugin
+msgid "Simple Post Redirect"
+msgstr ""
+
+#: simple-post-redirect.php:49
+msgid "Simple Redirect to: "
+msgstr ""
+
+#. Description of the plugin
+msgid ""
+"This plugin allows you to make simple redirects of single pages of any "
+"custom post type to any url."
+msgstr ""
+
+#: simple-post-redirect.php:64
+msgid "Type a URL here."
+msgstr ""

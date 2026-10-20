@@ -1,0 +1,77 @@
+.rep-verified-badge-container {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+}
+
+.rep-verified-badge-container .verified-badge {
+    display: inline-flex; 
+    align-items: center; 
+    padding: 6px 12px; 
+    border-radius: 20px; 
+    font-size: 14px; 
+    color: #5F6368; /* Neutral gray for better contrast */
+    font-family: Arial, sans-serif; 
+    margin-top: 5px;
+    position: relative;
+}
+
+/* Verified checkmark (icon) */
+.rep-verified-badge-container .verified-badge__icon {
+    margin-right: 6px;
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+}
+
+/* Tooltip for verified badge */
+.rep-verified-badge-container .verified-badge__tooltip {
+    visibility: hidden;
+    width: 200px;
+    background-color: #555555; /* Darker gray for contrast */
+    color: #fff;
+    text-align: center;
+    border-radius: 4px;
+    padding: 8px;
+    position: absolute;
+    z-index: 1;
+    bottom: calc(100% + 10px);
+    left: 12%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    font-size: 12px;
+    line-height: 1.4;
+}
+
+/* Tooltip arrow */
+.rep-verified-badge-container .verified-badge__tooltip::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555555 transparent transparent transparent;
+}
+
+/* Show tooltip when hovering over the icon */
+.rep-verified-badge-container .verified-badge__icon:hover + .verified-badge__tooltip {
+    visibility: visible;
+    opacity: 1;
+}
+
+/* Verified text link */
+.rep-verified-badge-container .verified-badge__link {
+    color: #5F6368; /* Use gray text instead of bright blue */
+    text-decoration: none !important; 
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+/* Hover effect for verified link */
+.rep-verified-badge-container .verified-badge__link:hover {
+    color: #2C3E50; /* Darker gray-blue for subtle interaction */
+    text-decoration: none !important;
+}
