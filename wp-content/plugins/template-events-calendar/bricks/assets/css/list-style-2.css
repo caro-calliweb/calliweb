@@ -1,0 +1,467 @@
+/**
+ * Events Widget — List template / Style 2 (ect-card)
+ *
+ * See the header of ect-bricks-events-widget-base.css: this file uses no
+ * !important either, which is a known limitation for Bricks Style-panel overrides.
+ */
+
+.ect-ev .ect-card {
+	display: grid;
+	grid-template-columns: 260px minmax(0, 1fr);
+	gap: 36px;
+	align-items: stretch;
+	padding: 22px 36px 22px 22px;
+	background: var(--ect-bricks-card-bg, var(--color-card-bg));
+	border: var(--ect-bricks-card-border-width, 1px) solid var(--ect-bricks-card-border-color, var(--color-border));
+	border-radius: 22px;
+	overflow: hidden;
+	box-shadow: 0 14px 34px rgba(15, 23, 42, 0.06);
+	width: 100%;
+	--ect-bricks-meta-gap: 24px;
+	--ect-bricks-style2-part-gap: 16px;
+}
+
+.ect-ev .ect-card__img-wrap {
+	position: relative;
+	min-height: var(--ect-bricks-featured-image-min-height, 300px);
+	overflow: hidden;
+	border-radius: 12px;
+	background: var(--ect-bricks-image-placeholder-bg);
+}
+
+.ect-ev .ect-card__date-badge {
+	position: absolute;
+	top: 18px;
+	left: 16px;
+	z-index: 2;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	color: var(--ect-bricks-shell-date-color, var(--color-card-bg));
+	background: var(--ect-bricks-shell-date-bg, var(--ect-bricks-accent));
+	border-radius: 10px;
+	box-shadow: 0 10px 22px rgba(var(--ect-bricks-accent-rgb), 0.28);
+	padding: 10px 15px;
+	font-size: var(--ect-bricks-shell-date-font-size, 22px);
+	font-weight: 800;
+	line-height: var(--ect-bricks-shell-date-line-height, 1);
+	text-transform: var(--ect-bricks-shell-date-text-transform, uppercase);
+}
+
+.ect-ev .ect-card__date-badge span {
+	display: block;
+	font-size: 0.5em;
+	font-weight: inherit;
+	line-height: inherit;
+	letter-spacing: 0.04em;
+	text-transform: inherit;
+}
+
+.ect-ev .ect-card__date-badge strong {
+	display: block;
+	font-size: 1em;
+	font-weight: inherit;
+	line-height: inherit;
+	text-transform: inherit;
+}
+
+.ect-ev .ect-card__content {
+	display: flex;
+	min-width: 0;
+	flex-direction: column;
+	gap: var(--ect-bricks-style2-part-gap, 16px);
+	padding: 14px 0;
+}
+
+.ect-ev .ect-card__top {
+	display: flex;
+	align-items: center;
+	justify-content: start;
+	gap: 8px;
+	margin-bottom: var(--ect-bricks-style2-part-gap, 16px);
+	flex-wrap: wrap;
+}
+
+.ect-ev .ect-card__cat {
+	padding: 4px 16px;
+	font-size: 11px;
+}
+
+.ect-ev .ect-card__title {
+	margin: 0;
+	color: var(--ect-bricks-card-heading);
+	font-size: 25px;
+	font-weight: 700;
+	line-height: 1.12;
+}
+
+.ect-ev .ect-card__desc {
+	width: 100%;
+	max-width: 760px;
+}
+
+.ect-ev .ect-card__desc:not(.ect-has-typo-fg) {
+	color: #24334d;
+}
+
+.ect-ev .ect-card__desc:not(.ect-has-typo-size) {
+	font-size: 15px;
+	line-height: 1.55;
+}
+
+.ect-ev .ect-card__divider {
+	width: 100%;
+	height: 1px;
+	margin: var(--ect-bricks-style2-part-gap, 16px) 0;
+	background: #edf1f7;
+}
+
+.ect-ev .ect-card__content > .ect-card__meta,
+.ect-ev .ect-card__footer > :is(
+	.ect-part--read-more,
+	.ect-s2-read-more
+),
+.ect-ev__item--style-2 .ect-card__content > .ect-part:not(.ect-card__top),
+.ect-ev__item--style-2 .ect-card__top.ect-has-align,
+.ect-ev__item--style-2 .ect-card__content > .ect-part.ect-has-align,
+.ect-ev__item--style-2 .ect-card__meta-item.ect-has-align,
+.ect-ev__item--style-2 .ect-card__meta-item > .ect-part.ect-has-align,
+.ect-ev__item--style-2 .ect-card__content > .ect-s2-image.ect-has-align {
+	/* Full width so Alignments (text-align) can position content.
+	 * Wrapper chrome-neutral / pointer-events live in base. */
+	width: 100%;
+	max-width: 100%;
+}
+
+.ect-ev .ect-card__meta {
+	display: grid;
+	grid-template-columns: repeat(3, minmax(0, 1fr));
+	align-items: center;
+	column-gap: var(--ect-bricks-meta-segment-gap, var(--ect-bricks-meta-gap, 24px));
+	row-gap: var(--ect-bricks-meta-row-gap, var(--ect-bricks-meta-gap, 24px));
+	width: 100%;
+}
+
+/* Combo rows: unwrap list item wrappers so segments share one equal-width grid. */
+.ect-ev .ect-card__meta-item:has(.ect-fld__meta-group):not(.ect-meta-row--custom-chrome) {
+	display: contents;
+}
+
+.ect-ev .ect-card__meta-item:has(.ect-fld__meta-group):not(.ect-meta-row--custom-chrome) > .ect-part {
+	display: contents;
+	background: transparent;
+	border: none;
+}
+
+.ect-ev .ect-card__meta-item:has(.ect-fld__meta-group):not(.ect-meta-row--custom-chrome) .ect-fld__meta-group {
+	display: contents;
+}
+
+/* Style 2 combo alignment: each segment stays a grid column; align inside the cell. */
+.ect-ev .ect-card__meta-item:not(.ect-meta-row--custom-chrome) .ect-part.ect-has-align .ect-fld__meta-segment {
+	width: 100%;
+}
+
+.ect-ev .ect-card__meta-item:not(.ect-meta-row--custom-chrome) .ect-part.ect-align--center .ect-fld__meta-segment {
+	justify-content: center;
+}
+
+.ect-ev .ect-card__meta-item:not(.ect-meta-row--custom-chrome) .ect-part.ect-align--right .ect-fld__meta-segment {
+	justify-content: flex-end;
+}
+
+.ect-ev .ect-card__meta-item:not(.ect-meta-row--custom-chrome) .ect-part.ect-align--justify .ect-fld__meta-segment {
+	justify-content: space-between;
+}
+
+.ect-ev .ect-card__meta-item.ect-meta-row--custom-chrome:has(.ect-fld__meta-group) {
+	display: flex;
+	align-items: center;
+	grid-column: 1 / -1;
+	width: 100%;
+	min-width: 0;
+}
+
+.ect-ev .ect-card__meta-item.ect-meta-row--custom-chrome:has(.ect-fld__meta-group) > .ect-part {
+	display: flex;
+	flex: 1 1 auto;
+	align-items: center;
+	width: 100%;
+	min-width: 0;
+	background: transparent;
+	border: none;
+}
+
+.ect-ev .ect-card__meta-item.ect-meta-row--custom-chrome:has(.ect-fld__meta-group) .ect-fld__meta-group {
+	display: flex;
+	flex: 1 1 auto;
+	flex-wrap: wrap;
+	align-items: center;
+	width: 100%;
+	min-width: 0;
+	column-gap: var(--ect-bricks-meta-segment-gap, var(--ect-bricks-meta-gap, 24px));
+	row-gap: var(--ect-bricks-meta-row-gap, var(--ect-bricks-meta-gap, 24px));
+}
+
+/* Single-field meta rows (no combo) span the full grid width. */
+.ect-ev .ect-card__meta-item:not(:has(.ect-fld__meta-group)) {
+	display: flex;
+	align-items: center;
+	gap: 13px;
+	grid-column: 1 / -1;
+	min-width: 0;
+	width: 100%;
+	flex: 0 0 auto;
+	color: var(--ect-bricks-card-heading);
+	font-size: 13px;
+	font-weight: 500;
+	line-height: 1.35;
+	overflow: hidden;
+	margin: 0;
+}
+
+.ect-ev .ect-card__meta-item .ect-fld__meta-segment {
+	display: inline-flex;
+	align-items: center;
+	gap: 13px;
+	min-width: 0;
+	max-width: 100%;
+}
+
+.ect-ev .ect-card .ect-card__meta-item:not(:has(.ect-fld__meta-group)) > .ect-part {
+	display: flex;
+	align-items: center;
+	gap: 13px;
+	flex: 1 1 auto;
+	min-width: 0;
+	overflow: hidden;
+	background: transparent;
+	border: none;
+}
+
+.ect-ev .ect-card__meta-item.ect-has-align:not(:has(.ect-fld__meta-group)) > .ect-part {
+	width: 100%;
+}
+
+.ect-ev .ect-card__meta-item .ect-fld__meta-text {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.ect-ev .ect-card__meta-item .ect-fld__meta-segment > .ect-card__meta-icon,
+.ect-ev .ect-card__meta-item:not(:has(.ect-fld__meta-group)) > .ect-part > .ect-card__meta-icon {
+	flex-shrink: 0;
+}
+
+.ect-ev .ect-card__btn {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	width: fit-content;
+	max-width: 100%;
+	box-sizing: border-box;
+	padding: 14px 25px;
+	color: var(--ect-bricks-btn-fg, var(--color-card-bg));
+	background-color: var(--ect-bricks-btn-bg, var(--ect-bricks-accent));
+	border: 1px solid var(--ect-bricks-btn-border-color, var(--ect-bricks-btn-bg, var(--ect-bricks-accent)));
+	border-radius: 10px;
+	font-weight: 500;
+	text-decoration: none;
+	transition: transform var(--transition-base), background-color var(--transition-base), border-color var(--transition-base), box-shadow var(--transition-base), color var(--transition-base);
+}
+
+/* Inherit Bricks typography from the CTA wrapper; default size only when unset. */
+.ect-ev :is(.ect-part--read-more, .ect-s2-read-more) > :is(a.ect-card__btn, a.ect-fld__link.ect-card__btn) {
+	font-size: inherit;
+	line-height: inherit;
+}
+
+.ect-ev :is(.ect-part--read-more, .ect-s2-read-more):not(.ect-has-typo-size):not(.ect-has-btn) > :is(a.ect-card__btn, a.ect-fld__link.ect-card__btn) {
+	font-size: 15px;
+	line-height: 1;
+}
+
+/* Style 2 layout CTA: keep reference button chrome unless custom btn_style / typography color is enabled.
+ * Shared part-bg / hover-bg paint for CTA links lives in base. */
+.ect-ev__item--style-2 :is(
+	.ect-s2-read-more
+):not(.ect-has-btn):not(.ect-has-part-bg) a.ect-card__btn {
+	color: var(--ect-bricks-btn-fg, var(--color-card-bg));
+	background-color: var(--ect-bricks-btn-bg, var(--ect-bricks-accent));
+	border-color: var(--ect-bricks-btn-bg, var(--ect-bricks-accent));
+	text-decoration: none;
+}
+
+/* Style 2 custom btn_style: paint button vars on the link (wrapper stays chrome-neutral). */
+.ect-ev__item--style-2 :is(
+	.ect-s2-read-more,
+	.ect-part--read-more
+) {
+	&.ect-has-btn > a.ect-card__btn,
+	&.ect-has-btn > a.ect-fld__link.ect-card__btn {
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		width: fit-content;
+		max-width: 100%;
+		box-sizing: border-box;
+		padding: var(--ect-bricks-btn-padding, 14px 25px);
+		border-radius: var(--ect-bricks-btn-radius, 10px);
+		border-width: var(--ect-bricks-btn-border-width, 1px);
+		border-style: var(--ect-bricks-btn-border-style, solid);
+		border-color: var(--ect-bricks-btn-border-color, var(--ect-bricks-btn-bg, var(--ect-bricks-accent)));
+		background-color: var(--ect-bricks-btn-bg, var(--ect-bricks-accent));
+		color: var(--ect-bricks-btn-fg, var(--color-card-bg));
+		font-size: inherit;
+		line-height: inherit;
+		text-decoration: none;
+		transition: transform var(--transition-base), background-color var(--transition-base), border-color var(--transition-base), box-shadow var(--transition-base), color var(--transition-base);
+	}
+
+	&.ect-has-btn.ect-has-part-bg > a.ect-card__btn,
+	&.ect-has-btn.ect-has-part-bg > a.ect-fld__link.ect-card__btn {
+		background-color: var(--ect-bricks-btn-bg);
+		border-color: var(--ect-bricks-btn-border-color, var(--ect-bricks-btn-bg));
+	}
+}
+
+@media (max-width: 1024px) {
+	.ect-ev .ect-card {
+		grid-template-columns: 240px minmax(0, 1fr);
+		gap: 28px;
+		padding: 20px 28px 20px 20px;
+	}
+
+	.ect-ev .ect-card__img-wrap {
+		min-height: var(--ect-bricks-featured-image-min-height, 286px);
+	}
+
+	.ect-ev .ect-card__desc:not(.ect-has-typo-size) {
+		font-size: 16px;
+	}
+
+	.ect-ev .ect-card__btn {
+		width: fit-content;
+		min-width: 208px;
+	}
+}
+
+@media (max-width: 767px) {
+	.ect-ev .ect-card {
+		grid-template-columns: 1fr;
+		gap: 20px;
+		padding: 16px;
+		--ect-bricks-meta-gap: 16px;
+	}
+
+	.ect-ev .ect-card__img-wrap {
+		min-height: auto;
+		aspect-ratio: 16 / 10;
+	}
+
+	.ect-ev .ect-card__content {
+		padding: 0 2px 2px;
+	}
+
+	.ect-ev .ect-card__top {
+		align-items: flex-start;
+		margin-bottom: 16px;
+	}
+
+	.ect-ev .ect-card__title {
+		font-size: 22px;
+	}
+
+	.ect-ev .ect-card__desc:not(.ect-has-typo-size) {
+		font-size: 15px;
+		margin: 0;
+	}
+
+	.ect-ev .ect-card__divider {
+		margin: 20px 0 18px;
+	}
+
+	.ect-ev .ect-card__meta-item:not(:has(.ect-fld__meta-group)),
+	.ect-ev .ect-card__btn {
+		min-width: 0;
+		width: 100%;
+	}
+
+	.ect-ev .ect-card .ect-card__meta-item:not(:has(.ect-fld__meta-group)) > .ect-part {
+		white-space: normal;
+		overflow: visible;
+		text-overflow: clip;
+	}
+}
+
+@media (max-width: 480px) {
+	.ect-ev .ect-card {
+		border-radius: 18px;
+		padding: 14px;
+	}
+
+	.ect-ev .ect-card__img-wrap {
+		aspect-ratio: 16 / 11;
+		border-radius: 10px;
+	}
+
+	.ect-ev .ect-card__top {
+		flex-direction: column;
+		gap: 10px;
+	}
+
+	.ect-ev .ect-card__title {
+		font-size: 20px;
+		letter-spacing: -0.03em;
+	}
+
+	.ect-ev .ect-card__desc:not(.ect-has-typo-size) {
+		font-size: 14px;
+	}
+
+	.ect-ev .ect-card__date-badge {
+		top: 12px;
+		left: 12px;
+		padding: 8px 12px;
+	}
+}
+
+/*
+ * Layout default hovers (Style 2) — only when Style tab hover colors are not set.
+ * Scoped to style-2 items so Style 1 layout hovers stay independent.
+ */
+.ect-ev__item--style-2 :is(
+	.ect-part,
+	.ect-s2-read-more
+) {
+	&:not(.ect-has-btn):not(.ect-has-hover-fg):not(.ect-has-hover-bg):not([class*="ect-part-hover--"]) a.ect-card__btn:hover,
+	&:not(.ect-has-btn):not(.ect-has-hover-fg):not(.ect-has-hover-bg):not([class*="ect-part-hover--"]) > a.ect-card__btn:hover,
+	&:not(.ect-has-btn):not(.ect-has-hover-fg):not(.ect-has-hover-bg):not([class*="ect-part-hover--"]) a.ect-fld__link.ect-card__btn:hover {
+		color: var(--color-card-bg) !important;
+		background-color: var(--ect-bricks-accent-dark);
+		border-color: var(--ect-bricks-accent-dark);
+		box-shadow: 0 12px 24px rgba(var(--ect-bricks-accent-rgb), 0.26);
+		transform: translateY(-2px);
+	}
+}
+
+.ect-ev__item--style-2 .ect-card__top:not(.ect-no-hover) a.ect-card__cat:hover,
+.ect-ev__item--style-2 .ect-card__top:not(.ect-no-hover) a.ect-card__cat:focus-visible {
+	color: var(--ect-bricks-hover-fg, var(--ect-bricks-accent));
+}
+
+.ect-ev__item--style-2 .ect-card__top:not(.ect-no-hover):not(.ect-has-hover-bg) a.ect-card__cat:hover,
+.ect-ev__item--style-2 .ect-card__top:not(.ect-no-hover):not(.ect-has-hover-bg) a.ect-card__cat:focus-visible {
+	background-color: var(--ect-bricks-accent-soft, #d4e4ff);
+}
+
+/* Default Style 2 category hover: chip only — not the full __top row. */
+.ect-ev__item--style-2 .ect-card__top:not(.ect-no-hover):not(.ect-has-hover-fg):hover a.ect-card__cat:not(:hover):not(:focus-visible) {
+	color: inherit;
+}
+
+.ect-ev__item--style-2 .ect-card__top:not(.ect-no-hover):not(.ect-has-hover-bg):hover a.ect-card__cat:not(:hover):not(:focus-visible) {
+	background-color: var(--ect-bricks-chip-bg);
+}

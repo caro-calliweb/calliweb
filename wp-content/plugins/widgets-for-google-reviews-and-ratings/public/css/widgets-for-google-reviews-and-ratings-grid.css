@@ -1,0 +1,484 @@
+.repocean-grid-main .content-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+.repocean-grid-main h1,
+.repocean-grid-main h2,
+.repocean-grid-main h3,
+.repocean-grid-main h4,
+.repocean-grid-main h5,
+.repocean-grid-main h6,
+.repocean-grid-main p {
+    margin: 0;
+}
+.repocean-grid-main strong {
+    font-weight: 700;
+}
+.repocean-grid-main .grid-outer {
+    padding: 5px 0;
+}
+.repocean-grid-main .title {
+    padding: 0px 0 20px 0;
+    text-align: center;
+}
+.repocean-grid-main .title h4 {
+    font-size: 14px;
+    line-height: 1.45;
+    font-weight: 400;
+    color: #999999;
+}
+.repocean-grid-main .grid-box-parent {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -8px;
+}
+.repocean-grid-main .grid-box-parent .grid-box {
+    width: calc(33.33% - 16px);
+    margin: 8px;
+    display: flex;
+    min-width: 315px;
+    display:none;
+    opacity: 0;
+}
+.repocean-grid-main .grid-box-inner {
+    padding: 20px;
+    background: var(--repocean-bg, #f6f6f6);
+    border: 1px solid var(--repocean-border, #f6f6f6);
+    border-radius: var(--repocean-radius, 12px);
+    transition: 400ms all;
+    transform: translate(0);
+    display: block;
+    width: 100%;
+}
+.repocean-grid-main .grid-box-inner:hover {
+    transform: translate(0, -5px);
+}
+.repocean-grid-main .img-text-content {
+    display: flex;
+    justify-content: space-between;
+}
+.repocean-grid-main .img-text-content .right-img {
+    width: 20px;
+    height: 20px;
+}
+.repocean-grid-main .img-text-content .right-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+.repocean-grid-main .profile-img-info {
+    display: flex;
+    gap: 15px;
+}
+.repocean-grid-main .profile-info {
+    flex-direction: column;
+    justify-content: center;
+    display: flex;
+}
+.repocean-grid-main .profile-img {
+    max-width: 40px;
+    max-height: 40px;
+    border-radius: 100%;
+}
+.repocean-grid-main .profile-img img {
+    display: block;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 100%;
+}
+.repocean-grid-main .profile-info .profile-title h6 {
+    font-size: 15px;
+    font-weight: bold;
+    color: #000000;
+    margin-bottom: 2px;
+    text-transform: none;
+    padding-bottom: 0px;
+}
+.repocean-grid-main .grid-box-parent .grid-box .grid-box-inner .description {
+    font-size: 14px;
+    line-height: 1.45;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+}
+.repocean-grid-main .grid-box-parent .grid-box .grid-box-inner .description p {
+    font-size: inherit;
+    line-height: inherit;
+}
+.repocean-grid-main .grid-box-parent .grid-box .grid-box-inner .description .more-content {
+    font-size: inherit;
+    line-height: inherit;
+    display: inline;
+}
+/* 4 lines when there are no photos */
+.repocean-grid-main .grid-box-parent .grid-box .grid-box-inner .description.max4line {
+    overflow: hidden;
+    max-height: calc(var(--repocean-lines, 5) * 1.45em); /* lines x 1.45 line-height */
+    min-height: calc(var(--repocean-lines, 5) * 1.45em);
+    transition: max-height 0.5s ease;
+}
+/* Review Text Lines minus 3 when the review has photos */
+.repocean-grid-main .grid-box-parent .grid-box .grid-box-inner .description.max1line {
+    overflow: hidden;
+    max-height: calc(var(--repocean-lines-photo, 2) * 1.45em); /* (lines - 3) x 1.45 line-height */
+    min-height: calc(var(--repocean-lines-photo, 2) * 1.45em);
+    transition: max-height 0.5s ease;
+}
+.repocean-grid-main .button-content.hide {
+    display: none;
+}
+/* Read more hidden but space kept, so photos stay aligned across cards */
+.repocean-grid-main .button-content.is-placeholder {
+    visibility: hidden;
+}
+.repocean-grid-main .button-content .readmore-button a {
+    font-size: 13px;
+    text-decoration: none;
+    color: #474747;
+    font-weight: 400;
+    line-height: 1.45;
+    transition: 400ms all;
+    display: block;
+    padding-top: 5px;
+    width: fit-content;
+    opacity: 0.5;
+}
+
+.repocean-grid-main .button-content .readmore-button a:hover {
+    opacity: 1;
+    text-decoration: underline !important;
+}
+.repocean-grid-main .review-box-parent {
+    margin-bottom: 8px;
+    margin-top: 15px;
+    text-align: left;
+    display: flex;
+    align-items: center;
+}
+.repocean-grid-main .review-box {
+    width: 17px;
+    padding-right: 2px;
+}
+
+.repocean-grid-main .review-box {
+    position: relative;
+    width: 85px; /* 5 stars, each 17px wide */
+    height: 17px; /* Height of the stars */
+    overflow: hidden;
+    --star-color: #800080; /* Default filled star color */
+    --empty-star-color: #e0e0e0; /* Default empty star color */
+    --rating: 5.0;
+}
+
+/* Empty Stars */
+.repocean-grid-main .review-box::after {
+    content: '';
+    display: block;
+    height: 100%;
+    background-color: var(--empty-star-color); /* Dynamic empty star color */
+    mask: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/></svg>') repeat-x;
+    -webkit-mask: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/></svg>') repeat-x;
+    mask-size: 17px 17px;
+    -webkit-mask-size: 17px 17px;
+    width: 85px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1; /* Ensure it is below filled stars */
+}
+
+/* Filled Stars */
+.repocean-grid-main .review-box::before {
+    content: '';
+    display: block;
+    height: 100%;
+    background-color: var(--star-color); /* Dynamic filled star color */
+    mask: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/></svg>') repeat-x;
+    -webkit-mask: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/></svg>') repeat-x;
+    mask-size: 17px 17px;
+    -webkit-mask-size: 17px 17px;
+    width: calc(var(--rating) * 17px); /* Dynamic width based on rating */
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2; /* Ensure it is above empty stars */
+}
+
+.repocean-grid-main .verified-icon-box {
+    margin-left: 7px;
+    height: 15px;
+    width: 15px;
+    display: inline-block;
+    background: url("images/rep-verified.svg");
+    background-size: auto;
+    background-size: contain;
+    position: relative;
+    z-index: 2;
+    cursor: pointer;
+}
+
+.repocean-verified-tooltip {
+    visibility: hidden;
+    opacity: 0;
+    width: 200px; /* Adjust tooltip width as needed */
+    text-align: center;
+    padding: 8px;
+    border-radius: 6px;
+    position: absolute;
+    top: 30px; /* Center tooltip vertically */
+    left: calc(100% + 10px); /* Position tooltip to the right with a 10px gap */
+    transform: translateY(-50%); /* Center tooltip vertically */
+    z-index: 10;
+    font-size: 12px;
+    white-space: normal;
+    color: #fff !important;
+    background-color: #555555 !important;
+    transition: opacity 0.3s ease-in-out, margin 0.3s ease-in-out;
+    line-height: 1.4em;
+    font-size: 10px;
+}
+
+.repocean-verified-tooltip::after {
+    content: "";
+    position: absolute;
+    top: 20%;
+    left: -10px;
+    transform: translateY(-50%);
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent #555555 transparent transparent;
+
+}
+
+.verified-icon-box:hover .repocean-verified-tooltip {
+    visibility: visible;
+    opacity: 1;
+}
+
+.review-box img {
+    display: block;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.repocean-grid-main .button a {
+    font-size: 13px;
+    text-decoration: none;
+    color: #474747;
+    font-weight: 400;
+    line-height: 1.45;
+    transition: 400ms all;
+    display: block;
+    padding-top: 5px;
+    width: fit-content;
+}
+.repocean-grid-main .button a:hover {
+    text-decoration: underline;
+}
+.repocean-grid-main .profile-date p {
+    font-size: 12px;
+    color: #474747;
+}
+.repocean-grid-main div.review-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    justify-content: center;
+    padding: 20px 0;
+}
+.repocean-grid-main  div.review-link .review-box-parent {
+    margin: 0;
+    padding: 0 4px;
+}
+.repocean-grid-main span.nowrap {
+    display: block;
+}
+.repocean-grid-main .review-link .gi-small-logo {
+    width: 66px;
+    padding-left: 7px;
+}
+.repocean-grid-main div.review-link .gi-small-logo img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+}
+.repocean-grid-main .bottom-review-us {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+.repocean-grid-main .bottom-review-us .bottom-review-us-btn {
+    display: inline-block;
+    background-color: #4285f4;
+    padding: 9.5px 13.5px;
+    border-radius: 4px;
+    border: 1px solid #4285f4;
+    color: #ffffff;
+    font-weight: bold;
+    text-decoration: none !important;
+    line-height: 1;
+    font-size: 13px;
+}
+.repocean-grid-main .bottom-review-us .bottom-review-us-btn:hover {
+    background-color: #1266f1;
+    border-color: #1266f1;
+}
+.repocean-grid-main .load-more-btn {
+    border-style: solid;
+    border-color: #f4f4f4;
+    color: #000000;
+    background: #f4f4f4;
+    background-color: rgb(244, 244, 244);
+    border-radius: 4px;
+    padding: 10px 20px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    margin: 16px auto;
+    display: flex;
+}
+.repocean-grid-main .load-more-btn:hover {
+    background-color: #dbdbdb !important;
+    border-color: #dbdbdb !important;
+}
+
+.repocean-grid-main .load-more-btn:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+.repocean-grid-main .grid-box.show {
+    display: flex;
+    opacity: 1;
+}
+
+@media(max-width:1199px) {
+    .repocean-grid-main .grid-outer {
+        max-width: 900px;
+        margin: 0 auto;
+    }
+}
+@media(max-width:991px) {
+    .repocean-grid-main .grid-box-parent .grid-box {
+        width: calc(50% - 16px);
+    }
+}
+@media(max-width:767px) {
+    .repocean-grid-main .title {
+        padding: 30px 0 10px 0;
+    }
+    .repocean-grid-main .slick-list.draggable {
+        margin: 0 4px;
+    }
+    .repocean-grid-main .grid-box-parent .grid-box {
+        width: calc(100% - 16px);
+    }
+    .excellent-text,
+    .review-box-parent {
+        display: block;
+        text-align: center;
+    }
+    .review-text {
+        margin-top: 5px;
+    }
+    .gi-small-logo {
+        margin-top: 10px;
+    }
+}
+@media only screen and (max-width: 400px) {
+    .repocean-grid-main .review-link {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .repocean-grid-main .review-box-parent {
+        display: inline-flex;
+        justify-content: center;
+        margin-bottom: 5px;
+    }
+    .repocean-grid-main .excellent-text {
+        margin-bottom: 5px;
+        display: inline-block;
+    }
+    .repocean-grid-main .review-text {
+        margin-top: 5px;
+        display: block;
+        text-align: center;
+    }
+    .repocean-grid-main .gi-small-logo {
+        display: block;
+        margin-top: 0px;
+        text-align: center;
+    }
+    .repocean-grid-main .grid-box-parent .grid-box {
+        min-width: auto;
+    }
+}
+
+.repocean-grid-main.dark .grid-box-inner {
+    background-color: #222222 !important;
+    color: #ffffff;
+}
+.repocean-grid-main.dark .profile-info .profile-title h6 {
+    background-color: #222222 !important;
+    color: #ffffff;
+}
+.repocean-grid-main.dark .profile-date p {
+    background-color: #222222 !important;
+    color: #ffffff;
+}
+.repocean-grid-main.dark .button-content .readmore-button a {
+    color: #ffffff;
+    opacity: 0.5;
+}
+.repocean-grid-main.dark .review-sub-title,
+.repocean-grid-main.dark .review-sub-title strong {
+    color: #666;
+}
+.repocean-grid-main .description.max4line {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: var(--repocean-lines, 5);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 1.5em;
+    max-height: calc(var(--repocean-lines, 5) * 1.5em);
+}
+.repocean-grid-main .description.max4line.expanding,
+.repocean-grid-main .description.max4line.expanded {
+    -webkit-line-clamp: unset;
+    display: block;
+    overflow: hidden;
+}
+.repocean-grid-main .description.max1line {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: var(--repocean-lines-photo, 2);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 1.5em;
+    max-height: calc(var(--repocean-lines-photo, 2) * 1.5em);
+}
+.repocean-grid-main .description.max1line.expanding,
+.repocean-grid-main .description.max1line.expanded {
+    -webkit-line-clamp: unset;
+    display: block;
+    overflow: hidden;
+}
+.repocean-review-photos {
+  display: flex;
+  gap: 6px;
+  margin-top: 8px;
+}
+
+.repocean-review-photos img {
+  width: 64px;
+  height: 64px !important;
+  object-fit: cover;
+  border-radius: 6px;
+  cursor: pointer;
+}

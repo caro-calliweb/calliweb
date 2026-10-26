@@ -1,0 +1,115 @@
+/* Review photo lightbox — shared across all layouts, fully namespaced */
+.repocean-lightbox {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 999999;
+    background: rgba(0, 0, 0, 0.85);
+    align-items: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-box-pack: center;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+}
+.repocean-lightbox.is-open {
+    display: flex;
+    opacity: 1;
+}
+body.repocean-lightbox-open {
+    overflow: hidden;
+}
+.repocean-lightbox-stage {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.repocean-lightbox-img {
+    width: 88vw;
+    height: 88vh;
+    object-fit: contain;
+    display: block;
+}
+.repocean-lightbox-counter {
+    position: absolute;
+    top: 22px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    pointer-events: none;
+    text-shadow: 0 1px 4px rgba(0, 0, 0, 0.6);
+}
+.repocean-lightbox-close,
+.repocean-lightbox-nav {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.18);
+    color: #ffffff;
+    cursor: pointer;
+    padding: 0;
+    transition: background 0.2s ease;
+}
+.repocean-lightbox-close:hover,
+.repocean-lightbox-nav:hover {
+    background: rgba(255, 255, 255, 0.32);
+}
+.repocean-lightbox-close {
+    top: 18px;
+    right: 18px;
+    width: 44px;
+    height: 44px;
+    font-size: 28px;
+    line-height: 1;
+}
+.repocean-lightbox-nav {
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50px;
+    height: 50px;
+}
+.repocean-lightbox-prev {
+    left: 24px;
+}
+.repocean-lightbox-next {
+    right: 24px;
+}
+/* Chevrons drawn with borders (no image), same technique as the slider arrows */
+.repocean-lightbox-nav::after {
+    content: "";
+    width: 11px;
+    height: 11px;
+    border-top: 2px solid #ffffff;
+    border-right: 2px solid #ffffff;
+    border-radius: 1px;
+}
+.repocean-lightbox-prev::after {
+    transform: rotate(-135deg);
+    margin-left: 4px;
+}
+.repocean-lightbox-next::after {
+    transform: rotate(45deg);
+    margin-right: 4px;
+}
+@media (max-width: 600px) {
+    .repocean-lightbox-img {
+        width: 94vw;
+        height: 82vh;
+    }
+    .repocean-lightbox-prev {
+        left: 10px;
+    }
+    .repocean-lightbox-next {
+        right: 10px;
+    }
+}

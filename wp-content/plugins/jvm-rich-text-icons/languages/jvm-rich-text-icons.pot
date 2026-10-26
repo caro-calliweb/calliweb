@@ -1,0 +1,352 @@
+# Copyright (C) 2026 Joris van Montfort
+# This file is distributed under the same license as the theme.
+msgid ""
+msgstr ""
+"Project-Id-Version: WordPress theme\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-25 09:41:31+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2026-06-25 09:41:31+00:00\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+
+
+#: views/settings-tools.php:6
+msgid "SVG Uploads"
+msgstr ""
+
+#: views/settings-tools.php:7
+msgid "All SVG uploads are sanitized for security and can undergo additional processing. This is especially useful when using the Inline SVG render technology."
+msgstr ""
+
+#: views/settings-tools.php:14
+msgid "Save Settings"
+msgstr ""
+
+#: views/settings-tools.php:20
+msgid "Bulk Sanitize SVGs"
+msgstr ""
+
+#: views/settings-tools.php:26
+msgid "The SVG uploads directory is not writable. Bulk sanitize will not work until permissions are fixed: %s"
+msgstr ""
+
+#: views/settings-tools.php:32
+msgid "Re-process all uploaded SVG icons through the sanitizer settings above. Files are updated in place. <br /><strong>Please note: </strong> Sanitation is irreversible. It is advised you have a backup of the wp-content/uploads/jvm-rich-text-icons just in case icons break."
+msgstr ""
+
+#: views/settings-tools.php:47
+msgid "Sanitize All Icons"
+msgstr ""
+
+#: views/settings.php:10
+msgid "Rich Text Icons Settings"
+msgstr ""
+
+#: views/settings.php:15
+msgid "Icon Set"
+msgstr ""
+
+#: views/settings.php:19
+msgid "Tools &amp; Settings"
+msgstr ""
+
+#: views/settings.php:41
+#: src/settings.php:371
+msgid "My SVG uploads"
+msgstr ""
+
+#: views/settings.php:42
+msgid "Add Icon"
+msgstr ""
+
+#: views/settings.php:49
+msgid "The SVG uploads directory is not writable. Uploading and deleting icons will not work until permissions are fixed: %s"
+msgstr ""
+
+#: views/uploader.php:43
+msgid "Drop SVG icons to upload"
+msgstr ""
+
+#: views/icon-list.php:29
+msgid "No custom icons have been uploaded. Please upload some SVG files to create your custom icon set."
+msgstr ""
+
+#: src/fields/class-jvm_acf_jvm_rich_text_icons5.php:38
+msgid "JVM Icon"
+msgstr ""
+
+#: src/fields/class-jvm_acf_jvm_rich_text_icons5.php:81
+msgid "Default icon"
+msgstr ""
+
+#: src/fields/class-jvm_acf_jvm_rich_text_icons5.php:87
+msgid "Choose a default icon (optional)"
+msgstr ""
+
+#: src/fields/class-jvm_acf_jvm_rich_text_icons5.php:95
+msgid "Return Value"
+msgstr ""
+
+#: src/fields/class-jvm_acf_jvm_rich_text_icons5.php:96
+msgid "Specify the returned value on front end"
+msgstr ""
+
+#: src/fields/class-jvm_acf_jvm_rich_text_icons5.php:100
+msgid "Icon Element"
+msgstr ""
+
+#: src/fields/class-jvm_acf_jvm_rich_text_icons5.php:101
+msgid "Icon Class"
+msgstr ""
+
+#: src/fields/class-jvm_acf_jvm_rich_text_icons5.php:106
+msgid "Allow Null?"
+msgstr ""
+
+#: src/fields/class-jvm_acf_jvm_rich_text_icons5.php:111
+msgid "Yes"
+msgstr ""
+
+#: src/fields/class-jvm_acf_jvm_rich_text_icons5.php:112
+msgid "No"
+msgstr ""
+
+#: src/settings.php:60
+msgid "A custom icon set is being loaded from: %s. Keep your setting set to the default Font Awsome icon set to keep this working. The custom icon set can't be loaded if you are creating a SVG icon set from this page."
+msgstr ""
+
+#: src/settings.php:99
+#: src/init.php:149
+msgid "Delete Icon"
+msgstr ""
+
+#: src/settings.php:100
+msgid ""
+"You are about to permanently delete this icon from your site. This action cannot be undone.\n"
+"'Cancel' to stop 'OK' to delete."
+msgstr ""
+
+#: src/settings.php:101
+msgid "Sanitizing..."
+msgstr ""
+
+#: src/settings.php:102
+msgid "Done! %d icons processed."
+msgstr ""
+
+#: src/settings.php:103
+msgid "Some icons could not be processed:"
+msgstr ""
+
+#: src/settings.php:234
+msgid "Permission denied."
+msgstr ""
+
+#: src/settings.php:238
+msgid "Invalid nonce."
+msgstr ""
+
+#: src/settings.php:246
+msgid "The SVG uploads directory is not writable: %s"
+msgstr ""
+
+#: src/settings.php:273
+msgid "could not read file"
+msgstr ""
+
+#: src/settings.php:330
+msgid "JVM rich text icons"
+msgstr ""
+
+#: src/settings.php:365
+msgid "Icon set"
+msgstr ""
+
+#: src/settings.php:368
+msgid "Font Awesome 4.7"
+msgstr ""
+
+#: src/settings.php:369
+msgid "Font Awesome Free 5.15.4"
+msgstr ""
+
+#: src/settings.php:370
+msgid "Font Awesome Free 6.7.2"
+msgstr ""
+
+#: src/settings.php:402
+msgid "Render technology"
+msgstr ""
+
+#: src/settings.php:407
+msgid "Inline SVG"
+msgstr ""
+
+#: src/settings.php:410
+msgid "HTML + CSS"
+msgstr ""
+
+#: src/settings.php:412
+msgid "HTML + CSS ::before pseudo-element"
+msgstr ""
+
+#: src/settings.php:415
+msgid "HTML + CSS ::after pseudo-element"
+msgstr ""
+
+#: src/settings.php:478
+msgid "Normalize colors"
+msgstr ""
+
+#: src/settings.php:479
+msgid "Replace hardcoded fill and stroke colors with currentColor so icons automatically inherit the surrounding text color. White is excluded."
+msgstr ""
+
+#: src/settings.php:482
+msgid "Normalize viewBox"
+msgstr ""
+
+#: src/settings.php:483
+msgid "Derive a viewBox from width/height attributes when missing, then remove explicit width/height so the icon scales freely with CSS."
+msgstr ""
+
+#: src/settings.php:486
+msgid "Square viewBox"
+msgstr ""
+
+#: src/settings.php:487
+msgid "Pad non-square viewBoxes to a square canvas by centering the content. Useful when icons need uniform dimensions in a grid."
+msgstr ""
+
+#: src/settings.php:490
+msgid "Remove IDs"
+msgstr ""
+
+#: src/settings.php:491
+msgid "Strip id attributes to prevent DOM collisions when the same icon appears multiple times on a page. IDs on mask elements are always preserved."
+msgstr ""
+
+#: src/settings.php:494
+msgid "Convert white masks"
+msgstr ""
+
+#: src/settings.php:495
+msgid "Auto-detect icons that use white shapes as cutouts and convert them to proper SVG mask elements. This ensures they render correctly with currentColor."
+msgstr ""
+
+#: src/pattern-overrides-control.js:58
+msgid "Reset override"
+msgstr ""
+
+#: src/pattern-overrides-control.js:75
+msgid "Overrides"
+msgstr ""
+
+#: src/pattern-overrides-control.js:78
+msgid "This icon and its color can be changed in each instance of this pattern."
+msgstr ""
+
+#: src/pattern-overrides-control.js:82
+msgid "Allow this icon and its color to be changed per pattern instance."
+msgstr ""
+
+#: src/pattern-overrides-control.js:94
+msgid "Disable overrides"
+msgstr ""
+
+#: src/pattern-overrides-control.js:101
+msgid "Name this block"
+msgstr ""
+
+#: src/pattern-overrides-control.js:116
+msgid "Enable overrides"
+msgstr ""
+
+#: src/icon-picker.js:25
+msgid "Search"
+msgstr ""
+
+#: src/icon-picker.js:49
+msgid "No icons found."
+msgstr ""
+
+#: src/blocks.js:61
+#: src/controls.js:41
+#: src/controls.js:52
+msgid "Insert Icon"
+msgstr ""
+
+#: src/blocks.js:168
+msgid "Replace"
+msgstr ""
+
+#: src/blocks.js:169
+msgid "Replace icon"
+msgstr ""
+
+#: src/blocks.js:175
+msgid "Icon color"
+msgstr ""
+
+#: src/blocks.js:185
+msgid "Remove link"
+msgstr ""
+
+#: src/blocks.js:186
+msgid "Add link"
+msgstr ""
+
+#: src/blocks.js:262
+msgid "Icon"
+msgstr ""
+
+#: src/blocks.js:272
+msgid "Font Size (px)"
+msgstr ""
+
+#: src/blocks.js:284
+msgid "Icon Color Override"
+msgstr ""
+
+#: src/init.php:86
+msgid "Donate to Support"
+msgstr ""
+
+#: src/init.php:110
+msgid "Insert icon"
+msgstr ""
+
+#: src/init.php:323
+msgid "Enjoying %1$s? Please consider %2$sleaving a review%3$s — it helps other WordPress users find this plugin."
+msgstr ""
+
+#: src/svg-sanitizer.php:139
+msgid "SVG input is empty."
+msgstr ""
+
+#: src/svg-sanitizer.php:146
+msgid "Failed to parse SVG."
+msgstr ""
+
+#: src/svg-sanitizer.php:153
+msgid "Root element is not <svg>."
+msgstr ""
+
+#: src/svg-sanitizer.php:190
+msgid "SVG file not found or not readable."
+msgstr ""
+
+#: src/svg-sanitizer.php:196
+msgid "Could not read SVG file."
+msgstr ""
+
+#: src/svg-sanitizer.php:417
+msgid "Icon contains white shapes that appear to be used as masks. Consider reviewing the SVG manually."
+msgstr ""
+
+#: src/svg-sanitizer.php:420
+msgid "Icon contains white-filled elements. These have been left as-is — verify the icon renders correctly."
+msgstr ""

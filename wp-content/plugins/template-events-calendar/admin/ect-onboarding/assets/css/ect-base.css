@@ -1,0 +1,318 @@
+/* =========================================================================
+   Events Calendar Addons — Admin UI base styles
+   Design system tokens + shell + primitives.
+   Class prefix: ect-
+
+   NOTE: trimmed to the primitives actually used by the Shortcodes & Blocks
+   onboarding wizard (wizard-shortcodes-blocks.html) — tokens, buttons,
+   pills, cross-sell chrome and the Preview Mode toggle. The dashboard-only
+   components (admin header, hero, workflow cards, catalog, premium grid,
+   promo box, info cards, banner, etc.) were removed as dead code.
+   ========================================================================= */
+
+:root {
+  /* Brand — primary blue */
+  --ect-primary: #0693E3;
+  --ect-primary-hover: #0072B3;
+  --ect-primary-active: #005F95;
+  --ect-primary-soft: #E6F4FC;
+  --ect-primary-soft-hover: #D1EAF8;
+  --ect-primary-border: #BBE0F4;
+
+  /* Brand — orange accent (RESERVED for Pro / upgrade CTAs only) */
+  --ect-accent: #E3680B;
+  --ect-accent-hover: #BC580B;
+  --ect-accent-active: #9C490A;
+  --ect-accent-soft: #FCEFE0;
+  --ect-accent-soft-hover: #F7E1C8;
+  --ect-accent-border: #F2D2B0;
+
+  /* Brand — success (activated / installed) */
+  --ect-success: #35B572;
+  --ect-success-soft: #E6F7EE;
+  --ect-success-border: #B6E5CC;
+
+  /* Text */
+  --ect-text: #020E21;
+  --ect-text-muted: #4B5563;
+  --ect-text-soft: #6B7280;
+
+  /* Surfaces */
+  --ect-bg: #F5F7FA;
+  --ect-card-bg: #FFFFFF;
+  --ect-border: #D7DEE5;
+  --ect-border-soft: #E6EBF0;
+
+  /* Disabled */
+  --ect-disabled-bg: #F3F4F6;
+  --ect-disabled-text: #667085;
+  --ect-disabled-border: #E5E7EB;
+
+  /* Focus — do not change */
+  --ect-focus: #F59E0B;
+
+  /* Radius */
+  --ect-radius-sm: 8px;
+  --ect-radius-md: 12px;
+  --ect-radius-lg: 16px;
+
+  /* Shadow */
+  --ect-shadow-sm: 0 1px 2px rgba(2, 14, 33, 0.06);
+  --ect-shadow-md: 0 12px 28px rgba(2, 14, 33, 0.08);
+  --ect-shadow-header: 0 2px 14px rgba(2, 14, 33, 0.06);
+
+  /* Spacing scale (use numbers; do not bake into tokens for everything) */
+  --ect-space-1: 4px;
+  --ect-space-2: 8px;
+  --ect-space-3: 12px;
+  --ect-space-4: 16px;
+  --ect-space-5: 20px;
+  --ect-space-6: 24px;
+  --ect-space-8: 32px;
+}
+
+/* -------------------------------------------------------------------------
+   Reset + base
+   ------------------------------------------------------------------------- */
+
+.ect-wizard-shell, .ect-wizard-shell * { box-sizing: border-box; }
+.ect-wizard-shell {
+  min-height: 100vh;
+  background: var(--ect-bg);
+  color: var(--ect-text);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+/* Ensure HTML [hidden] always wins over author display rules
+   (Dashicons, our inline-flex pills, grid containers, etc).
+   Per HTML spec recommendation. */
+.ect-wizard-shell [hidden] { display: none !important; }
+
+/* -------------------------------------------------------------------------
+   Cards (shared chrome) — trimmed to the cross-sell card used on Step 4
+   ------------------------------------------------------------------------- */
+
+.ect-cross-sell {
+  background: var(--ect-card-bg);
+  border: 1px solid var(--ect-border-soft);
+  border-radius: var(--ect-radius-lg);
+  box-shadow: var(--ect-shadow-sm);
+}
+
+.ect-cross-sell__title {
+  margin: 0;
+  font-size: 19px;
+  line-height: 1.35;
+  font-weight: 650;
+  letter-spacing: -0.01em;
+}
+
+/* -------------------------------------------------------------------------
+   Buttons
+   ------------------------------------------------------------------------- */
+
+/* Base button styles — use plain class selectors so variant rules
+   below match specificity (0,1,0) and their border-color etc. wins. */
+.ect-btn-primary,
+.ect-btn-secondary,
+.ect-btn-accent,
+.ect-btn-ghost,
+.ect-btn-disabled {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  min-height: 42px;
+  padding: 10px 18px;
+  border: 1px solid transparent;
+  border-radius: 6px;
+  cursor: pointer;
+  font: inherit;
+  font-size: 14px;
+  line-height: 1.35;
+  font-weight: 600;
+  text-align: center;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: background-color 0.15s ease, border-color 0.15s ease, color 0.15s ease, box-shadow 0.15s ease, transform 0.05s ease;
+}
+
+.ect-btn-primary {
+  background: var(--ect-primary);
+  border-color: var(--ect-primary);
+  color: #fff;
+  box-shadow: 0 1px 2px rgba(6, 147, 227, 0.22);
+}
+.ect-btn-primary:hover,
+.ect-btn-primary:visited { color: #fff; text-decoration: none; }
+.ect-btn-primary:hover { background: var(--ect-primary-hover); border-color: var(--ect-primary-hover); }
+.ect-btn-primary:active { background: var(--ect-primary-active); border-color: var(--ect-primary-active); transform: translateY(1px); }
+
+.ect-btn-secondary {
+  background: #fff;
+  border-color: var(--ect-primary);
+  color: var(--ect-primary);
+  box-shadow: 0 1px 2px rgba(6, 147, 227, 0.10);
+}
+.ect-btn-secondary:hover,
+.ect-btn-secondary:visited { text-decoration: none; }
+.ect-btn-secondary:hover { background: var(--ect-primary-soft); border-color: var(--ect-primary-hover); color: var(--ect-primary-hover); }
+.ect-btn-secondary:active { background: var(--ect-primary-soft-hover); border-color: var(--ect-primary-active); color: var(--ect-primary-active); transform: translateY(1px); }
+
+/* Accent — Pro / upgrade only */
+.ect-btn-accent {
+  background: var(--ect-accent);
+  border-color: var(--ect-accent);
+  color: #fff;
+  box-shadow: 0 1px 2px rgba(227, 104, 11, 0.25);
+}
+.ect-btn-accent:hover,
+.ect-btn-accent:visited { color: #fff; text-decoration: none; }
+.ect-btn-accent:hover { background: var(--ect-accent-hover); border-color: var(--ect-accent-hover); }
+.ect-btn-accent:active { background: var(--ect-accent-active); border-color: var(--ect-accent-active); transform: translateY(1px); }
+
+/* Ghost — quiet bordered action, often inside a card */
+.ect-btn-ghost {
+  background: #fff;
+  border-color: var(--ect-border);
+  color: var(--ect-text);
+  box-shadow: 0 1px 2px rgba(2, 14, 33, 0.04);
+}
+.ect-btn-ghost:hover {
+  background: var(--ect-bg);
+  border-color: var(--ect-text-soft);
+  color: var(--ect-text);
+  text-decoration: none;
+}
+.ect-btn-ghost:active { transform: translateY(1px); }
+
+/* Disabled */
+.ect-btn-disabled,
+.ect-btn-disabled:hover,
+.ect-btn-disabled:active,
+.ect-btn-disabled:visited {
+  background: var(--ect-disabled-bg);
+  border-color: var(--ect-disabled-border);
+  color: var(--ect-disabled-text);
+  cursor: not-allowed;
+  pointer-events: none;
+  text-decoration: none;
+  box-shadow: none;
+  transform: none;
+}
+
+/* Button-with-icon */
+.ect-btn-primary .dashicons,
+.ect-btn-secondary .dashicons,
+.ect-btn-accent .dashicons,
+.ect-btn-ghost .dashicons,
+.ect-btn-disabled .dashicons {
+  width: 16px; height: 16px; font-size: 16px; line-height: 1; color: currentColor;
+}
+
+/* -------------------------------------------------------------------------
+   Status pills (only the base + Pro variant are used by the wizard)
+   ------------------------------------------------------------------------- */
+
+.ect-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  min-height: 22px;
+  padding: 3px 9px;
+  border-radius: 999px;
+  font-size: 11px;
+  line-height: 1.2;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  white-space: nowrap;
+  border: 1px solid transparent;
+}
+.ect-pill .dashicons { width: 12px; height: 12px; font-size: 12px; line-height: 1; color: currentColor; }
+
+.ect-pill-pro {
+  background: var(--ect-accent-soft);
+  border-color: var(--ect-accent-border);
+  color: var(--ect-accent-hover);
+}
+
+/* -------------------------------------------------------------------------
+   Cross-sell sidecar — Tier-2 promotion of a sibling FREE addon
+   Blue/neutral tinted so orange stays Pro-only.
+   (Layout properties are overridden by the wizard-specific variant in
+   ect-wizard.css, which loads after this file.)
+   ------------------------------------------------------------------------- */
+
+.ect-cross-sell {
+  margin-top: 20px;
+  padding: 18px 22px;
+  display: grid;
+  grid-template-columns: 52px minmax(0, 1fr) auto;
+  gap: 18px;
+  align-items: center;
+  background: var(--ect-primary-soft);
+  border-color: var(--ect-primary-border);
+}
+.ect-cross-sell__icon {
+  width: 52px; height: 52px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.ect-cross-sell__icon img { width: 52px; height: 52px; object-fit: contain; display: block; }
+.ect-cross-sell__title { font-size: 16px; }
+.ect-cross-sell__desc {
+  margin: 4px 0 0;
+  font-size: 13px;
+  line-height: 1.55;
+  color: var(--ect-text-muted);
+}
+.ect-cross-sell__actions {
+  display: flex;
+  gap: 8px;
+  flex-wrap: nowrap;
+  align-items: center;
+  flex: 0 0 auto;
+}
+
+/* -------------------------------------------------------------------------
+   Responsive
+   ------------------------------------------------------------------------- */
+
+@media (max-width: 1140px) and (min-width: 781px) {
+  .ect-btn-primary, .ect-btn-secondary, .ect-btn-accent, .ect-btn-ghost { min-height: 38px; padding: 8px 12px; font-size: 13px; }
+}
+
+@media (max-width: 980px) {
+  .ect-cross-sell { grid-template-columns: 44px 1fr; row-gap: 12px; }
+  .ect-cross-sell__actions { grid-column: 1 / -1; }
+}
+
+/* =========================================================================
+   WordPress-admin a:focus shield.
+   wp-admin core CSS sets, on EVERY focused <a>:
+     a:focus { color:#043959; border-radius:2px;
+               box-shadow:0 0 0 1.5px #3858e9; outline:2px solid transparent; }
+   which recolours our buttons, squares their corners, drops their shadow and
+   paints a blue ring. Neutralise it INSIDE our surface only. Our sheet enqueues
+   AFTER core admin CSS, so :where() (same 0,1,1 specificity as core's rule)
+   wins by source order without out-ranking our own component states
+   (:hover / .is-selected / :focus-visible are 0,2,0). Harmless in the
+   standalone prototype (no core rule to fight).
+   ========================================================================= */
+:where(.ect-wizard-shell) a:focus { box-shadow: none; }
+:where(.ect-wizard-shell) a:focus:not(:focus-visible) { outline: none; }
+:where(.ect-wizard-shell) a:focus-visible { outline: 2px solid var(--ect-focus); outline-offset: 2px; }
+/* Keep buttons their own text colour + 6px radius on focus (0,2,0 beats core). */
+.ect-btn-primary:focus, .ect-btn-accent:focus, .ect-btn-success:focus { color: #fff; }
+.ect-btn-secondary:focus { color: var(--ect-primary); }
+.ect-btn-ghost:focus { color: var(--ect-text); }
+.ect-btn-primary:focus, .ect-btn-secondary:focus, .ect-btn-accent:focus,
+.ect-btn-ghost:focus, .ect-btn-disabled:focus, .ect-btn-success:focus { border-radius: 6px; }
+/* Preserve card radii against core a:focus { border-radius:2px }. */
+.ect-editor-option:focus { border-radius: 0.75rem; }
+.ect-layout-card:focus,
+.ect-style-card:focus,
+.ect-toggle-option:focus { border-radius: 0.5rem; }

@@ -1,0 +1,134 @@
+<?php
+/**
+ * Models a lazy collection of posts that will store the post IDs in cache during serialization and rebuild the
+ * collection items from post IDs during unserialization.
+ *
+ * @since   5.0.0
+ *
+ * @package Tribe\Events\Collections
+ */
+
+namespace Tribe\Events\Collections;
+
+use Tribe\Utils\Lazy_Collection;
+
+/**
+ * Class Lazy_Post_Collection
+ *
+ * @since   5.0.0
+ *
+ * @package Tribe\Events\Collections
+ */
+class Lazy_Post_Collection extends Lazy_Collection {
+	/**
+	 * Callbacks allowed to rebuild the collection during unserialization.
+	 *
+	 * Use the `tec_events_lazy_post_collection_allowed_unserialize_callbacks` filter to add to this list.
+	 *
+	 * @since 6.17.3.1
+	 *
+	 * @var string[]
+	 */
+	private const ALLOWED_UNSERIALIZE_CALLBACKS = [
+		'get_post',
+		'tribe_get_organizer_object',
+		'tribe_get_venue_object',
+	];
+
+	/**
+	 * The callback function that should be called to rebuild the collection items from an array of post IDs.
+	 *
+	 * @since 5.0.0
+	 *
+	 * @var callable|string
+	 */
+	protected $unserialize_callback;
+
+	/**
+	 * Lazy_Post_Collection constructor.
+	 *
+	 * @since 5.0.0
+	 *
+	 * @param callable $callback             The callback that should be used to fetch the collection items.
+	 * @param string   $unserialize_callback The callback that should be used to rebuild the collection items from the
+	 *                                       serialized post IDs.
+	 */
+	public function __construct( callable $callback, $unserialize_callback = 'get_post' ) {
+		parent::__construct( $callback );
+		$this->unserialize_callback = $unserialize_callback;
+	}
+
+	/**
+	 * Plucks the post IDs from the collection items before serialization.
+	 *
+	 * While serializing a post object w/ added properties will not generate any error during serialization, doing the
+	 * same during unserialization will yield a `false` result.
+	 * To avoid dealing with the lower level details of how the post object is built or decorated, here we extract
+	 * the post IDs to only store those.
+	 *
+	 * @since 5.0.0
+	 *
+	 * @param array<\WP_Post> $items The posts part of this collection.
+	 *
+	 * @return array The collection post IDs and callback.
+	 *
+	 * @see   Lazy_Post_Collection::custom_unserialize() for the other part of the post handling.
+	 */
+	protected function before_serialize( array $items ) {
+		return [
+			'callback' => $this->unserialize_callback,
+			'ids'      => array_map( static function ( $item ): int {
+				return $item instanceof \WP_Post ? $item->ID : (int) $item;
+			}, $items ),
+		];
+	}
+
+	/**
+	 * Custom handling of the lazy collection unserialization, this method will build complete post objects from
+	 * the serialized post IDs.
+	 *
+	 * @since 5.0.0
+	 * @since 6.17.3.1 Only rebuild through an allowed callback.
+	 * @since 6.17.4 Restore the unserialize callback, so the collection can be serialized again.
+	 *
+	 * @param string $serialized The serialized values, usually an array of post IDs.
+	 *
+	 * @return array<\WP_Post>|null Either the rebuilt collection, or `null` if the serialized string cannot be
+	 *                             unserialized.
+	 */
+	protected function custom_unserialize( $serialized ) {
+		// phpcs:ignore WordPress.PHP.DiscouragedPHPFunctions.serialize_unserialize
+		$unserialized = unserialize( $serialized, [ 'allowed_classes' => false ] );
+
+		if ( ! is_array( $unserialized ) || ! isset( $unserialized['callback'], $unserialized['ids'] ) || ! is_array( $unserialized['ids'] ) ) {
+			return null;
+		}
+
+		/**
+		 * Filters the callbacks allowed to rebuild a Lazy_Post_Collection during unserialization.
+		 *
+		 * The callback name is read back from serialized data and is not to be trusted: only add callbacks
+		 * that are safe to call with an arbitrary post ID.
+		 *
+		 * @since 6.17.4
+		 *
+		 * @param string[] $allowed_callbacks The names of the callbacks allowed to rebuild the collection.
+		 */
+		$allowed_callbacks = (array) apply_filters(
+			'tec_events_lazy_post_collection_allowed_unserialize_callbacks',
+			self::ALLOWED_UNSERIALIZE_CALLBACKS
+		);
+
+		if ( ! in_array( $unserialized['callback'], $allowed_callbacks, true ) ) {
+			return null;
+		}
+
+		/*
+		 * Restore the callback: without it a collection that is serialized again, e.g. when it's read from
+		 * the object cache and written back to it, would store a `null` callback and fail to rebuild.
+		 */
+		$this->unserialize_callback = $unserialized['callback'];
+
+		return array_map( $unserialized['callback'], $unserialized['ids'] );
+	}
+}

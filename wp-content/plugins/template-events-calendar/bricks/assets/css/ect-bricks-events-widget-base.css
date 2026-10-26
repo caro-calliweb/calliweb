@@ -1,0 +1,998 @@
+/**
+ * Events Widget — shared list layout, featured image dual-layer hover.
+ * List chrome: `list-style-*.css`.
+ *
+ * Known limitation: this file no longer uses !important anywhere. Bricks prints
+ * each element's Style-panel output on `#brxe-{id}` (an ID selector) and supports
+ * a native per-control Hover state on any property — both out-specify any class
+ * selector here. As a result, several --ect-bricks-* Style-panel values (hover
+ * colors, chip/button colors, custom backgrounds) and the chrome-neutral wrapper
+ * resets below may silently fail to override Bricks' own output. If a support
+ * request says "my custom color/hover/background isn't applying," this is why.
+ */
+
+.ect-ev__list--list {
+	display: flex;
+	flex-direction: column;
+	gap: var(--ect-bricks-gap, 24px);
+}
+
+.ect-ev .ect-list,
+.ect-ev .ect-card {
+	min-width: 0;
+}
+
+.ect-ev {
+	--color-card-bg: #ffffff;
+	--color-primary: #2147c7;
+	--color-heading: #121827;
+	--color-text: #526070;
+	--color-muted: #8a95a6;
+	--color-border: #e5eaf2;
+	--badge-blue: #244ee7;
+	--ect-bricks-accent: #0d55d8;
+	--ect-bricks-accent-rgb: 13, 85, 216;
+	--ect-bricks-accent-dark: #0847bb;
+	--ect-bricks-card-heading: #001d3d;
+	--ect-bricks-accent-soft: #d4e4ff;
+	--ect-bricks-chip-bg: #eaf2ff;
+	--ect-bricks-image-placeholder-bg: #d9e0ea;
+	--ect-bricks-meta-gap: 24px;
+	--ect-bricks-meta-row-gap: var(--ect-bricks-meta-gap, 24px);
+	--ect-bricks-meta-segment-gap: var(--ect-bricks-meta-gap, 24px);
+	--font-family-base: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+	--radius-sm: 5px;
+	--shadow-card: 0 8px 24px rgba(15, 23, 42, 0.06);
+	--shadow-card-hover: 0 16px 40px rgba(15, 23, 42, 0.12);
+	--ect-bricks-btn-hover-shadow: 0 8px 18px rgba(33, 71, 199, 0.2);
+	--transition-base: 280ms ease;
+	--transition-fast: 0.2s ease;
+	--transition-motion: 0.38s ease;
+	--ect-bricks-anim-offset: 8px;
+	--ect-bricks-anim-scale-in: 1.06;
+	--ect-bricks-anim-scale-out: 0.94;
+	font-family: var(--font-family-base);
+	color: var(--color-text);
+}
+
+.ect-ev .ect-ev__item {
+	padding: 0;
+	border: none;
+	border-radius: 0;
+	background: transparent;
+	box-shadow: none;
+}
+
+.ect-ev img {
+	display: block;
+	max-width: 100%;
+}
+
+/* Date order stacks — PHP controls segment order; gap uniformizes spacing for both layouts. */
+.ect-ev .ect-list__date-inner {
+	gap: 10px;
+}
+
+.ect-ev .ect-card__date-badge {
+	gap: 3px;
+}
+
+.ect-ev .ect-list__img-link,
+.ect-ev .ect-card__img-link {
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+
+.ect-ev .ect-list__img,
+.ect-ev .ect-card__img {
+	width: 100%;
+	height: 100%;
+}
+
+.ect-ev :is(.ect-list__img, .ect-card__img, .ect-fld__img).ect-event-img--default {
+	object-fit: cover;
+}
+
+.ect-ev a,
+.ect-part--title.ect-no-hover .ect-fld__link {
+	color: inherit;
+	text-decoration: none;
+}
+
+.ect-ev ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.ect-ev .event-list .ect-card__meta-icon {
+	display: inline-flex;
+	width: auto;
+	height: auto;
+	color: var(--ect-bricks-meta-icon-color, var(--ect-bricks-btn-fg, var(--color-muted)));
+	background: transparent;
+	flex: 0;
+}
+
+.ect-ev .event-badge {
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	z-index: 2;
+	display: inline-flex;
+	align-items: center;
+	justify-content: start;
+	gap: 10px;
+	flex-wrap: wrap;
+	max-width: calc(100% - 20px);
+}
+
+.ect-ev .event-badge--blue {
+	background: var(--ect-bricks-shell-cat-bg, var(--badge-blue));
+	padding: 5px 9px;
+	border-radius: 50px;
+	color: var(--ect-bricks-shell-cat-color, var(--color-card-bg));
+	font-size: var(--ect-bricks-shell-cat-font-size, 10px);
+	font-weight: 700;
+	line-height: var(--ect-bricks-shell-cat-line-height, 1.2);
+	text-transform: var(--ect-bricks-shell-cat-text-transform, uppercase);
+	text-decoration: none;
+}
+
+/*
+ * Category hover — badge element only.
+ * Hover colors are CSS vars on .ect-ev (set by Bricks / inline decls).
+ * Never use card/widget :hover here — that recolors every badge at once.
+ */
+.ect-ev.ect-has-shell-cat-hover .event-badge--blue {
+	transition:
+		transform var(--transition-motion),
+		background-color var(--transition-base),
+		color var(--transition-base),
+		text-decoration-color var(--transition-base);
+}
+
+.ect-ev.ect-has-shell-cat-hover a.event-badge--blue:hover,
+.ect-ev.ect-has-shell-cat-hover .event-badge--blue:hover {
+	color: var(--ect-bricks-shell-cat-hover-color);
+	background-color: var(--ect-bricks-shell-cat-hover-bg);
+	text-decoration: var(--ect-bricks-shell-cat-hover-text-decoration, none);
+}
+
+@media (hover: hover) and (pointer: fine) {
+	.ect-ev.ect-has-shell-cat-hover.ect-shell-cat-hover--fade_in_up a.event-badge--blue:hover,
+	.ect-ev.ect-has-shell-cat-hover.ect-shell-cat-hover--fade_in_up .event-badge--blue:hover {
+		transform: translateY(calc(-1 * var(--ect-bricks-anim-offset)));
+	}
+
+	.ect-ev.ect-has-shell-cat-hover.ect-shell-cat-hover--fade_in_right a.event-badge--blue:hover,
+	.ect-ev.ect-has-shell-cat-hover.ect-shell-cat-hover--fade_in_right .event-badge--blue:hover {
+		transform: translateX(var(--ect-bricks-anim-offset));
+	}
+
+	.ect-ev.ect-has-shell-cat-hover.ect-shell-cat-hover--fade_in_down a.event-badge--blue:hover,
+	.ect-ev.ect-has-shell-cat-hover.ect-shell-cat-hover--fade_in_down .event-badge--blue:hover {
+		transform: translateY(var(--ect-bricks-anim-offset));
+	}
+
+	.ect-ev.ect-has-shell-cat-hover.ect-shell-cat-hover--fade_in_left a.event-badge--blue:hover,
+	.ect-ev.ect-has-shell-cat-hover.ect-shell-cat-hover--fade_in_left .event-badge--blue:hover {
+		transform: translateX(calc(-1 * var(--ect-bricks-anim-offset)));
+	}
+
+	.ect-ev.ect-has-shell-cat-hover.ect-shell-cat-hover--zoom_in a.event-badge--blue:hover,
+	.ect-ev.ect-has-shell-cat-hover.ect-shell-cat-hover--zoom_in .event-badge--blue:hover {
+		transform: scale(var(--ect-bricks-anim-scale-in));
+	}
+
+	.ect-ev.ect-has-shell-cat-hover.ect-shell-cat-hover--zoom_out a.event-badge--blue:hover,
+	.ect-ev.ect-has-shell-cat-hover.ect-shell-cat-hover--zoom_out .event-badge--blue:hover {
+		transform: scale(var(--ect-bricks-anim-scale-out));
+	}
+}
+
+.ect-ev a.event-button,
+.ect-ev a.ect-card__btn {
+	text-decoration: none;
+}
+
+.ect-ev .event-button {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 34px;
+	border-radius: var(--radius-sm);
+	font-weight: 700;
+	line-height: 1;
+	text-decoration: none;
+	transition: transform var(--transition-base), background-color var(--transition-base), border-color var(--transition-base), color var(--transition-base), box-shadow var(--transition-base);
+}
+
+.ect-ev .ect-part:not(.ect-has-typo-size) .event-button,
+.ect-ev .ect-part:not(.ect-has-typo-size) > .event-button {
+	font-size: 12px;
+}
+
+.ect-ev .event-button:hover {
+	transform: translateY(-2px);
+}
+
+.ect-ev .event-button--outline {
+	padding: 0 16px;
+	border: 1px solid var(--color-primary);
+	color: inherit;
+	background: var(--color-card-bg);
+}
+
+/*
+ * Default/typography color lives on CSS vars (--ect-bricks-btn-fg) set on the row wrapper.
+ * Wrappers use color:inherit so Bricks never leaves a stale `color` on `&`.
+ * See ect-bricks-part-fields.php (Text color control + typography without color).
+ */
+.ect-part {
+	color: inherit;
+}
+
+.ect-ev .ect-part:has(.event-button--outline) .event-button--outline,
+.ect-ev .ect-part:has(.event-button--outline) > .event-button--outline {
+	color: var(--ect-bricks-btn-fg, var(--color-primary));
+}
+
+.ect-ev .ect-part:has(.event-button--outline).ect-has-typo-fg .event-button--outline,
+.ect-ev .ect-part:has(.event-button--outline).ect-has-typo-fg > .event-button--outline {
+	color: var(--ect-bricks-btn-fg, inherit);
+}
+
+/* Default Style 1 outline hover lives in list-style-1.css; custom hover vars here. */
+.ect-ev .ect-part.ect-has-hover-fg > :is(a.event-button--outline, .ect-fld__link.event-button--outline):hover,
+.ect-ev .ect-part.ect-has-hover-fg :is(a.event-button--outline, .ect-fld__link.event-button--outline):hover,
+.ect-ev .ect-part.ect-has-hover-bg > :is(a.event-button--outline, .ect-fld__link.event-button--outline):hover,
+.ect-ev .ect-part.ect-has-hover-bg :is(a.event-button--outline, .ect-fld__link.event-button--outline):hover {
+	color: var(--ect-bricks-hover-fg, var(--color-card-bg));
+	background-color: var(--ect-bricks-hover-bg, var(--color-primary));
+	border-color: var(--ect-bricks-hover-bg, var(--color-primary));
+	box-shadow: var(--ect-bricks-btn-hover-shadow);
+}
+
+.ect-ev .event-meta {
+	display: flex;
+	flex-wrap: wrap;
+	color: var(--color-muted);
+}
+
+.ect-ev .event-meta li {
+	position: relative;
+	display: inline-flex;
+	align-items: center;
+	gap: 8px;
+}
+
+.ect-ev .ect-card__meta-icon {
+	display: inline-flex;
+	width: 38px;
+	height: 38px;
+	flex: 0 0 38px;
+	align-items: center;
+	justify-content: center;
+	/* Style 2 editor sets --ect-bricks-meta-icon-* on .ect-part (icon is a child). */
+	color: var(--ect-bricks-meta-icon-color, var(--ect-bricks-btn-fg, var(--ect-bricks-accent, #0d55d8)));
+	background: var(--ect-bricks-meta-icon-bg, var(--ect-bricks-chip-bg));
+	border-radius: 10px;
+}
+
+.ect-ev .ect-card__meta-icon svg {
+	width: 21px;
+	height: 21px;
+	fill: none;
+	stroke: currentColor;
+	stroke-width: 2.1;
+	stroke-linecap: round;
+	stroke-linejoin: round;
+}
+
+/* Composite meta rows (venue + time, venue + time + cost). */
+.ect-ev .ect-fld__meta-group {
+	display: inline-flex;
+	align-items: center;
+	flex-wrap: nowrap;
+}
+
+.ect-ev .ect-fld__meta-segment {
+	display: inline-flex;
+	align-items: center;
+	min-width: 0;
+}
+
+.ect-ev .ect-fld__meta-text {
+	min-width: 0;
+}
+
+/* Venue / time / cost meta rows: alignment + spacing paint on the list item wrapper. */
+.ect-ev .event-meta--list > li.ect-meta-row.ect-has-align,
+.ect-ev .ect-card__meta-item.ect-has-align:not(:has(.ect-fld__meta-group)),
+.ect-ev .ect-card__meta-item.ect-meta-row--custom-chrome.ect-has-align {
+	display: flex;
+	align-items: center;
+	width: 100%;
+	max-width: 100%;
+}
+
+/* Style 1: inline icons + consistent segment spacing. */
+.ect-ev .event-meta--list .ect-fld__meta-group {
+	column-gap: var(--ect-bricks-meta-segment-gap, 18px);
+	row-gap: 0;
+}
+
+.ect-ev .event-meta--list .ect-fld__meta-segment {
+	gap: 8px;
+}
+
+.ect-ev .event-meta--list .ect-fld__meta-group .ect-card__meta-icon--inline,
+.ect-ev .event-meta--list > li.ect-meta-row > .ect-card__meta-icon {
+	width: auto;
+	height: auto;
+	min-width: 0;
+	flex: 0 0 auto;
+	padding: 0;
+	background: transparent;
+	border-radius: 0;
+	color: var(--ect-bricks-meta-icon-color, var(--ect-bricks-btn-fg, inherit));
+	font-size: inherit;
+	line-height: inherit;
+}
+
+.ect-ev .event-meta--list .ect-fld__meta-group .ect-card__meta-icon--inline svg,
+.ect-ev .event-meta--list > li.ect-meta-row > .ect-card__meta-icon svg {
+	width: 1.2em;
+	height: 1.2em;
+}
+
+.ect-ev .ect-card__cat {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	color: inherit;
+	background: var(--ect-bricks-chip-bg);
+	border-radius: 999px;
+	font-weight: 500;
+	line-height: 1.2;
+	text-decoration: none;
+	transition: color var(--transition-base), background-color var(--transition-base);
+}
+
+.ect-ev .ect-part:not(.ect-has-typo-tx) .ect-card__cat,
+.ect-ev .ect-part:not(.ect-has-typo-tx) a.ect-card__cat {
+	text-transform: uppercase;
+}
+
+.ect-part.ect-has-typo-tx .ect-fld__term-chip,
+.ect-part.ect-has-typo-tx .ect-fld__term-chip .ect-fld__link,
+.ect-part.ect-has-typo-tx .ect-card__cat,
+.ect-part.ect-has-typo-tx a.ect-card__cat {
+	text-transform: inherit;
+}
+
+/* Default/typography color on category chips — var from row wrapper. */
+.ect-ev .ect-part:has(.ect-card__cat) .ect-card__cat,
+.ect-ev .ect-part:has(.ect-card__cat) a.ect-card__cat {
+	color: var(--ect-bricks-chip-fg, #1e3356);
+}
+
+.ect-ev .ect-card__meta-item .ect-fld__meta-group {
+	min-width: 0;
+}
+
+/* No !important needed: the modifier class always co-occurs with the base card
+ * class on the same element (see class-ect-bricks-layout-base.php), so repeating
+ * the base class here raises specificity (0,3,0) above list-style-1.css/
+ * list-style-2.css's base grid-template-columns rule (0,2,0), regardless of load order. */
+.ect-ev .ect-list.ect-list--no-image,
+.ect-ev .ect-card.ect-card--no-image {
+	grid-template-columns: 1fr;
+}
+
+.ect-ev .ect-list--no-image .ect-list__img-wrap {
+	display: none;
+}
+
+.ect-ev .ect-card--no-image .ect-card__img-wrap {
+	display: none;
+}
+
+/* Repeater featured image (inline in content flow). */
+:is(.ect-part--image, .ect-s2-image).ect-part {
+	width: fit-content;
+	max-width: 100%;
+	background: transparent !important;
+	background-color: transparent !important;
+	border: none !important;
+	box-shadow: none !important;
+}
+
+.ect-ev :is(.ect-part--image, .ect-s2-image) .ect-fld__link {
+	display: inline-block;
+	width: fit-content;
+	max-width: 100%;
+}
+
+.ect-ev :is(.ect-part--image, .ect-s2-image) .ect-fld__img {
+	display: block;
+	max-width: 100%;
+	height: auto;
+	vertical-align: middle;
+}
+
+/* Image part alignments — block images need auto width + margin, not text-align alone. */
+:is(.ect-part--image, .ect-s2-image).ect-has-align {
+	width: 100%;
+	max-width: 100%;
+}
+
+:is(.ect-part--image, .ect-s2-image).ect-has-align .ect-fld__link {
+	display: block;
+	width: fit-content;
+	max-width: 100%;
+}
+
+:is(.ect-part--image, .ect-s2-image).ect-has-align .ect-fld__img {
+	width: auto;
+	max-width: 100%;
+	height: auto;
+}
+
+:is(.ect-part--image, .ect-s2-image).ect-align--center :is(.ect-fld__link, .ect-fld__img) {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+:is(.ect-part--image, .ect-s2-image).ect-align--right :is(.ect-fld__link, .ect-fld__img) {
+	margin-left: auto;
+	margin-right: 0;
+}
+
+:is(.ect-part--image, .ect-s2-image).ect-align--left :is(.ect-fld__link, .ect-fld__img) {
+	margin-left: 0;
+	margin-right: auto;
+}
+
+/* Event items: positioning context for absolutely positioned children (if any). */
+.bricks-is-frontend .ect-ev__item {
+	position: relative;
+}
+
+/*
+ * Category chips / card top: keep the row wrapper transparent so Background /
+ * Hover background paint only .ect-card__cat (and Style 1
+ * term chips), never the full .ect-card__top strip.
+ */
+:is(.ect-part--categories, .ect-s2-categories).ect-part,
+:is(.ect-part--categories, .ect-s2-categories).ect-part:hover,
+.ect-ev .ect-card__top,
+.ect-ev .ect-card__top:hover,
+.ect-ev .ect-card__top.ect-has-hover-bg,
+.ect-ev .ect-card__top.ect-has-hover-bg:hover {
+	background-color: transparent;
+}
+
+/* Category row wrappers are content-sized; only chips are hover targets (Style 1 + Style 2). */
+:is(.ect-part--categories, .ect-s2-categories).ect-part,
+.ect-ev .ect-card__top {
+	width: fit-content;
+	max-width: 100%;
+	pointer-events: none;
+}
+
+:is(.ect-part--categories, .ect-s2-categories) .ect-card__cat,
+.ect-ev .ect-card__top a.ect-card__cat {
+	pointer-events: auto;
+}
+
+/* Row hover must not paint chips unless the chip itself is hovered. */
+:is(.ect-part--categories, .ect-s2-categories).ect-has-hover-bg:hover .ect-card__cat:not(:hover):not(:focus-visible),
+.ect-ev .ect-card__top.ect-has-hover-bg:hover a.ect-card__cat:not(:hover):not(:focus-visible),
+:is(.ect-part--categories, .ect-s2-categories).ect-has-hover-fg:hover .ect-card__cat:not(:hover):not(:focus-visible),
+.ect-ev .ect-card__top.ect-has-hover-fg:hover a.ect-card__cat:not(:hover):not(:focus-visible) {
+	background-color: var(--ect-bricks-chip-bg);
+	color: var(--ect-bricks-chip-fg, inherit);
+}
+
+/* Button-style / layout CTA rows: shrink wrapper to the link — never full-width hover target. */
+.ect-part.ect-has-btn,
+:is(.ect-part--read-more, .ect-s2-read-more),
+:is(.ect-part--read-more, .ect-s2-read-more):hover {
+	width: fit-content;
+	max-width: 100%;
+	background: transparent;
+	background-color: transparent;
+	border: none;
+	box-shadow: none;
+	pointer-events: none;
+}
+
+:is(.ect-part--read-more, .ect-s2-read-more) > a,
+.ect-part.ect-has-btn > a,
+.ect-part.ect-has-btn > .ect-fld__link {
+	pointer-events: auto;
+}
+
+.ect-part.ect-has-btn {
+	padding: 0;
+}
+
+/* Layout CTA rows: Bricks typography also paints the wrapper; collapse it so font-size sizes the button only. */
+:is(.ect-part--read-more, .ect-s2-read-more):not(.ect-has-btn):not(.ect-has-typo-size) {
+	font-size: 0;
+	line-height: 0;
+}
+
+/* Custom font-size from Bricks typography on the part wrapper; children inherit. */
+.ect-part.ect-has-typo-size:not(.ect-has-btn) > a.event-button,
+.ect-part.ect-has-typo-size:not(.ect-has-btn) > .ect-fld__link,
+.ect-part.ect-has-typo-size:not(.ect-has-btn) a.event-button,
+.ect-part.ect-has-typo-size:not(.ect-has-btn) .ect-fld__link,
+.ect-part.ect-has-typo-size:not(.ect-has-btn) a.ect-card__btn,
+.ect-part.ect-has-typo-size:not(.ect-has-btn) .ect-fld__link.ect-card__btn,
+:is(.ect-part--read-more, .ect-s2-read-more).ect-has-typo-size:not(.ect-has-btn) > :is(a.ect-card__btn, a.ect-fld__link.ect-card__btn),
+.ect-part.ect-has-typo-size.ect-has-btn > a.event-button,
+.ect-part.ect-has-typo-size.ect-has-btn > .ect-fld__link,
+.ect-part.ect-has-typo-size.ect-has-btn a.event-button,
+.ect-part.ect-has-typo-size.ect-has-btn .ect-fld__link,
+.ect-part.ect-has-typo-size .ect-fld__term-chip,
+.ect-part.ect-has-typo-size .ect-fld__term-chip .ect-fld__link,
+.ect-part.ect-has-typo-size .ect-card__cat,
+.ect-part.ect-has-typo-size a.ect-card__cat,
+.ect-ev :is(.ect-list__desc, .ect-card__desc).ect-has-typo-size p {
+	font-size: inherit;
+	line-height: inherit;
+}
+
+/* Shared description typography (Style 1/2). Layout files keep default color/size. */
+.ect-ev :is(.ect-list__desc, .ect-card__desc) {
+	margin: 0;
+	/* Full row width so Alignments work on short excerpts, not only long/full text. */
+	width: 100%;
+	max-width: 100%;
+}
+
+/* Image-shell category typography vars must not inherit onto description. */
+.ect-ev :is(.ect-list__desc, .ect-card__desc):not(.ect-has-typo-tx) {
+	text-transform: none;
+}
+
+/* Typography text-decoration on row wrapper → inner surfaces (buttons default to none). */
+.ect-part.ect-has-typo-dec {
+	text-decoration: var(--ect-bricks-typo-text-decoration, inherit);
+}
+
+.ect-part.ect-has-typo-dec :is(
+	.ect-fld__plain,
+	.ect-fld__meta-text,
+	.ect-fld__title-text,
+	.ect-fld__link,
+	.ect-fld__term-chip,
+	.ect-fld__term-chip .ect-fld__link,
+	.ect-card__cat,
+	a.ect-card__cat
+),
+.ect-ev .ect-part.ect-has-typo-dec :is(
+	a.event-button,
+	a.ect-card__btn,
+	.ect-fld__link.event-button,
+	.ect-fld__link.ect-card__btn
+) {
+	text-decoration: inherit;
+	text-decoration-color: inherit;
+}
+
+.ect-ev :is(.ect-list__desc, .ect-card__desc).ect-has-typo-dec p {
+	text-decoration: inherit;
+	text-decoration-color: inherit;
+}
+
+/* Text color must not change description size: only inherit color. */
+.ect-ev :is(.ect-list__desc, .ect-card__desc).ect-has-typo-fg p {
+	color: inherit;
+}
+
+.ect-part.ect-has-btn > .ect-fld__link,
+.ect-part.ect-has-btn .ect-fld__link,
+.ect-part.ect-has-btn > a.event-button,
+.ect-part.ect-has-btn > .ect-fld__plain,
+.ect-part.ect-has-btn .ect-fld__plain {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	width: auto;
+	max-width: 100%;
+	box-sizing: border-box;
+}
+
+/* Style 1 custom btn_style: keep outline layout chrome; vars override only when set. */
+.ect-ev__item--style-1 .ect-part.ect-has-btn > a.event-button,
+.ect-ev__item--style-1 .ect-part.ect-has-btn > .ect-fld__link.event-button,
+.ect-ev__item--style-1 .ect-part.ect-has-btn > a.event-button.event-button--outline,
+.ect-ev__item--style-1 .ect-part.ect-has-btn > .ect-fld__link.event-button--outline,
+.ect-ev__item--style-1 .ect-part.ect-has-btn > .ect-fld__link:not(.ect-card__btn) {
+	padding: var(--ect-bricks-btn-padding, 0 16px);
+	border-radius: var(--ect-bricks-btn-radius, var(--radius-sm));
+	border-width: var(--ect-bricks-btn-border-width, 1px);
+	border-style: var(--ect-bricks-btn-border-style, solid);
+	border-color: var(--ect-bricks-btn-border-color, var(--color-primary));
+	background-color: var(--ect-bricks-btn-bg, var(--color-card-bg));
+	color: var(--ect-bricks-btn-fg, inherit);
+}
+
+/* Style 2 CTA link chrome / default paint live in list-style-2.css (.ect-card__btn). */
+
+/* Repeater Background on non-CTA / non-category / non-image row wrappers (vars on `&`). */
+.ect-part.ect-has-part-bg:not(:is(.ect-part--read-more, .ect-s2-read-more)):not(:is(.ect-part--categories, .ect-s2-categories, .ect-part--image, .ect-s2-image)):not(.ect-card__top):not(.ect-has-btn) {
+	background-color: var(--ect-bricks-chip-bg);
+}
+
+.ect-part.ect-has-part-bg .ect-fld__term-chip {
+	background-color: var(--ect-bricks-chip-bg);
+}
+
+/* Repeater image part: border/radius are painted on .ect-fld__img (inline + builder CSS). */
+:is(.ect-part--image, .ect-s2-image) .ect-fld__img {
+	box-sizing: border-box;
+}
+
+/* Image rows: hover color tints the image border on hover. */
+:is(.ect-part--image, .ect-s2-image).ect-has-hover-fg:not(.ect-no-hover) :is(.ect-fld__img:hover, .ect-fld__link:hover .ect-fld__img) {
+	border-color: var(--ect-bricks-hover-fg);
+}
+
+/* Repeater hover text decoration from row CSS variable — never on full-width CTA wrappers. */
+.ect-part.ect-has-hover-td:not(.ect-no-hover) :is(
+	.ect-fld__link,
+	a.event-button,
+	a.ect-card__btn,
+	.ect-fld__plain,
+	.ect-fld__term-chip,
+	.ect-fld__title-text,
+	.ect-card__cat
+):hover {
+	text-decoration: var(--ect-bricks-hover-text-decoration);
+}
+
+.ect-part.ect-has-hover-td:not(.ect-no-hover):not(:is(.ect-part--read-more, .ect-s2-read-more)):hover {
+	text-decoration: var(--ect-bricks-hover-text-decoration);
+}
+
+/* Repeater row hover animation presets (class set in PHP; motion in static CSS).
+ * CTA rows animate the button link — not the full-width .ect-s2-read-more wrapper. */
+.ect-part[class*="ect-part-hover--"]:not(.ect-no-hover):not(:is(.ect-part--read-more, .ect-s2-read-more)),
+:is(.ect-part--read-more, .ect-s2-read-more)[class*="ect-part-hover--"]:not(.ect-no-hover) > a {
+	transition: transform var(--transition-motion);
+	transform: none;
+	transform-origin: center center;
+}
+
+@media (hover: hover) and (pointer: fine) {
+	/* Presets set a CSS var on the part; apply targets differ for CTA vs non-CTA. */
+	.ect-part.ect-part-hover--fade_in_up:not(.ect-no-hover) {
+		--ect-bricks-part-hover-transform: translateY(calc(-1 * var(--ect-bricks-anim-offset)));
+	}
+	.ect-part.ect-part-hover--fade_in_right:not(.ect-no-hover) {
+		--ect-bricks-part-hover-transform: translateX(var(--ect-bricks-anim-offset));
+	}
+	.ect-part.ect-part-hover--fade_in_down:not(.ect-no-hover) {
+		--ect-bricks-part-hover-transform: translateY(var(--ect-bricks-anim-offset));
+	}
+	.ect-part.ect-part-hover--fade_in_left:not(.ect-no-hover) {
+		--ect-bricks-part-hover-transform: translateX(calc(-1 * var(--ect-bricks-anim-offset)));
+	}
+	.ect-part.ect-part-hover--zoom_in:not(.ect-no-hover) {
+		--ect-bricks-part-hover-transform: scale(var(--ect-bricks-anim-scale-in));
+	}
+	.ect-part.ect-part-hover--zoom_out:not(.ect-no-hover) {
+		--ect-bricks-part-hover-transform: scale(var(--ect-bricks-anim-scale-out));
+	}
+
+	.ect-part[class*="ect-part-hover--"]:not(.ect-no-hover):not(:is(.ect-part--read-more, .ect-s2-read-more)):hover {
+		transform: var(--ect-bricks-part-hover-transform);
+	}
+
+	:is(.ect-part--read-more, .ect-s2-read-more)[class*="ect-part-hover--"]:not(.ect-no-hover) > a:hover {
+		transform: var(--ect-bricks-part-hover-transform);
+	}
+}
+
+/* Repeater typography color — CSS vars on row wrapper; inner text consumes them. */
+.ect-part .ect-fld__title-text,
+.ect-part > .ect-fld__title-text,
+.ect-part .ect-fld__plain,
+.ect-part > .ect-fld__plain,
+.ect-part .ect-fld__meta-text,
+.ect-part > .ect-fld__meta-text,
+.ect-part .ect-fld__link:not(.ect-card__btn):not(.event-button),
+.ect-part > .ect-fld__link:not(.ect-card__btn):not(.event-button) {
+	color: var(--ect-bricks-btn-fg, inherit);
+}
+
+.ect-part.ect-has-typo-fg :is(
+	a.event-button,
+	.ect-fld__link.event-button,
+	a.ect-card__btn,
+	.ect-fld__link.ect-card__btn
+) {
+	color: var(--ect-bricks-btn-fg);
+}
+
+.ect-part.ect-has-typo-fg .ect-fld__term-chip,
+.ect-part.ect-has-typo-fg .ect-card__cat,
+.ect-part.ect-has-typo-fg a.ect-card__cat {
+	color: var(--ect-bricks-chip-fg, var(--ect-bricks-btn-fg));
+}
+
+.ect-part.ect-has-typo-fg .ect-fld__title-text,
+.ect-part.ect-has-typo-fg > .ect-fld__title-text,
+.ect-part.ect-has-typo-fg .ect-fld__plain,
+.ect-part.ect-has-typo-fg > .ect-fld__plain,
+.ect-part.ect-has-typo-fg .ect-fld__meta-text,
+.ect-part.ect-has-typo-fg > .ect-fld__meta-text,
+.ect-ev :is(.ect-list__desc, .ect-card__desc).ect-has-typo-fg {
+	color: var(--ect-bricks-btn-fg);
+}
+
+.ect-part.ect-has-typo-fg .ect-card__meta-icon,
+.ect-part.ect-has-typo-fg > .ect-card__meta-icon,
+.ect-part.ect-has-typo-fg .ect-card__meta-icon--inline {
+	color: var(--ect-bricks-meta-icon-color, var(--ect-bricks-btn-fg));
+}
+
+/* Repeater Background on Style 1 outline CTAs and Style 2 card CTA links. */
+.ect-part.ect-has-part-bg > a.event-button.event-button--outline,
+.ect-part.ect-has-part-bg a.event-button.event-button--outline,
+.ect-part.ect-has-part-bg > .ect-fld__link.event-button--outline,
+:is(.ect-part--read-more, .ect-s2-read-more).ect-has-part-bg > a.ect-card__btn,
+:is(.ect-part--read-more, .ect-s2-read-more).ect-has-part-bg > a.ect-fld__link.ect-card__btn {
+	background-color: var(--ect-bricks-btn-bg);
+	border-color: var(--ect-bricks-btn-border-color, var(--ect-bricks-btn-bg));
+}
+
+.ect-part.ect-has-btn.ect-no-hover .ect-fld__plain {
+	cursor: default;
+	pointer-events: none;
+}
+
+/* Repeater custom hover text color — var on row wrapper (builder + frontend). */
+.ect-part.ect-has-hover-fg:not(.ect-no-hover):not(:is(.ect-part--title, .ect-s2-title)) :is(
+	.ect-fld__link,
+	a.event-button,
+	a.ect-card__btn,
+	.ect-fld__plain,
+	.ect-fld__term-chip,
+	.ect-card__cat
+):hover,
+.ect-ev .ect-card__top.ect-has-hover-fg:not(.ect-no-hover) a.ect-card__cat:hover,
+.ect-ev li.ect-meta-row.ect-has-hover-fg:not(.ect-no-hover):hover > .ect-card__meta-icon,
+.ect-ev li.ect-meta-row.ect-has-hover-fg:not(.ect-no-hover):hover .ect-card__meta-icon--inline,
+.ect-ev li:has(> .ect-part.ect-has-hover-fg:not(.ect-no-hover)):hover > .ect-card__meta-icon,
+.ect-ev li:has(> .ect-part.ect-has-hover-fg:not(.ect-no-hover)):hover .ect-card__meta-icon--inline {
+	color: var(--ect-bricks-hover-fg);
+}
+
+/* Title rows: hover text color on the wrapper + inner text. */
+:is(.ect-part--title, .ect-s2-title).ect-has-hover-fg:not(.ect-no-hover):hover,
+:is(.ect-part--title, .ect-s2-title).ect-has-hover-fg:not(.ect-no-hover):hover :is(.ect-fld__link, .ect-fld__title-text) {
+	color: var(--ect-bricks-hover-fg);
+}
+
+/* Title rows: hover background paints the row wrapper (inner link/text stays transparent). */
+.ect-ev .ect-part:is(.ect-part--title, .ect-s2-title).ect-has-hover-bg:not(.ect-no-hover):hover {
+	background-color: var(--ect-bricks-hover-bg);
+}
+
+.ect-ev li.ect-meta-row.ect-has-hover-bg:not(.ect-no-hover):hover > .ect-card__meta-icon,
+.ect-ev li.ect-meta-row.ect-has-hover-bg:not(.ect-no-hover):hover .ect-card__meta-icon--inline,
+.ect-ev li:has(> .ect-part.ect-has-hover-bg:not(.ect-no-hover)):hover > .ect-card__meta-icon,
+.ect-ev li:has(> .ect-part.ect-has-hover-bg:not(.ect-no-hover)):hover .ect-card__meta-icon--inline,
+.ect-part.ect-has-hover-bg:not(.ect-no-hover):not(:is(.ect-part--title, .ect-s2-title)) :is(
+	.ect-fld__link,
+	a.event-button,
+	a.ect-card__btn,
+	.ect-fld__plain,
+	.ect-fld__term-chip,
+	.ect-card__cat
+):hover,
+.ect-ev .ect-card__top.ect-has-hover-bg:not(.ect-no-hover) a.ect-card__cat:hover {
+	background-color: var(--ect-bricks-hover-bg);
+}
+
+/* Layout CTA rows are content-sized wrappers; custom color/bg never paints the row. */
+:is(.ect-part--read-more, .ect-s2-read-more):is(.ect-has-hover-fg, .ect-has-hover-bg, .ect-has-part-bg),
+:is(.ect-part--read-more, .ect-s2-read-more):is(.ect-has-hover-fg, .ect-has-hover-bg, .ect-has-part-bg):hover,
+.ect-ev .ect-card__footer > :is(.ect-part--read-more, .ect-s2-read-more) {
+	color: inherit !important;
+	background: transparent !important;
+	background-color: transparent !important;
+	background-image: none !important;
+}
+
+/* Bricks live preview may still set background-color on the CTA wrapper — paint the button only.
+ * Shared background/border paint for .ect-has-part-bg CTAs is grouped with Style 1 outline rules above. */
+
+:is(.ect-part--read-more, .ect-s2-read-more).ect-has-hover-fg:not(.ect-no-hover) > :is(
+	a.ect-card__btn,
+	a.ect-fld__link.ect-card__btn,
+	a.event-button,
+	a.ect-fld__link.event-button,
+	a.event-button--outline,
+	a.ect-fld__link.event-button--outline
+):hover {
+	color: var(--ect-bricks-hover-fg) !important;
+}
+
+:is(.ect-part--read-more, .ect-s2-read-more).ect-has-hover-bg:not(.ect-no-hover) > :is(
+	a.ect-card__btn,
+	a.ect-fld__link.ect-card__btn,
+	a.event-button,
+	a.ect-fld__link.event-button,
+	a.event-button--outline,
+	a.ect-fld__link.event-button--outline
+):hover {
+	background-color: var(--ect-bricks-hover-bg);
+	border-color: var(--ect-bricks-hover-bg);
+}
+
+:is(.ect-part--read-more, .ect-s2-read-more).ect-has-hover-bg.ect-has-hover-fg:not(.ect-no-hover) > :is(
+	a.ect-card__btn,
+	a.ect-fld__link.ect-card__btn,
+	a.event-button,
+	a.ect-fld__link.event-button,
+	a.event-button--outline,
+	a.ect-fld__link.event-button--outline
+):hover {
+	color: var(--ect-bricks-hover-fg) !important;
+}
+
+.ect-part.ect-has-hover-bg:not(.ect-no-hover) :is(a.event-button, a.ect-card__btn):hover,
+.ect-part.ect-has-hover-bg:not(.ect-no-hover).ect-has-btn > .ect-fld__link:hover {
+	border-color: var(--ect-bricks-hover-bg);
+}
+
+/* Smooth hover transitions — CTA buttons only (wrapper is not a hover target). */
+.ect-part:not(.ect-no-hover) .ect-fld__link,
+.ect-part:not(.ect-no-hover) .ect-fld__term-chip,
+.ect-part:not(.ect-no-hover) .ect-card__cat,
+.ect-ev .ect-card__top:not(.ect-no-hover) a.ect-card__cat,
+.ect-part--title:not(.ect-no-hover),
+.ect-part--categories:not(.ect-no-hover),
+.ect-part--tags:not(.ect-no-hover) {
+	transition: opacity var(--transition-fast), transform var(--transition-fast), color var(--transition-fast), text-decoration-color var(--transition-fast);
+}
+
+:is(.ect-part--read-more, .ect-s2-read-more):not(.ect-no-hover) > a {
+	transition: opacity var(--transition-fast), transform var(--transition-fast), color var(--transition-fast), background-color var(--transition-fast), border-color var(--transition-fast), box-shadow var(--transition-fast), text-decoration-color var(--transition-fast);
+}
+
+/* Interactive parts with hover off: plain text, no link affordance (not button-styled rows). */
+.ect-part.ect-no-hover:not(.ect-has-btn) .ect-fld__plain {
+	color: inherit;
+	text-decoration: none;
+	cursor: default;
+}
+
+.ect-part--categories.ect-no-hover .ect-fld__term-chip,
+.ect-part--tags.ect-no-hover .ect-fld__term-chip {
+	cursor: default;
+}
+
+/* Hover disabled per row: block hover-driven visuals (template + scoped CSS). */
+.ect-no-hover,
+.ect-no-hover:hover,
+.ect-no-hover:focus-within,
+.ect-no-hover .ect-fld__link,
+.ect-no-hover .ect-fld__link:hover,
+.ect-no-hover a,
+.ect-no-hover a:hover,
+.ect-no-hover .ect-fld__term-chip,
+.ect-no-hover .ect-fld__term-chip:hover,
+.ect-no-hover .ect-fld__plain,
+.ect-no-hover .ect-fld__plain:hover {
+	transition: none;
+}
+
+.ect-no-hover:not(.ect-has-btn):not(.ect-part--title):hover,
+.ect-no-hover:not(.ect-has-btn):not(.ect-part--title):focus-within,
+.ect-no-hover:not(.ect-has-btn):not(.ect-part--title) .ect-fld__link:not(.ect-card__btn):not(.event-button):hover,
+.ect-no-hover:not(.ect-has-btn):not(.ect-part--title) a:not(.ect-card__btn):not(.event-button):hover,
+.ect-no-hover:not(.ect-has-btn):not(.ect-part--title) .ect-card__cat:hover,
+.ect-no-hover:not(.ect-has-btn):not(.ect-part--title) .ect-fld__term-chip:hover {
+	color: inherit;
+	background-color: inherit;
+	text-decoration: inherit;
+	text-decoration-color: inherit;
+	transform: none;
+	opacity: inherit;
+}
+
+/* Unlinked title: no link affordance; keep Style tab background and heading color. */
+.ect-part--title.ect-no-hover .ect-fld__title-text,
+.ect-part--title.ect-no-hover .ect-fld__title-text:hover {
+	text-decoration: none;
+	cursor: default;
+}
+
+/* Empty state — layout defaults. */
+.ect-ev__empty {
+	display: flex;
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+	margin-top: 24px;
+	box-sizing: border-box;
+}
+
+.ect-ev__empty-message {
+	display: inline-block;
+	box-sizing: border-box;
+	margin: 0;
+	color: rgba(0, 0, 0, 0.65);
+	text-align: center;
+	transition: opacity var(--transition-fast), transform var(--transition-fast), background-color var(--transition-fast), color var(--transition-fast), border-color var(--transition-fast), box-shadow var(--transition-fast);
+}
+
+/* Plain text tags only — headings (default h2) keep theme heading styles. */
+.ect-ev__empty-message:is(p, div) {
+	font-size: 1rem;
+	line-height: 1.5;
+}
+
+/* Keeps the inner link/text transparent; color/bg belongs on the row wrapper. */
+:is(.ect-part--title, .ect-s2-title) :is(.ect-fld__link, .ect-fld__title-text) {
+	display: inline-block;
+	width: fit-content;
+	max-width: 100%;
+	background: transparent;
+	background-color: transparent;
+}
+
+/* Layout shells: neutral ecbb wrappers (layout CSS files own colors). */
+
+.ect-ev .ect-list .ect-part:not(.ect-has-btn),
+.ect-ev .ect-card .ect-part:not(.ect-has-btn) {
+	background-color: transparent;
+	border: none;
+}
+
+.ect-ev .ect-list .event-meta li > .ect-part {
+	display: inline;
+	margin: 0;
+	padding: 0;
+	background: transparent;
+	border: none;
+}
+
+/* ==================================================
+   Responsive — list
+   Breakpoints align with Bricks tablet (1024) / mobile (767).
+================================================== */
+
+@media (max-width: 767px) {
+	.ect-ev__list--list {
+		gap: var(--ect-bricks-gap, 18px);
+	}
+
+	.ect-ev .event-badge {
+		top: 8px;
+		left: 8px;
+		max-width: calc(100% - 16px);
+	}
+
+	.ect-ev .event-badge--blue {
+		font-size: var(--ect-bricks-shell-cat-font-size, 9px);
+		padding: 4px 8px;
+	}
+}
+
+/* Builder panel: Grid (PRO only) is clickable (opens the Grid demo) but is not a selectable template.
+   Bricks select has no native disabled-option support. Options order: List, then Grid. */
+[data-controlkey="layout_template"] .dropdown > li:nth-child(2) {
+	opacity: 0.7;
+	cursor: pointer;
+	text-decoration: underline;
+}
